@@ -50,6 +50,22 @@ footer {
     color: white;
 }
 
+.width-full {
+    width: 100%;
+}
+
+.width-fit {
+    width: fit-content;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .big-dash::before {
     content: '';
     display: inline-block;
@@ -139,4 +155,13 @@ footer {
     height: inherit;
     object-fit: cover;
     z-index: -1;
+}
+
+.card-fixed {
+    width: 20rem;
+    height: 20rem;
+}
+
+.card-wide {
+    width: 30rem;
 }
