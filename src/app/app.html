@@ -1,0 +1,30 @@
+<div>
+<nav>
+  <div class="nav-body">
+    <img class="nav-logo" src="images/oliva-logo.png" alt="Oliva Energy Logo">
+    <ul class="nav-menu m-text">
+      <li><a class="nav-menu-item" (click)="setPageIndex(0); $event.stopImmediatePropagation()">Over</a></li>
+      <li><a class="nav-menu-item" (click)="setPageIndex(1); $event.stopImmediatePropagation()">Care</a></li>
+      <li><a class="nav-menu-item" (click)="setPageIndex(2); $event.stopImmediatePropagation()">Systems</a></li>
+      <li><a class="nav-menu-item" (click)="setPageIndex(3); $event.stopImmediatePropagation()">Installateurs</a></li>
+      <li><a class="nav-menu-item" (click)="setPageIndex(4); $event.stopImmediatePropagation()">Cases</a></li>
+      <li><a class="nav-menu-item" (click)="setPageIndex(5); $event.stopImmediatePropagation()">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+  @switch (current_page_index)
+  {
+    @case (0) {
+      <app-home></app-home>
+    }
+    @case (1) {
+      <app-care></app-care>
+    }
+    @default {
+      <p>DO: IMPL PAGE</p>
+    }
+  }
+<footer>
+  <p>Gouwepoort 1, 4901 RZ Zierikzee, The Netherlands. Copyright © 2025 Oliva Energy.</p>
+</footer>
+</div>

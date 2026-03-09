@@ -1,0 +1,13 @@
+:host {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+:host img {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+  z-index: -1;
+}

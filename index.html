@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="nl" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oliva Energy</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/utils.css">
+    <link rel="stylesheet" href="anglur/public/assets/css/style.css">
+    <link rel="stylesheet" href="anglur/public/assets/css/utils.css">
 </head>
 <body>
 <nav>
     <div class="nav-body">
-        <img class="nav-logo" src="assets/images/oliva-logo.png" alt="Oliva Energy Logo">
-        <ul class="nav-menu large-text">
+        <img class="nav-logo" src="anglur/public/images/oliva-logo.png" alt="Oliva Energy Logo">
+        <ul class="nav-menu m-text">
             <li><a class="nav-menu-item" href="index.html">Over</a></li>
             <li><a class="nav-menu-item" href="#">Care</a></li>
             <li><a class="nav-menu-item" href="systems.html">Systems</a></li>
@@ -22,40 +22,51 @@
     </div>
 </nav>
 <main>
-    <!-- Hero -->
-    <section class="section section-large">
+    <section class="section l-height">
         <img class="section-back-img" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1280' height='720' viewBox='0 0 1280 720'%3E%3Crect width='100%25' height='100%25' fill='%23ddd'/%3E%3Ctext x='50%25' y='50%25' font-family='sans-serif' font-size='16' text-anchor='middle' fill='%23999'%3E1280×720%3C/text%3E%3C/svg%3E" alt="Placeholder">
-        <div class="card" style="left: 3rem; top: 3rem; width: 20rem;">
+        <div class="card" style="top: 25%; left: 5%; width: 20rem;">
             <div class="text-group">
                 <p class="big-dash bleached-text">JOIN THE FLEXIBILITY TRANSITION</p>
-                <p class="large-text">Grip op energie</p>
-                <p class="small-text bleached-text">Wij helpen organisaties energiekosten beheersbaar te maken<br/>
+                <p class="xl-text no-word-wrap">Grip op energie</p>
+                <p class="small-text bleached-text">Wij helpen organisaties energiekosten beheersbaar te maken
                     en energiesystemen te optimaliseren.
                 </p>
             </div>
         </div>
     </section>
-    <!-- Intro -->
-    <section class="section section-small" style="width: 50%">
-        <p>Oliva Energy is een onafhankelijke energiepartner.
+    <section class="section s-height width-half-size l-text pt-lg">
+        <p>Oliva Energy is een onafhankelijke energiepartner.<br/>
         Wij combineren data, monitoring en engineering om organisaties grip te geven op energie.</p>
     </section>
-    <section class="section section-large">
-        <p class="big-dash">Hoe we werken</p>
-        <h2>Twee afdelingen, één missie</h2>
+    <section class="section l-height m-text mt-lg" style="width: 75%">
+        <p class="big-dash text-oliva-green m-none text-left">Hoe we werken</p>
+        <h2 class="text-oliva-green m-none text-left">Twee afdelingen, één missie</h2>
         <div class="flex-row flex-center gap-lg mt-lg">
-            <div class="card-fixed">
-                <h3>Oliva Care</h3>
-                <p>De standaard voor professioneel energiemanagement</p>
-                <p>Voor bedrijven die zekerheid willen</p>
-                <p>Voorkom dat u ongemerkt te veel betaalt voor energie</p>
+
+            <div class="gradient-border">
+                <div class="l-width p-lg gradient-border-inner full-height">
+                    <h3 class="text-oliva-green m-none text-left">Oliva Care</h3>
+                    <p class="ss-text m-none text-left">De standaard voor professioneel energiemanagement</p>
+                    <p class="s-text">Voor bedrijven die zekerheid willen<br/>
+                        Voorkom dat u ongemerkt te veel betaalt voor ene</p>
+                    <div class="flex-row flex-center gap-sm">
+                        <button class="s-button-fixed background-oliva-green l-text bleached-text icon-button">&plus;</button>
+                        <p class="ss-text">Zeker weten dat uw energiekosten kloppen</p>
+                    </div>
+                </div>
             </div>
-            <div class="card-fixed">
-                <h3>Oliva Systems</h3>
-                <p>Voor organisaties waar Care niet voldoende is</p>
-                <p>Voor bedrijven waar energie een strategische factor is</p>
-                <p>Van losse assets naar één intelligent energiesysteem</p>
-                <p>Integratie, sturing en optimalisatie van complete energie-infrastructuur</p>
+            <div class="gradient-border">
+              <div class="l-width p-lg gradient-border-inner full-height">
+                <div class="flex-row flex-center-no-vertical gap-sm"></div>
+                    <h3 class="text-oliva-green m-none text-left">Oliva Systems</h3>
+                    <p class="ss-text m-none text-left">Voor organisaties waar Care niet voldoende is</p>
+                    <p class="s-text">Voor bedrijven waar energie een strategische factor <br/>is<br/>
+                    Van losse assets naar één intelligent energiesysteem</p>
+                    <div class="flex-row flex-center gap-sm text-left">
+                        <button class="s-button-fixed background-oliva-green l-text bleached-text icon-button">&plus;</button>
+                        <p class="ss-text">Integratie, sturing en optimalisatie van complete energie-infrastructuur</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
