@@ -19,7 +19,7 @@ import {Contact} from './pages/contact/contact';
 })
 export class App
 {
-  protected current_page_index: number = 2;
+  protected current_page_index: number = 0;
   constructor(protected translations: TranslationService)
   {
     fromEvent(window, 'hashchange').subscribe(() => {
