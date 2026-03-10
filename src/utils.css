@@ -20,6 +20,11 @@
     flex-direction: row;
 }
 
+.grid-center {
+  display: grid;
+  place-items: center;
+}
+
 .gap-sm {
     gap: 0.5rem;
 }
@@ -70,6 +75,18 @@
 
 .pt-lg {
     padding-top: 2rem;
+}
+
+.pb-sm {
+  padding-bottom: 0.5rem;
+}
+
+.pb-md {
+  padding-bottom: 1rem;
+}
+
+.pb-lg {
+  padding-bottom: 2rem;
 }
 
 .text-left  {
@@ -138,6 +155,10 @@
 
 .width-half-size {
     width: 50%;
+}
+
+.full-width {
+  width: 100%;
 }
 
 .full-height {

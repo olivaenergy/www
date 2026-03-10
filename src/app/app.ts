@@ -4,19 +4,22 @@ import {fromEvent} from 'rxjs';
 import {Section} from './components/section/section';
 import {Home} from './pages/home/home';
 import {Care} from './pages/care/care';
+import {Systems} from './pages/systems/systems';
+import {Contact} from './pages/contact/contact';
 
 @Component({
   selector: 'app-root',
   imports: [
-    Section,
     Home,
-    Care
+    Care,
+    Systems,
+    Contact
   ],
   templateUrl: './app.html'
 })
 export class App
 {
-  protected current_page_index: number = 0;
+  protected current_page_index: number = 2;
   constructor(protected translations: TranslationService)
   {
     fromEvent(window, 'hashchange').subscribe(() => {

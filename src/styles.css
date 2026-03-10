@@ -37,6 +37,17 @@ footer {
   align-items: center;
 }
 
+.app-root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.fill-remaining {
+  flex: 1;
+  min-height: 0;
+}
+
 .bleached-text {
   color: white;
 }
