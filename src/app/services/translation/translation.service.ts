@@ -1,59 +1,43 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { tap, catchError, switchMap } from 'rxjs/operators';
-import { of, fromEvent } from 'rxjs';
+import { tap, catchError, map } from 'rxjs/operators';
+import { of } from 'rxjs';
+import { load } from 'js-yaml';
+import { signal } from '@angular/core';
 
 @Injectable({ providedIn: 'root' })
-export class TranslationService {
-  private currentLang: string = '';
+export class TranslationService
+{
   private translations: any = {};
+  readonly translationsLoaded = signal(0);
 
-  constructor(private http: HttpClient) {
-    this.loadFromHash();
-    fromEvent(window, 'hashchange').pipe(
-      switchMap(() => this.fetchLanguage(this.getLangFromHash()))
+  constructor(private http: HttpClient)
+  {
+    this.http.get('/locales/nl.yaml', { responseType: 'text' }).pipe(
+      map(text => load(text) as any),
+      tap(data =>
+      {
+        this.translations = data;
+        this.translationsLoaded.update(v => v + 1);
+      }),
+      catchError(() =>
+      {
+        console.warn('⚠️ Failed to load en.yaml');
+        return of({});
+      })
     ).subscribe();
   }
 
-  translate(key: string): string {
+  translate(key: string): string
+  {
+    this.translationsLoaded();
     const keys = key.split('.');
     let result: any = this.translations;
-    for (const k of keys) {
+    for (const k of keys)
+    {
       if (result && typeof result === 'object' && k in result) result = result[k];
       else return key;
     }
     return typeof result === 'string' ? result : key;
-  }
-
-  setLanguage(lang: string) {
-    window.location.hash = lang;
-  }
-
-  get currentLanguage(): string {
-    return this.currentLang;
-  }
-
-  private getLangFromHash(): string {
-    return window.location.hash.replace('#', '') || 'en';
-  }
-
-  private loadFromHash() {
-    this.fetchLanguage(this.getLangFromHash()).subscribe();
-  }
-
-  private fetchLanguage(lang: string) {
-    if (lang === this.currentLang && Object.keys(this.translations).length > 0) return of(this.translations);
-
-    return this.http.get<any>(`/locales/${lang}.json`).pipe(
-      tap(data => {
-        this.translations = data;
-        this.currentLang = lang;
-      }),
-      catchError((): any => {
-        console.warn(`⚠️ Translation file for "${lang}" not found. Falling back to English.`);
-        if (lang !== 'en') return this.fetchLanguage('en');
-        return of({});
-      })
-    );
   }
 }

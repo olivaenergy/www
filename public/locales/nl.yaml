@@ -1,0 +1,21 @@
+home:
+  hero:
+    eyebrow: JOIN THE FLEXIBILITY TRANSITION
+    title: "Energieflexibiliteit\n heeft waarde"
+    subtitle: Waarde die je nog niet ziet en gebruikt. Wij gaan het voor je inzetten
+    cta_care: Ontdek Care
+    cta_systems: Ontdek Systems
+  intro:
+    text: Oliva Energy helpt organisaties de waarde van energieflexibiliteit te benutten.
+    subtext: "Wij combineren data, monitoring en engineering\nom organisaties grip te geven op energie."
+  mission:
+    eyebrow: Hoe we werken
+    title: Twee afdelingen, één missie
+    care:
+      title: Oliva Care
+      subtitle: De standaard voor professioneel energiemanagement
+      button: Ontdek Care
+    systems:
+      title: Oliva Systems
+      subtitle: Voor organisaties waar flexibiliteit een strategische factor is
+      button: Ontdek Systems

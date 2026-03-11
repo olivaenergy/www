@@ -1,33 +1,28 @@
 <main>
-  <app-section [hasImage]="true" [imagePath]="'/images/image_01.png'" class="l-height">
-    <div class="card background-oliva-green" style="top: 10%; left: 5%; width: 30rem;">
-        <div class="flex-col gap-sm">
-          <p class="m-none big-dash bleached-text">JOIN THE FLEXIBILITY TRANSITION</p>
-          <p class="m-none xl-text no-word-wrap">Energieflexibiliteit<br/> heeft waarde</p>
-          <p class="m-none small-text bleached-text">Waarde die je nog niet ziet en gebruikt. Wij gaan het voor je inzetten</p>
-        </div>
+  <app-section [hasImage]="true" [imagePath]="'/images/image_01.png'" class="l-height grid-center">
+    <div class="card" style="left: 5%; width: 30rem;">
+      <div class="flex-col gap-sm bleached-text">
+        <p class="m-none big-dash">JOIN THE FLEXIBILITY TRANSITION</p>
+        <p class="m-none xl-text title" style="line-height: 1.25;">Oliva Care</p>
+        <p class="m-none small-text">Waarde die je nog niet ziet en gebruikt. Wij gaan het voor je inzetten</p>
+      </div>
     </div>
   </app-section>
+  <br/>
+  <br/>
   <app-section class="s-height width-half-size l-text pt-lg">
-    <p>Oliva Energy is een onafhankelijke energiepartner.<br/>
-      Wij combineren data, monitoring en engineering om organisaties grip te geven op energie.</p>
+    <p><b>Oliva Energy helpt organisaties de waarde van energieflexibiliteit te benutten.</b>
+      Wij combineren data, monitoring en engineering
+      om organisaties grip te geven op energie.</p>
   </app-section>
+  <br/>
+  <br/>
   <app-section class="l-height m-text mt-lg" style="width: 75%">
     <p class="big-dash text-oliva-green m-none text-left">Hoe we werken</p>
     <h2 class="text-oliva-green m-none text-left">Twee afdelingen, één missie</h2>
     <div class="flex-row flex-center gap-lg mt-lg">
-      <div class="l-width p-lg full-height border-green">
-        <h3 class="m-none text-left">Oliva Systems</h3>
-        <p class="ss-text m-none text-left">De standaard voor professioneel energiemanagement</p>
-        <br/>
-        <button class="button-base p-sm background-oliva-green bleached-text">Ontdek Systems</button>
-      </div>
-      <div class="l-width p-lg full-height border-green">
-        <h3 class="m-none text-left">Oliva Systems</h3>
-        <p class="ss-text m-none text-left">Voor organisaties waar Systems niet voldoende is</p>
-        <br/>
-        <button class="button-base p-sm background-oliva-green bleached-text">Ontdek Systems</button>
-      </div>
+      <app-info-box title="Oliva Care" subtitle="De standaard voor professioneel energiemanagement" buttonLabel="Ontdek Care" (OnClick)="switchPage(1)"></app-info-box>
+      <app-info-box title="Oliva Systems" subtitle="Voor organisaties waar flexibiliteit een strategische factor is" buttonLabel="Ontdek Systems" (OnClick)="switchPage(2)"></app-info-box>
     </div>
   </app-section>
 </main>

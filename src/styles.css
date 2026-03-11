@@ -5,11 +5,16 @@ body {
   margin: 0;
   padding: 0;
   --dark-body-text-colour: darkgray;
-  --body-text-colour: rgb(49,81,125);
+  --body-header-text-colour: rgb(49,81,125);
+  --body-text-colour: rgb(90,106,122);
   --dark-body: rgb(49,76,102);
   --oliva-green: #86b622;
   --body-colour: white;
-  color: var(--body-text-colour);
+  color: var(--body-header-text-colour);
+}
+
+.title {
+  font-weight: 600;
 }
 
 nav {
@@ -114,31 +119,10 @@ footer {
   height: fit-content;
 }
 
-.card-wide {
-  width: 30rem;
-}
-
 .text-oliva-green {
   color: var(--oliva-green);
 }
 
 .background-oliva-green {
   background-color: var(--oliva-green);
-}
-
-.button-base {
-  border: none;
-  border-radius: 10%;
-}
-
-.background-frost {
-  background-color: rgba(255,255,255,0.25);
-}
-
-.background-frost-dark {
-  background-color: rgba(0,0,0,0.5);
-}
-
-.border-green {
-  border: 3px solid var(--oliva-green);
 }

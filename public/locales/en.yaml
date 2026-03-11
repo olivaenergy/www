@@ -1,0 +1,21 @@
+home:
+  hero:
+    eyebrow: JOIN THE FLEXIBILITY TRANSITION
+    title: "Energy flexibility\n has value"
+    subtitle: Value you don't yet see or use. We are going to put it to work for you.
+    cta_care: Discover Care
+    cta_systems: Discover Systems
+  intro:
+    text: Oliva Energy helps organisations unlock the value of energy flexibility.
+    subtext: "We combine data, monitoring and engineering\nto give organisations control over energy."
+  mission:
+    eyebrow: How we work
+    title: Two divisions, one mission
+    care:
+      title: Oliva Care
+      subtitle: The standard for professional energy management
+      button: Discover Care
+    systems:
+      title: Oliva Systems
+      subtitle: For organisations where flexibility is a strategic factor
+      button: Discover Systems

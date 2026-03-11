@@ -1,36 +1,35 @@
 <main>
-  <app-section [hasImage]="true" [imagePath]="'/images/image_01.jpeg'" class="l-height">
-    <div class="card background-frost-dark" style="top: 10%; left: 5%; width: 30rem;">
+  <app-section [hasImage]="true" [imagePath]="'/images/image_01.jpeg'" class="l-height grid-center">
+    <div class="card" style="left: 5%; width: 25rem;">
       <div class="flex-col gap-sm bleached-text">
-        <p class="m-none big-dash">JOIN THE FLEXIBILITY TRANSITION</p>
-        <p class="m-none xl-text no-word-wrap">Energieflexibiliteit<br/> heeft waarde</p>
-        <p class="m-none small-text">Waarde die je nog niet ziet en gebruikt. Wij gaan het voor je inzetten</p>
+        <p class="m-none big-dash pb-md">{{ t.translate('home.hero.eyebrow') }}</p>
+        <p class="m-none xl-text no-word-wrap title pb-sm" style="line-height: 1.1;">{{ t.translate('home.hero.title') }}</p>
+        <p class="m-none small-text pb-md">{{ t.translate('home.hero.subtitle') }}</p>
         <div class="flex-row gap-md">
-          <button class="button-base p-sm background-oliva-green m-text bleached-text">Ontdek Care</button>
-          <button class="button-base p-sm background-frost m-text bleached-text">Ontdek Systems</button>
+          <app-button [isGreen]="true" [label]="t.translate('home.hero.cta_care')" (click)="switchPage(1)"></app-button>
+          <app-button [label]="t.translate('home.hero.cta_systems')" (click)="switchPage(2)"></app-button>
         </div>
       </div>
     </div>
   </app-section>
+  <br/>
+  <br/>
   <app-section class="s-height width-half-size l-text pt-lg">
-    <p><b>Oliva Energy helpt organisaties de waarde van energieflexibiliteit te benutten.</b><br>Wij combineren data, monitoring en engineering<br>om organisaties grip te geven op energie.</p>
+    <p>
+      <b>{{ t.translate('home.intro.text') }}</b><br>
+      {{ t.translate('home.intro.subtext') }}
+    </p>
   </app-section>
+  <br/>
+  <br/>
   <app-section class="l-height m-text mt-lg" style="width: 75%">
-    <p class="big-dash text-oliva-green m-none text-left">Hoe we werken</p>
-    <h2 class="text-oliva-green m-none text-left">Twee afdelingen, één missie</h2>
+    <p class="big-dash text-oliva-green m-none text-left">{{ t.translate('home.mission.eyebrow') }}</p>
+    <h2 class="text-oliva-green m-none text-left">{{ t.translate('home.mission.title') }}</h2>
     <div class="flex-row flex-center gap-lg mt-lg">
-      <div class="l-width p-lg full-height border-green">
-        <h3 class="m-none text-left">Oliva Systems</h3>
-        <p class="ss-text m-none text-left">De standaard voor professioneel energiemanagement</p>
-        <br/>
-        <button class="button-base p-sm background-oliva-green bleached-text">Ontdek Care</button>
-      </div>
-      <div class="l-width p-lg full-height border-green">
-        <h3 class="m-none text-left">Oliva Systems</h3>
-        <p class="ss-text m-none text-left">Voor organisaties waar Systems niet voldoende is</p>
-        <br/>
-        <button class="button-base p-sm background-oliva-green bleached-text">Ontdek Systems</button>
-      </div>
+      <app-info-box [title]="t.translate('home.mission.care.title')" [subtitle]="t.translate('home.mission.care.subtitle')" [buttonLabel]="t.translate('home.mission.care.button')" (OnClick)="switchPage(1)">
+      </app-info-box>
+      <app-info-box [title]="t.translate('home.mission.systems.title')" [subtitle]="t.translate('home.mission.systems.subtitle')" [buttonLabel]="t.translate('home.mission.systems.button')" (OnClick)="switchPage(2)">
+      </app-info-box>
     </div>
   </app-section>
 </main>
