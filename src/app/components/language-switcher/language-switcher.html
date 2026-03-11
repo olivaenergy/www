@@ -1,0 +1,8 @@
+<select [value]="t.currentLanguage()" (change)="onChange($event)" [disabled]="t.isLoading()" aria-label="Select language">
+  @for (lang of languages; track lang.code)
+  {
+    <option [value]="lang.code">
+      {{ lang.label }} {{ lang.flag }}
+    </option>
+  }
+</select>

@@ -38,9 +38,27 @@ footer {
   height: 5rem;
   background-color: var(--dark-body);
   color: var(--dark-body-text-colour);
+}
+
+.footer-bar {
   display: flex;
-  justify-content: center;
   align-items: center;
+  width: 100%;
+}
+
+.footer-spacer {
+  flex: 1;
+}
+
+.footer-text {
+  flex: 0 1 auto;
+  text-align: center;
+}
+
+.footer-end {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .app-root {
