@@ -1,13 +1,13 @@
 page_0:
   section_1:
     top_label: "JOIN THE FLEXIBILITY TRANSITION"
-    heading: "Energy flexibility\n has value"
-    subheading: "Value you don't yet see or use. We will put it to work for you."
+    heading: "Energy flexibility has value"
+    subheading: "Value you may not yet see or use. We will help you unlock it."
     button_left: "Discover Care"
     button_right: "Discover Systems"
   section_2:
-    text_top: "Oliva Energy helps organisations unlock the value of energy flexibility."
-    text_bottom: "We combine data, monitoring and engineering\nto give organisations control over energy."
+    text_top: "Oliva Energy helps organizations unlock the value of energy flexibility."
+    text_bottom: "We combine data, monitoring and engineering to give organizations control over their energy."
   section_3:
     top_label: "How we work"
     heading: "Two divisions, one mission"
@@ -17,65 +17,74 @@ page_0:
       button: "Discover Care"
     card_right:
       heading: "Oliva Systems"
-      subheading: "For organisations where flexibility is a strategic factor"
+      subheading: "For organizations where flexibility is a strategic factor"
       button: "Discover Systems"
 
 page_1:
   section_1:
     top_label: "JOIN THE FLEXIBILITY TRANSITION"
     heading: "Oliva Care"
-    subheading: "Value you don't yet see or use. We will put it to work for you."
+    subheading: "Value you may not yet see or use. We will help you put it to work"
   section_2:
-    text_top: "Oliva Energy helps organisations unlock the value of energy flexibility."
-    text_bottom: "We combine data, monitoring and engineering to give organisations control over energy."
-  section_3:
-    top_label: "How we work"
-    heading: "Two divisions, one mission"
-    card_left:
-      heading: "Oliva Care"
-      subheading: "The standard for professional energy management"
-      button: "Discover Care"
-    card_right:
-      heading: "Oliva Systems"
-      subheading: "For organisations where flexibility is a strategic factor"
-      button: "Discover Systems"
+    card_0:
+      heading: "Are you unknowingly paying too much?"
+      body: "Many companies pay their energy bill every month, but not everyone checks this structurally:\n- Whether the energy contract is still appropriate\n- Whether optimization toward the grid operator is possible\n- Whether peak power levels are unnecessarily high\n- Whether flexibility remains unused\n\nContracts are becoming more complex. Grid costs are rising. Electrification is changing your consumption profile."
+    card_1:
+      heading: "What is Oliva Care?"
+      body: "Oliva Care is independent energy management.\n\nWe are not involved in the supply of energy. We do not sell contracts. We represent only your interests.\n\nFor a fixed monthly fee we ensure that:\n- Your energy contract is correct in content\n- Your consumption is continuously monitored (Care Control)\n- Deviations are detected (Care Control)\n- Optimizations are proposed\n\nYou gain peace of mind, control and insight."
+    card_2:
+      heading: "Care vs Care Control"
+      body: "Not every organization requires active control. That is why we offer two levels.\n\nCare\n- Independent contract review\n- Strategic advice\n- From €20 per month\n\nFor organizations that want certainty.\n\nCare Control\n- Everything from Care\n- Installation of Energy Box\n- Real-time analysis\n- Active power control\n- Optimization of PV, charging stations and peak loads\n- From €60 per month\n\nFor organizations that want to get more out of their energy infrastructure."
+    card_3:
+      heading: "Our position"
+      body: "Oliva Energy is not an energy supplier.\n\nWe have no interest in which contract you choose.\n\nOur role is comparable to a financial advisor, but for energy.\n\nIndependent. Data-driven. Transparent."
+    card_4:
+      heading: "Frequently asked questions"
+      body: "Are you independent from energy suppliers?\nYes. We do not supply energy and we receive no commission on contracts.\n\nI already have an energy advisor and they do not charge a monthly fee. Why should I pay you for the same advice?\nEnergy advisors often receive a kickback when they deliver a signed energy contract to a supplier. These kickback payments can become quite substantial.\n\nOliva Energy does NOT do this. The only compensation we receive is the monthly subscription fee. We do not advise based on the highest kickback. We advise based on your needs and in your best interest.\n\nDo I need to install hardware?\nNot for Care. For Care Control an Energy Box is required.\n\nHow quickly will I see results?\nOften already during the first contract analysis.\n\nIs this interesting for small businesses?\nYes. Especially companies without their own energy expertise benefit from Care."
+    card_5:
+      heading: "Control over energy starts with insight"
+      body: "Leave your details and we will contact you."
+      label_1: "Name:"
+      label_2: "Phone:"
+      label_3: "Email:"
+      label_4: "Organization:"
 
 page_2:
   section_1:
     top_label: "JOIN THE FLEXIBILITY TRANSITION"
     heading: "Oliva Systems"
-    subheading: "For organisations where Care is not enough"
+    subheading: "For organizations where Care is not sufficient"
   section_2:
     text_top: "From separate assets to one intelligent energy system."
-    text_bottom: "For organisations where energy is a strategic factor."
+    text_bottom: "For organizations where energy is a strategic factor."
   section_3:
     card_0:
-      heading: "When Systems?"
-      body: "Many organisations have solar panels, charging stations, batteries or heat pumps. These systems often still operate independently. As a result, a large part of the possible optimisation goes unused. Oliva Systems ensures that all energy assets work together within one intelligent system."
+      heading: "Why Systems?"
+      body: "Many organizations have solar panels, charging stations, batteries or heat pumps. These systems often still operate separately. As a result, a large part of the possible optimization remains unused.\n\nOliva Systems ensures that all energy assets work together within one intelligent system."
     card_1:
       heading: "What does Oliva Systems do?"
-      body: "We design, integrate and optimise complete energy systems.\nWe do this through:\n- System design\n- Integration of energy assets\n- Energy monitoring\n- Power management\n- Flexibility optimisation\n\nThis creates one central energy system that can actively manage costs, capacity and efficiency."
+      body: "We design, integrate and optimize complete energy systems.\n\nWe do this through:\n- System design\n- Integration of energy assets\n- Energy monitoring\n- Power control\n- Flexibility optimization\n\nThis creates one central energy system that can actively steer on cost, capacity and efficiency."
     card_2:
-      heading: "Who is Systems for?"
-      body: "Oliva Systems is relevant for organisations with multiple assets, high energy demand, peak loads or grid congestion challenges."
+      heading: "Who is Systems for"
+      body: "Oliva Systems is interesting for organizations with:\n- Multiple energy assets\n- High energy demand\n- Peak power usage\n- Grid congestion challenges."
     card_3:
       heading: "From Care to Systems"
-      body: "Many organisations start with Oliva Care, which provides insight into energy usage and contract structures.\n\nWhen greater optimisation proves possible, scaling up to Oliva Systems is an option."
+      body: "Many organizations start with Oliva Care. This creates insight into energy usage and contract structures.\n\nWhen greater optimization opportunities become visible, organizations can scale up to Oliva Systems."
     card_4:
       heading: "Collaboration with installers"
-      body: "Oliva Systems works closely with installers and technical partners.\n\nWe focus on:\n- Analysis\n- System design\n- Energy management\n\nInstallers handle the physical realisation of installations."
+      body: "Oliva Systems works closely with installers and technical partners.\n\nWe focus on:\n- Analysis\n- System design\n- Energy control\n\nInstallers are responsible for the realization of installations."
     card_5:
       heading: "Interested?"
-      body: "Does your organisation have multiple energy assets or complex energy usage? Leave your details to discuss the possibilities. We will get back to you within 2 business days."
+      body: "Does your organization have multiple energy assets or complex energy usage?\n\nLeave your details to discuss the possibilities.\n\nWe will contact you within 2 working days."
       label_1: "Name:"
       label_2: "Phone:"
       label_3: "Email:"
-      label_4: "Organisation:"
+      label_4: "Organization:"
 
 page_3:
   section_1:
-    heading: "Get in touch:"
+    heading: "Contact us:"
     label_1: "Name:"
     label_2: "Phone:"
     label_3: "Email:"
-    label_4: "Organisation:"
+    label_4: "Organization:"

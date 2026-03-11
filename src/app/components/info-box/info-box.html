@@ -2,7 +2,7 @@
   <h2 [class]="hasDash? 'title big-dash': 'title'" [style]="isTitleGreen? 'color: var(--oliva-green);': ''">{{ title }}</h2>
   @if (subtitle)
   {
-    <p class="subtitle">{{ subtitle }}</p>
+    <div class="subtitle" [innerHTML]="formatBody(subtitle)"></div>
   }
   @else
   {

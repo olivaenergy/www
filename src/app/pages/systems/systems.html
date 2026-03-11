@@ -8,20 +8,21 @@
       </div>
     </div>
   </app-section>
-  <app-section class="s-height width-half-size l-text pt-lg">
-    <p><b>{{ t.translate('page_2.section_2.text_top') }}</b><br/>
-    {{ t.translate('page_2.section_2.text_bottom') }}</p>
-  </app-section>
   <br/>
   <br/>
   <app-section class="m-text mt-lg pb-lg">
     <div class="flex-col flex-center gap-lg mt-lg">
-      @for (i of [0,1,2,3,4,5]; track i)
+      @for (i of [0,1,2,3,4]; track i)
       {
         <app-info-box [hasDash]="true" [isTitleGreen]="true" [hasButton]="false" [width]="'80vw'"
                       [title]="t.translate(`page_2.section_3.card_${i}.heading`)"
                       [subtitle]="t.translate(`page_2.section_3.card_${i}.body`)">
         </app-info-box>
+        @if(i === 0)
+        {
+          <br/>
+          <br/>
+        }
       }
       <app-info-box [hasDash]="true" [isTitleGreen]="true" [hasButton]="false" [title]="t.translate('page_2.section_3.card_5.heading')" [width]="'80vw'">
         <p class="s-text m-none text-left">{{ t.translate('page_2.section_3.card_5.body') }}</p>
