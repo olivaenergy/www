@@ -2,12 +2,12 @@
   <app-section [hasImage]="true" [imagePath]="'/images/image_01.jpeg'" class="l-height grid-center">
     <div class="card" style="left: 5%; width: 25rem;">
       <div class="flex-col gap-sm bleached-text">
-        <p class="m-none big-dash pb-md">{{ t.translate('home.hero.eyebrow') }}</p>
-        <p class="m-none xl-text title pb-sm" style="line-height: 1.1;">{{ t.translate('home.hero.title') }}</p>
-        <p class="m-none small-text pb-md">{{ t.translate('home.hero.subtitle') }}</p>
+        <p class="m-none big-dash pb-md">{{ t.translate('page_0.section_1.top_label') }}</p>
+        <p class="m-none xl-text title pb-sm" style="line-height: 1.1;">{{ t.translate('page_0.section_1.heading') }}</p>
+        <p class="m-none small-text pb-md">{{ t.translate('page_0.section_1.subheading') }}</p>
         <div class="flex-row gap-md">
-          <app-button [isGreen]="true" [label]="t.translate('home.hero.cta_care')" (click)="switchPage(1)"></app-button>
-          <app-button [label]="t.translate('home.hero.cta_systems')" (click)="switchPage(2)"></app-button>
+          <app-button [isGreen]="true" [label]="t.translate('page_0.section_1.button_left')" (click)="switchPage(1)"></app-button>
+          <app-button [label]="t.translate('page_0.section_1.button_right')" (click)="switchPage(2)"></app-button>
         </div>
       </div>
     </div>
@@ -16,19 +16,19 @@
   <br/>
   <app-section class="s-height width-half-size l-text pt-lg">
     <p>
-      <b>{{ t.translate('home.intro.text') }}</b><br>
-      {{ t.translate('home.intro.subtext') }}
+      <b>{{ t.translate('page_0.section_2.text_top') }}</b><br>
+      {{ t.translate('page_0.section_2.text_bottom') }}
     </p>
   </app-section>
   <br/>
   <br/>
   <app-section class="l-height m-text mt-lg" style="width: 75%">
-    <p class="big-dash text-oliva-green m-none text-left">{{ t.translate('home.mission.eyebrow') }}</p>
-    <h2 class="text-oliva-green m-none text-left">{{ t.translate('home.mission.title') }}</h2>
+    <p class="big-dash text-oliva-green m-none text-left">{{ t.translate('page_0.section_3.top_label') }}</p>
+    <h2 class="text-oliva-green m-none text-left">{{ t.translate('page_0.section_3.heading') }}</h2>
     <div class="flex-row flex-center gap-lg mt-lg">
-      <app-info-box [title]="t.translate('home.mission.care.title')" [subtitle]="t.translate('home.mission.care.subtitle')" [buttonLabel]="t.translate('home.mission.care.button')" (OnClick)="switchPage(1)">
+      <app-info-box [title]="t.translate('page_0.section_3.card_left.heading')" [subtitle]="t.translate('page_0.section_3.card_left.subheading')" [buttonLabel]="t.translate('page_0.section_3.card_left.button')" (OnClick)="switchPage(1)">
       </app-info-box>
-      <app-info-box [title]="t.translate('home.mission.systems.title')" [subtitle]="t.translate('home.mission.systems.subtitle')" [buttonLabel]="t.translate('home.mission.systems.button')" (OnClick)="switchPage(2)">
+      <app-info-box [title]="t.translate('page_0.section_3.card_right.heading')" [subtitle]="t.translate('page_0.section_3.card_right.subheading')" [buttonLabel]="t.translate('page_0.section_3.card_right.button')" (OnClick)="switchPage(2)">
       </app-info-box>
     </div>
   </app-section>

@@ -10,9 +10,9 @@ import {TranslationService} from '../../services/translation/translation.service
   templateUrl: './home.html',
 })
 export class Home {
-  constructor(public t: TranslationService) {}
-
   @Output() onPageChange: EventEmitter<number> = new EventEmitter();
+
+  constructor(public t: TranslationService) {}
 
   protected switchPage(number: number) {
     this.onPageChange.emit(number);

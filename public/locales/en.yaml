@@ -1,21 +1,81 @@
-home:
-  hero:
-    eyebrow: JOIN THE FLEXIBILITY TRANSITION
-    title: "Energy flexibility\n has value"
-    subtitle: Value you don't yet see or use. We are going to put it to work for you.
-    cta_care: Discover Care
-    cta_systems: Discover Systems
-  intro:
-    text: Oliva Energy helps organisations unlock the value of energy flexibility.
-    subtext: "We combine data, monitoring and engineering\nto give organisations control over energy."
-  mission:
-    eyebrow: How we work
-    title: Two divisions, one mission
-    care:
-      title: Oliva Care
-      subtitle: The standard for professional energy management
-      button: Discover Care
-    systems:
-      title: Oliva Systems
-      subtitle: For organisations where flexibility is a strategic factor
-      button: Discover Systems
+page_0:
+  section_1:
+    top_label: "JOIN THE FLEXIBILITY TRANSITION"
+    heading: "Energy flexibility\n has value"
+    subheading: "Value you don't yet see or use. We will put it to work for you."
+    button_left: "Discover Care"
+    button_right: "Discover Systems"
+  section_2:
+    text_top: "Oliva Energy helps organisations unlock the value of energy flexibility."
+    text_bottom: "We combine data, monitoring and engineering\nto give organisations control over energy."
+  section_3:
+    top_label: "How we work"
+    heading: "Two divisions, one mission"
+    card_left:
+      heading: "Oliva Care"
+      subheading: "The standard for professional energy management"
+      button: "Discover Care"
+    card_right:
+      heading: "Oliva Systems"
+      subheading: "For organisations where flexibility is a strategic factor"
+      button: "Discover Systems"
+
+page_1:
+  section_1:
+    top_label: "JOIN THE FLEXIBILITY TRANSITION"
+    heading: "Oliva Care"
+    subheading: "Value you don't yet see or use. We will put it to work for you."
+  section_2:
+    text_top: "Oliva Energy helps organisations unlock the value of energy flexibility."
+    text_bottom: "We combine data, monitoring and engineering to give organisations control over energy."
+  section_3:
+    top_label: "How we work"
+    heading: "Two divisions, one mission"
+    card_left:
+      heading: "Oliva Care"
+      subheading: "The standard for professional energy management"
+      button: "Discover Care"
+    card_right:
+      heading: "Oliva Systems"
+      subheading: "For organisations where flexibility is a strategic factor"
+      button: "Discover Systems"
+
+page_2:
+  section_1:
+    top_label: "JOIN THE FLEXIBILITY TRANSITION"
+    heading: "Oliva Systems"
+    subheading: "For organisations where Care is not enough"
+  section_2:
+    text_top: "From separate assets to one intelligent energy system."
+    text_bottom: "For organisations where energy is a strategic factor."
+  section_3:
+    card_0:
+      heading: "When Systems?"
+      body: "Many organisations have solar panels, charging stations, batteries or heat pumps. These systems often still operate independently. As a result, a large part of the possible optimisation goes unused. Oliva Systems ensures that all energy assets work together within one intelligent system."
+    card_1:
+      heading: "What does Oliva Systems do?"
+      body: "We design, integrate and optimise complete energy systems.\nWe do this through:\n- System design\n- Integration of energy assets\n- Energy monitoring\n- Power management\n- Flexibility optimisation\n\nThis creates one central energy system that can actively manage costs, capacity and efficiency."
+    card_2:
+      heading: "Who is Systems for?"
+      body: "Oliva Systems is relevant for organisations with multiple assets, high energy demand, peak loads or grid congestion challenges."
+    card_3:
+      heading: "From Care to Systems"
+      body: "Many organisations start with Oliva Care, which provides insight into energy usage and contract structures.\n\nWhen greater optimisation proves possible, scaling up to Oliva Systems is an option."
+    card_4:
+      heading: "Collaboration with installers"
+      body: "Oliva Systems works closely with installers and technical partners.\n\nWe focus on:\n- Analysis\n- System design\n- Energy management\n\nInstallers handle the physical realisation of installations."
+    card_5:
+      heading: "Interested?"
+      body: "Does your organisation have multiple energy assets or complex energy usage? Leave your details to discuss the possibilities. We will get back to you within 2 business days."
+      label_1: "Name:"
+      label_2: "Phone:"
+      label_3: "Email:"
+      label_4: "Organisation:"
+
+page_3:
+  section_1:
+    heading: "Get in touch:"
+    label_1: "Name:"
+    label_2: "Phone:"
+    label_3: "Email:"
+    label_4: "Organisation:"

@@ -144,3 +144,7 @@ footer {
 .background-oliva-green {
   background-color: var(--oliva-green);
 }
+
+.background-frost-dark {
+  background-color: rgba(0,0,0,0.5);
+}

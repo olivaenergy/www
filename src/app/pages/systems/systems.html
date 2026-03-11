@@ -2,81 +2,43 @@
   <app-section [hasImage]="true" [imagePath]="'/images/image_01.jpeg'" class="l-height grid-center">
     <div class="card" style="left: 5%; width: 30rem;">
       <div class="flex-col gap-sm bleached-text">
-        <p class="m-none big-dash">JOIN THE FLEXIBILITY TRANSITION</p>
-        <p class="m-none xl-text title" style="line-height: 1.25;">Oliva Systems</p>
-        <p class="m-none small-text">Voor organisaties waar Contact niet voldoende is</p>
+        <p class="m-none big-dash">{{ t.translate('page_2.section_1.top_label') }}</p>
+        <p class="m-none xl-text title" style="line-height: 1.25;">{{ t.translate('page_2.section_1.heading') }}</p>
+        <p class="m-none small-text">{{ t.translate('page_2.section_1.subheading') }}</p>
       </div>
     </div>
   </app-section>
   <app-section class="s-height width-half-size l-text pt-lg">
-    <p>Van losse assets naar één intelligent energiesysteem.<br/>
-      Voor organisaties waar energie een strategische factor is.</p>
+    <p><b>{{ t.translate('page_2.section_2.text_top') }}</b><br/>
+    {{ t.translate('page_2.section_2.text_bottom') }}</p>
   </app-section>
   <br/>
   <br/>
-  <app-section class="s-height full-width flex-col flex-center l-text pt-lg mt-lg">
-    <app-info-box [hasDash]="true" [isTitleGreen]="true" [hasButton]="false" title="Wanneer Systems?" [width]="'80vw'">
-      <p class="ss-text m-none text-left">Veel organisaties beschikken over zonnepanelen, laadpalen, batterijen of warmtepompen. Deze
-        systemen werken vaak nog los van elkaar. Daardoor blijft een groot deel van de mogelijke
-        optimalisatie onbenut.
-        Oliva Systems zorgt ervoor dat alle energie assets samenwerken binnen één intelligent systeem.</p>
-    </app-info-box>
-  </app-section>
   <app-section class="m-text mt-lg pb-lg">
     <div class="flex-col flex-center gap-lg mt-lg">
-      <app-info-box [hasDash]="true" [isTitleGreen]="true" [hasButton]="false" title="Wat doet Oliva Systems?" [width]="'80vw'">
-        <p class="ss-text m-none text-left">
-          Wij ontwerpen, integreren en optimaliseren complete energiesystemen.
-          <br/>Dat doen wij onder andere door:
-          <br/>- Systeemontwerp
-          <br/>- Integratie van energie assets
-          <br/>- Energie monitoring
-          <br/>- Vermogenssturing
-          <br/>- Flexibiliteitsoptimalisatie
-          <br/>
-          <br/>Zo ontstaat één centraal energiesysteem dat actief kan sturen op kosten, capaciteit en efficiëntie.
-        </p>
-      </app-info-box>
-      <app-info-box [hasDash]="true" [isTitleGreen]="true" [hasButton]="false" title="Voor wie is Systems"
-                    subtitle="Oliva Systems is interessant voor organisaties met meerdere assets, hoge energievraag, piekvermogens of netcongestie uitdagingen." [width]="'80vw'">
-      </app-info-box>
-      <app-info-box [hasDash]="true" [isTitleGreen]="true" [hasButton]="false" title="Van Contact naar Systems" [width]="'80vw'">
-        <p class="ss-text m-none text-left">
-          Veel organisaties starten met Oliva Contact, daarmee ontstaat inzicht in energiegebruik en
-          contractstructuren.
-          <br/><br/>
-          Wanneer blijkt dat er grotere optimalisatie mogelijk is, kan worden opgeschaald naar Oliva Systems.
-        </p>
-      </app-info-box>
-      <app-info-box [hasDash]="true" [isTitleGreen]="true" [hasButton]="false" title="Samenwerking met installateurs" [width]="'80vw'">
-        <p class="ss-text m-none text-left">
-          Oliva Systems werkt nauw samen met installateurs en technische partners.
-          <br/><br/>Wij focussen op:
-          <br/>- Analyse
-          <br/>- Systeemontwerp
-          <br/>- Energiesturing
-          <br/><br/>Installateurs verzorgen de realisatie van installaties.
-        </p>
-      </app-info-box>
-      <app-info-box [hasDash]="true" [isTitleGreen]="true" [hasButton]="false" title="Interesse?" [width]="'80vw'">
-          <p class="ss-text m-none text-left">
-            Heeft uw organisatie meerdere energie assets of complex energiegebruik? Laat uw gegevens achter
-            om de mogelijkheden te bespreken. Wij nemen uiterlijk binnen 2 werkdagen contact met u op.
-          </p>
-          <div class="flex-row flex-center mt-md gap-sm">
-            <div class="flex-col text-right gap-sm">
-              <label class="m-none s-text" for="name">Naam:</label>
-              <label class="m-none s-text" for="phone">Telefoon:</label>
-              <label class="m-none s-text" for="email">Email:</label>
-              <label class="m-none s-text" for="organisation">Organisatie:</label>
-            </div>
-            <div class="flex-col gap-sm">
-              <input type="text" id="name" name="name"/>
-              <input type="tel" id="phone" name="phone"/>
-              <input type="email" id="email" name="email"/>
-              <input type="text" id="organisation" name="organisation"/>
-            </div>
+      @for (i of [0,1,2,3,4,5]; track i)
+      {
+        <app-info-box [hasDash]="true" [isTitleGreen]="true" [hasButton]="false" [width]="'80vw'"
+                      [title]="t.translate(`page_2.section_3.card_${i}.heading`)"
+                      [subtitle]="t.translate(`page_2.section_3.card_${i}.body`)">
+        </app-info-box>
+      }
+      <app-info-box [hasDash]="true" [isTitleGreen]="true" [hasButton]="false" [title]="t.translate('page_2.section_3.card_5.heading')" [width]="'80vw'">
+        <p class="s-text m-none text-left">{{ t.translate('page_2.section_3.card_5.body') }}</p>
+        <div class="flex-row flex-center mt-md gap-sm">
+          <div class="flex-col text-right gap-sm">
+            <label class="m-none s-text" for="name">{{ t.translate('page_2.section_3.card_5.label_1') }}</label>
+            <label class="m-none s-text" for="phone">{{ t.translate('page_2.section_3.card_5.label_2') }}</label>
+            <label class="m-none s-text" for="email">{{ t.translate('page_2.section_3.card_5.label_3') }}</label>
+            <label class="m-none s-text" for="organisation">{{ t.translate('page_2.section_3.card_5.label_4') }}</label>
           </div>
+          <div class="flex-col gap-sm">
+            <input type="text" id="name" name="name"/>
+            <input type="tel" id="phone" name="phone"/>
+            <input type="email" id="email" name="email"/>
+            <input type="text" id="organisation" name="organisation"/>
+          </div>
+        </div>
       </app-info-box>
     </div>
   </app-section>
