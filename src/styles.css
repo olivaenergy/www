@@ -123,6 +123,12 @@ footer {
 .nav-menu-item:hover {
   height: inherit;
   border-bottom: 0.2rem solid var(--oliva-green);
+  border-radius: 1px;
+}
+
+.nav-menu-item.active {
+  height: inherit;
+  border-bottom: 0.1rem solid var(--oliva-green);
 }
 
 .card {

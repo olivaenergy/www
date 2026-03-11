@@ -3,20 +3,20 @@
   <div class="nav-body">
     <img class="logo" src="images/oliva-logo.png" alt="Oliva Energy Logo">
     <ul class="navigation">
-      <li><a class="nav-menu-item" (click)="setPageIndex(0); $event.stopImmediatePropagation()">HOME</a></li>
-      <li><a class="nav-menu-item" (click)="setPageIndex(1); $event.stopImmediatePropagation()">CARE</a></li>
-      <li><a class="nav-menu-item" (click)="setPageIndex(2); $event.stopImmediatePropagation()">SYSTEMS</a></li>
-      <li><a class="nav-menu-item" (click)="setPageIndex(3); $event.stopImmediatePropagation()">CONTACT</a></li>
+      <li><a [class]="current_page_index === 0?'nav-menu-item active':'nav-menu-item'" (click)="setPageIndex(0); $event.stopImmediatePropagation()">HOME</a></li>
+      <li><a [class]="current_page_index === 1?'nav-menu-item active':'nav-menu-item'" (click)="setPageIndex(1); $event.stopImmediatePropagation()">CARE</a></li>
+      <li><a [class]="current_page_index === 2?'nav-menu-item active':'nav-menu-item'" (click)="setPageIndex(2); $event.stopImmediatePropagation()">SYSTEMS</a></li>
+      <li><a [class]="current_page_index === 3?'nav-menu-item active':'nav-menu-item'" (click)="setPageIndex(3); $event.stopImmediatePropagation()">CONTACT</a></li>
     </ul>
   </div>
 </nav>
   @switch (current_page_index)
   {
     @case (0) {
-      <app-home></app-home>
+      <app-home (onPageChange)="setPageIndex($event)"></app-home>
     }
     @case (1) {
-      <app-care></app-care>
+      <app-care (onPageChange)="setPageIndex($event)"></app-care>
     }
     @case (2) {
       <app-systems></app-systems>
