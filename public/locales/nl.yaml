@@ -9,6 +9,11 @@ page_0:
     text_top: "Oliva Energy helpt organisaties de waarde van energieflexibiliteit te benutten."
     text_bottom: "Wij combineren data, monitoring en engineering om organisaties grip te geven op energie."
   section_3:
+    top_label: "Onze klanten"
+    heading: "Wij bieden maatwerkoplossingen"
+    text_top: "Voor energieleveranciers, netbeheerders, installateurs en eindgebruikers, om flexibiliteit in het energiesysteem te ontsluiten en sturen."
+    text_bottom: "Met strategisch partnerschap en onze expertise creëren we samen blijvende waarde voor een toekomstbestendig energiesysteem."
+  section_4:
     top_label: "Hoe we werken"
     heading: "Twee afdelingen, één missie"
     card_left:
@@ -41,13 +46,6 @@ page_1:
     card_4:
       heading: "Veelgestelde vragen"
       body: "Zijn jullie onafhankelijk van energieleveranciers?\nJa. Wij leveren geen energie en ontvangen geen commissie op contracten.\n\nIk heb een eigen energieadviseur en die vraagt geen maandelijkse vergoeding. Waarom zou ik wel een vergoeding aan jullie betalen voor hetzelfde advies?\nEnergieadviseurs verdienen vaak een kick-back vergoeding wanneer zij een getekend energiecontract kunnen overhandigen aan een energieleverancier. Deze kick-back vergoedingen kunnen flink oplopen.\n\nOliva Energy doet dit pertinent NIET. De enige vergoeding die wij ontvangen zijn de maandelijkse abonnementskosten. Wij adviseren niet op de hoogste kick-back vergoeding. Wij adviseren op basis van uw wensen in uw belang.\n\nMoet ik hardware installeren?\nVoor Care niet. Voor Care Control is een Energy Box nodig.\n\nHoe snel zie ik resultaat?\nVaak al bij de eerste contractanalyse.\n\nIs dit interessant voor kleine bedrijven?\nJa. Juist bedrijven zonder eigen energie-expertise profiteren van Care."
-    card_5:
-      heading: "Grip op energie begint met inzicht"
-      body: "Laat uw gegevens achter en we nemen contact met u op."
-      label_1: "Naam:"
-      label_2: "Telefoon:"
-      label_3: "Email:"
-      label_4: "Organisatie:"
 
 page_2:
   section_1:
@@ -73,13 +71,6 @@ page_2:
     card_4:
       heading: "Samenwerking met installateurs"
       body: "Oliva Systems werkt nauw samen met installateurs en technische partners.\n\nWij focussen op:\n- Analyse\n- Systeemontwerp\n- Energiesturing\n\nInstallateurs verzorgen de realisatie van installaties."
-    card_5:
-      heading: "Interesse?"
-      body: "Heeft uw organisatie meerdere energie assets of complex energiegebruik?\n\nLaat uw gegevens achter om de mogelijkheden te bespreken.\n\nWij nemen uiterlijk binnen 2 werkdagen contact met u op."
-      label_1: "Naam:"
-      label_2: "Telefoon:"
-      label_3: "Email:"
-      label_4: "Organisatie:"
 
 page_3:
   section_1:

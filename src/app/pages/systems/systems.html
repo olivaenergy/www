@@ -24,23 +24,6 @@
           <br/>
         }
       }
-      <app-info-box [hasDash]="true" [isTitleGreen]="true" [hasButton]="false" [title]="t.translate('page_2.section_3.card_5.heading')" [width]="'80vw'">
-        <p class="s-text m-none text-left">{{ t.translate('page_2.section_3.card_5.body') }}</p>
-        <div class="flex-row flex-center mt-md gap-sm">
-          <div class="flex-col text-right gap-sm">
-            <label class="m-none s-text" for="name">{{ t.translate('page_2.section_3.card_5.label_1') }}</label>
-            <label class="m-none s-text" for="phone">{{ t.translate('page_2.section_3.card_5.label_2') }}</label>
-            <label class="m-none s-text" for="email">{{ t.translate('page_2.section_3.card_5.label_3') }}</label>
-            <label class="m-none s-text" for="organisation">{{ t.translate('page_2.section_3.card_5.label_4') }}</label>
-          </div>
-          <div class="flex-col gap-sm">
-            <input type="text" id="name" name="name"/>
-            <input type="tel" id="phone" name="phone"/>
-            <input type="email" id="email" name="email"/>
-            <input type="text" id="organisation" name="organisation"/>
-          </div>
-        </div>
-      </app-info-box>
     </div>
   </app-section>
 </main>
