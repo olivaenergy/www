@@ -33,19 +33,78 @@ page_1:
   section_2:
     card_0:
       heading: "Betaalt u niet ongemerkt te veel?"
-      body: "Veel bedrijven betalen maandelijks hun energierekening, maar niet iedereen controleert structureel:\n- Of het energiecontract nog passend is\n- Of er optimalisatie mogelijk is richting de netbeheerder\n- Of piekvermogens onnodig hoog zijn\n- Of flexibiliteit onbenut is\n\nContracten worden complexer. Netbeheerkosten stijgen. Elektrificatie verandert uw verbruiksprofiel."
+      body:
+        - "Veel bedrijven betalen maandelijks hun energierekening, maar niet iedereen controleert structureel:"
+        - "⋅ Of het energiecontract nog passend is"
+        - "⋅ Of er optimalisatie mogelijk is richting de netbeheerder"
+        - "⋅ Of piekvermogens onnodig hoog zijn"
+        - "⋅ Of flexibiliteit onbenut is"
+        - ""
+        - "Contracten worden complexer. Netbeheerkosten stijgen. Elektrificatie verandert uw verbruiksprofiel."
     card_1:
       heading: "Wat is Oliva Care?"
-      body: "Oliva Care is onafhankelijk energiemanagement.\n\nWij zitten niet in de levering van energie. Wij verkopen geen contracten. Wij vertegenwoordigen uitsluitend uw belang.\n\nVoor een vast bedrag per maand zorgen wij dat:\n- Uw energiecontract inhoudelijk klopt\n- Uw verbruik continu wordt gemonitord (Care Control)\n- Afwijkingen worden gesignaleerd (Care Control)\n- Optimalisaties worden voorgesteld\n\nU krijgt rust, controle en inzicht."
+      body:
+        - "Oliva Care is onafhankelijk energiemanagement."
+        - ""
+        - "Wij zitten niet in de levering van energie. Wij verkopen geen contracten. Wij vertegenwoordigen uitsluitend uw belang."
+        - ""
+        - "Voor een vast bedrag per maand zorgen wij dat:"
+        - "⋅ Uw energiecontract inhoudelijk klopt"
+        - "⋅ Uw verbruik continu wordt gemonitord (Care Control)"
+        - "⋅ Afwijkingen worden gesignaleerd (Care Control)"
+        - "⋅ Optimalisaties worden voorgesteld"
+        - ""
+        - "U krijgt rust, controle en inzicht."
     card_2:
       heading: "Care vs Care Control"
-      body: "Niet elke organisatie heeft actieve sturing nodig. Daarom hebben we twee niveaus.\n\nCare\n- Onafhankelijke contractcontrole\n- Strategisch advies\n- Vanaf €20 per maand\n\nVoor organisaties die zekerheid willen.\n\nCare Control\n- Alles van Care\n- Installatie van Energy Box\n- Real-time analyse\n- Actieve vermogenssturing\n- Optimalisatie van PV, laadpalen en pieken\n- Vanaf €60 per maand\n\nVoor organisaties die méér uit hun energie-infrastructuur willen halen."
+      body:
+        - "Niet elke organisatie heeft actieve sturing nodig. Daarom hebben we twee niveaus."
+        - ""
+        - "Care"
+        - "⋅ Onafhankelijke contractcontrole"
+        - "⋅ Strategisch advies"
+        - "⋅ Vanaf €20 per maand"
+        - ""
+        - "Voor organisaties die zekerheid willen."
+        - ""
+        - "Care Control"
+        - "⋅ Alles van Care"
+        - "⋅ Installatie van Energy Box"
+        - "⋅ Real-time analyse"
+        - "⋅ Actieve vermogenssturing"
+        - "⋅ Optimalisatie van PV, laadpalen en pieken"
+        - "⋅ Vanaf €60 per maand"
+        - ""
+        - "Voor organisaties die méér uit hun energie-infrastructuur willen halen."
     card_3:
       heading: "Onze positie"
-      body: "Oliva Energie is geen energieleverancier.\n\nWij hebben geen belang bij uw contractkeuze.\n\nOnze rol is vergelijkbaar met een financieel adviseur, maar dan voor energie.\n\nOnafhankelijk. Data-gedreven. Transparant."
+      body:
+        - "Oliva Energie is geen energieleverancier."
+        - ""
+        - "Wij hebben geen belang bij uw contractkeuze."
+        - ""
+        - "Onze rol is vergelijkbaar met een financieel adviseur, maar dan voor energie."
+        - ""
+        - "Onafhankelijk. Data-gedreven. Transparant."
     card_4:
       heading: "Veelgestelde vragen"
-      body: "Zijn jullie onafhankelijk van energieleveranciers?\nJa. Wij leveren geen energie en ontvangen geen commissie op contracten.\n\nIk heb een eigen energieadviseur en die vraagt geen maandelijkse vergoeding. Waarom zou ik wel een vergoeding aan jullie betalen voor hetzelfde advies?\nEnergieadviseurs verdienen vaak een kick-back vergoeding wanneer zij een getekend energiecontract kunnen overhandigen aan een energieleverancier. Deze kick-back vergoedingen kunnen flink oplopen.\n\nOliva Energy doet dit pertinent NIET. De enige vergoeding die wij ontvangen zijn de maandelijkse abonnementskosten. Wij adviseren niet op de hoogste kick-back vergoeding. Wij adviseren op basis van uw wensen in uw belang.\n\nMoet ik hardware installeren?\nVoor Care niet. Voor Care Control is een Energy Box nodig.\n\nHoe snel zie ik resultaat?\nVaak al bij de eerste contractanalyse.\n\nIs dit interessant voor kleine bedrijven?\nJa. Juist bedrijven zonder eigen energie-expertise profiteren van Care."
+      body:
+        - "Zijn jullie onafhankelijk van energieleveranciers?"
+        - "Ja. Wij leveren geen energie en ontvangen geen commissie op contracten."
+        - ""
+        - "Ik heb een eigen energieadviseur en die vraagt geen maandelijkse vergoeding. Waarom zou ik wel een vergoeding aan jullie betalen voor hetzelfde advies?"
+        - "Energieadviseurs verdienen vaak een kick-back vergoeding wanneer zij een getekend energiecontract kunnen overhandigen aan een energieleverancier. Deze kick-back vergoedingen kunnen flink oplopen."
+        - ""
+        - "Oliva Energy doet dit pertinent NIET. De enige vergoeding die wij ontvangen zijn de maandelijkse abonnementskosten. Wij adviseren niet op de hoogste kick-back vergoeding. Wij adviseren op basis van uw wensen in uw belang."
+        - ""
+        - "Moet ik hardware installeren?"
+        - "Voor Care niet. Voor Care Control is een Energy Box nodig."
+        - ""
+        - "Hoe snel zie ik resultaat?"
+        - "Vaak al bij de eerste contractanalyse."
+        - ""
+        - "Is dit interessant voor kleine bedrijven?"
+        - "Ja. Juist bedrijven zonder eigen energie-expertise profiteren van Care."
 
 page_2:
   section_1:
@@ -58,19 +117,48 @@ page_2:
   section_3:
     card_0:
       heading: "Wanneer Systems?"
-      body: "Veel organisaties beschikken over zonnepanelen, laadpalen, batterijen of warmtepompen. Deze systemen werken vaak nog los van elkaar. Daardoor blijft een groot deel van de mogelijke optimalisatie onbenut.\n\nOliva Systems zorgt ervoor dat alle energie assets samenwerken binnen één intelligent systeem."
+      body:
+        - "Veel organisaties beschikken over zonnepanelen, laadpalen, batterijen of warmtepompen. Deze systemen werken vaak nog los van elkaar. Daardoor blijft een groot deel van de mogelijke optimalisatie onbenut."
+        - ""
+        - "Oliva Systems zorgt ervoor dat alle energie assets samenwerken binnen één intelligent systeem."
     card_1:
       heading: "Wat doet Oliva Systems?"
-      body: "Wij ontwerpen, integreren en optimaliseren complete energiesystemen.\n\nDat doen wij onder andere door:\n- Systeemontwerp\n- Integratie van energie assets\n- Energie monitoring\n- Vermogenssturing\n- Flexibiliteitsoptimalisatie\n\nZo ontstaat één centraal energiesysteem dat actief kan sturen op kosten, capaciteit en efficiëntie."
+      body:
+        - "Wij ontwerpen, integreren en optimaliseren complete energiesystemen."
+        - ""
+        - "Dat doen wij onder andere door:"
+        - "⋅ Systeemontwerp"
+        - "⋅ Integratie van energie assets"
+        - "⋅ Energie monitoring"
+        - "⋅ Vermogenssturing"
+        - "⋅ Flexibiliteitsoptimalisatie"
+        - ""
+        - "Zo ontstaat één centraal energiesysteem dat actief kan sturen op kosten, capaciteit en efficiëntie."
     card_2:
       heading: "Voor wie is Systems"
-      body: "Oliva Systems is interessant voor organisaties met:\n- Meerdere energie assets\n- Hoge energievraag\n- Piekvermogens\n- Netcongestie uitdagingen."
+      body:
+        - "Oliva Systems is interessant voor organisaties met:"
+        - "⋅ Meerdere energie assets"
+        - "⋅ Hoge energievraag"
+        - "⋅ Piekvermogens"
+        - "⋅ Netcongestie uitdagingen."
     card_3:
       heading: "Van Contact naar Systems"
-      body: "Veel organisaties starten met Oliva Contact. Daarmee ontstaat inzicht in energiegebruik en contractstructuren.\n\nWanneer blijkt dat er grotere optimalisatie mogelijk is, kan worden opgeschaald naar Oliva Systems."
+      body:
+        - "Veel organisaties starten met Oliva Contact. Daarmee ontstaat inzicht in energiegebruik en contractstructuren."
+        - ""
+        - "Wanneer blijkt dat er grotere optimalisatie mogelijk is, kan worden opgeschaald naar Oliva Systems."
     card_4:
       heading: "Samenwerking met installateurs"
-      body: "Oliva Systems werkt nauw samen met installateurs en technische partners.\n\nWij focussen op:\n- Analyse\n- Systeemontwerp\n- Energiesturing\n\nInstallateurs verzorgen de realisatie van installaties."
+      body:
+        - "Oliva Systems werkt nauw samen met installateurs en technische partners."
+        - ""
+        - "Wij focussen op:"
+        - "⋅ Analyse"
+        - "⋅ Systeemontwerp"
+        - "⋅ Energiesturing"
+        - ""
+        - "Installateurs verzorgen de realisatie van installaties."
 
 page_3:
   section_1:

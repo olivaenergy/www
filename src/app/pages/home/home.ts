@@ -3,7 +3,6 @@ import {Section} from '../../components/section/section';
 import {TranslationService} from '../../services/translation/translation.service';
 import {Button} from 'primeng/button';
 import {Panel} from 'primeng/panel';
-import {formatBody} from '../../utils/helpers';
 
 @Component({
   selector: 'app-home',
@@ -18,6 +17,4 @@ export class Home {
   protected switchPage(number: number) {
     this.onPageChange.emit(number);
   }
-
-  protected readonly formatBody = formatBody;
 }

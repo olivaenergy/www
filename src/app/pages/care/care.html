@@ -12,15 +12,57 @@
   <br/>
   <app-section class="m-text mt-lg pb-lg">
     <div class="flex-col flex-center gap-lg mt-lg">
-      @for (i of [0,1,2,3,4]; track i)
+      @for (i of [0,1,2,3]; track i)
       {
         <p-panel class="width-three-quarter-size">
           <ng-template #header>
             <p class="title big-dash text-oliva-green">{{t.translate(`page_1.section_2.card_${i}.heading`)}}</p>
           </ng-template>
-          <div class="subtitle" [innerHTML]="formatBody(t.translate(`page_1.section_2.card_${i}.body`))"></div>
+          <div class="subtitle">
+            @for (line of t.translateArray(`page_1.section_2.card_${i}.body`); track $index)
+            {
+              @if (line === '')
+              {
+                <br/>
+              }
+              @else
+              {
+                <p class="m-none">{{ line }}</p>
+              }
+            }
+          </div>
         </p-panel>
       }
+      <p-panel class="width-three-quarter-size">
+        <ng-template #header>
+          <p class="title big-dash text-oliva-green">{{t.translate('page_1.section_2.card_4.heading')}}</p>
+        </ng-template>
+        <p-accordion value="0">
+          @for (faq of getFaqs('page_1.section_2.card_4.body'); track $index; let i = $index)
+          {
+            <p-accordion-panel  [value]="i">
+              <p-accordion-header>
+                <p class="title">{{ faq.question }}</p>
+              </p-accordion-header>
+              <p-accordion-content>
+                <div class="subtitle">
+                  @for (line of faq.answer; track $index)
+                  {
+                    @if (line === '')
+                    {
+                      <br/>
+                    }
+                    @else
+                    {
+                      <p class="m-none">{{ line }}</p>
+                    }
+                  }
+                </div>
+              </p-accordion-content>
+            </p-accordion-panel>
+          }
+        </p-accordion>
+      </p-panel>
     </div>
   </app-section>
 </main>

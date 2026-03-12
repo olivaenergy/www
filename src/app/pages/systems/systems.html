@@ -16,9 +16,21 @@
           <ng-template #header>
             <p class="title big-dash text-oliva-green">{{t.translate(`page_2.section_3.card_${i}.heading`)}}</p>
           </ng-template>
-          <div class="subtitle" [innerHTML]="formatBody(t.translate(`page_2.section_3.card_${i}.body`))"></div>
+          <div class="subtitle">
+            @for (line of t.translateArray(`page_2.section_3.card_${i}.body`); track $index)
+            {
+              @if (line === '')
+              {
+                <br/>
+              }
+              @else
+              {
+                <p class="m-none">{{ line }}</p>
+              }
+            }
+          </div>
         </p-panel>
-        @if(i === 0)
+        @if (i === 0)
         {
           <br/>
         }

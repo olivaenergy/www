@@ -70,4 +70,17 @@ export class TranslationService
     }
     return typeof result === 'string' ? result : key;
   }
+
+  translateArray(key: string): string[] {
+    this.translationsLoaded(); // reactive dependency
+    const keys = key.split('.');
+    let node: any = this.activeTranslations();
+    for (const k of keys) {
+      if (node && typeof node === 'object' && k in node) node = node[k];
+      else return [];
+    }
+    if (Array.isArray(node)) return node;
+    if (typeof node === 'string') return node.split('\n');
+    return [];
+  }
 }

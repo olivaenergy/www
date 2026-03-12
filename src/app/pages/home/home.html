@@ -22,7 +22,7 @@
     <p class="big-dash text-oliva-green m-none text-left">{{ t.translate('page_0.section_3.top_label') }}</p>
     <h2 class="text-oliva-green m-none text-left">{{ t.translate('page_0.section_3.heading') }}</h2>
     <p class="m-text">{{ t.translate('page_0.section_3.text_top') }}<br/>
-    {{ t.translate('page_0.section_3.text_bottom') }}</p>
+      {{ t.translate('page_0.section_3.text_bottom') }}</p>
   </app-section>
   <app-section class="m-height m-text mt-lg" style="width: 75%">
     <p class="big-dash text-oliva-green m-none text-left">{{ t.translate('page_0.section_4.top_label') }}</p>
@@ -30,16 +30,18 @@
     <div class="flex-row flex-center gap-md mt-lg">
       <p-panel class="width-half-size">
         <ng-template #header>
-          <p class="title">{{t.translate('page_0.section_4.card_left.heading')}}</p>
+          <p class="title">{{ t.translate('page_0.section_4.card_left.heading') }}</p>
         </ng-template>
-        <div class="subtitle" [innerHTML]="formatBody(t.translate('page_0.section_4.card_left.subheading'))"></div>
+        <p class="subtitle m-none">{{ t.translate('page_0.section_4.card_left.subheading') }}</p>
+        <br/>
         <p-button [label]="t.translate('page_0.section_4.card_left.button')"></p-button>
       </p-panel>
       <p-panel class="width-half-size">
         <ng-template #header>
-          <p class="title">{{t.translate('page_0.section_4.card_right.heading')}}</p>
+          <p class="title">{{ t.translate('page_0.section_4.card_right.heading') }}</p>
         </ng-template>
-        <div class="subtitle" [innerHTML]="formatBody(t.translate('page_0.section_4.card_right.subheading'))"></div>
+        <p class="subtitle m-none">{{ t.translate('page_0.section_4.card_right.subheading') }}</p>
+        <br/>
         <p-button [label]="t.translate('page_0.section_4.card_right.button')"></p-button>
       </p-panel>
     </div>
