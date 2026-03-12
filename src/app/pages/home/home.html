@@ -6,8 +6,8 @@
         <p class="m-none xl-text title pb-sm" style="line-height: 1.1;">{{ t.translate('page_0.section_1.heading') }}</p>
         <p class="m-none small-text pb-md">{{ t.translate('page_0.section_1.subheading') }}</p>
         <div class="flex-row gap-md">
-          <app-button [isGreen]="true" [label]="t.translate('page_0.section_1.button_left')" (click)="switchPage(1)"></app-button>
-          <app-button [label]="t.translate('page_0.section_1.button_right')" (click)="switchPage(2)"></app-button>
+          <p-button [label]="t.translate('page_0.section_1.button_left')" (click)="switchPage(1)"></p-button>
+          <p-button [label]="t.translate('page_0.section_1.button_right')" (click)="switchPage(2)" severity="contrast"></p-button>
         </div>
       </div>
     </div>
@@ -28,14 +28,26 @@
   </app-section>
   <br/>
   <br/>
-  <app-section class="l-height m-text mt-lg" style="width: 75%">
+  <app-section class="m-height m-text mt-lg" style="width: 75%">
     <p class="big-dash text-oliva-green m-none text-left">{{ t.translate('page_0.section_4.top_label') }}</p>
     <h2 class="text-oliva-green m-none text-left">{{ t.translate('page_0.section_4.heading') }}</h2>
-    <div class="flex-row flex-center gap-lg mt-lg">
-      <app-info-box [title]="t.translate('page_0.section_4.card_left.heading')" [subtitle]="t.translate('page_0.section_4.card_left.subheading')" [buttonLabel]="t.translate('page_0.section_4.card_left.button')" (OnClick)="switchPage(1)">
-      </app-info-box>
-      <app-info-box [title]="t.translate('page_0.section_4.card_right.heading')" [subtitle]="t.translate('page_0.section_4.card_right.subheading')" [buttonLabel]="t.translate('page_0.section_4.card_right.button')" (OnClick)="switchPage(2)">
-      </app-info-box>
+    <div class="flex-row flex-center gap-md mt-lg">
+      <p-panel class="width-half-size">
+        <ng-template #header>
+          <p class="title">{{t.translate('page_0.section_4.card_left.heading')}}</p>
+        </ng-template>
+        <div class="subtitle" [innerHTML]="formatBody(t.translate('page_0.section_4.card_left.subheading'))"></div>
+        <p-button [label]="t.translate('page_0.section_4.card_left.button')"></p-button>
+      </p-panel>
+      <p-panel class="width-half-size">
+        <ng-template #header>
+          <p class="title">{{t.translate('page_0.section_4.card_right.heading')}}</p>
+        </ng-template>
+        <div class="subtitle" [innerHTML]="formatBody(t.translate('page_0.section_4.card_right.subheading'))"></div>
+        <p-button [label]="t.translate('page_0.section_4.card_right.button')"></p-button>
+      </p-panel>
     </div>
   </app-section>
+  <br/>
+  <br/>
 </main>

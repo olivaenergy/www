@@ -1,20 +1,15 @@
-import {Component, EventEmitter, Output} from '@angular/core';
+import {Component} from '@angular/core';
 import {Section} from '../../components/section/section';
-import {Button} from '../../components/button/button';
-import {InfoBox} from '../../components/info-box/info-box';
 import {TranslationService} from '../../services/translation/translation.service';
+import {Panel} from 'primeng/panel';
+import {formatBody} from '../../utils/helpers';
 
 @Component({
   selector: 'app-care',
-  imports: [Section, InfoBox],
+  imports: [Section, Panel],
   templateUrl: './care.html',
 })
 export class Care {
-  @Output() onPageChange: EventEmitter<number> = new EventEmitter();
-
   constructor(public t: TranslationService) {}
-
-  protected switchPage(number: number) {
-    this.onPageChange.emit(number);
-  }
+  protected readonly formatBody = formatBody;
 }

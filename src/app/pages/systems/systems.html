@@ -14,10 +14,12 @@
     <div class="flex-col flex-center gap-lg mt-lg">
       @for (i of [0,1,2,3,4]; track i)
       {
-        <app-info-box [hasDash]="true" [isTitleGreen]="true" [hasButton]="false" [width]="'80vw'"
-                      [title]="t.translate(`page_2.section_3.card_${i}.heading`)"
-                      [subtitle]="t.translate(`page_2.section_3.card_${i}.body`)">
-        </app-info-box>
+        <p-panel class="width-three-quarter-size">
+          <ng-template #header>
+            <p class="title big-dash text-oliva-green">{{t.translate(`page_2.section_3.card_${i}.heading`)}}</p>
+          </ng-template>
+          <div class="subtitle" [innerHTML]="formatBody(t.translate(`page_2.section_3.card_${i}.body`))"></div>
+        </p-panel>
         @if(i === 0)
         {
           <br/>

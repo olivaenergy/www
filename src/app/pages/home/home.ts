@@ -1,12 +1,13 @@
 import {Component, EventEmitter, Output} from '@angular/core';
 import {Section} from '../../components/section/section';
-import {InfoBox} from '../../components/info-box/info-box';
-import {Button} from '../../components/button/button';
 import {TranslationService} from '../../services/translation/translation.service';
+import {Button} from 'primeng/button';
+import {Panel} from 'primeng/panel';
+import {formatBody} from '../../utils/helpers';
 
 @Component({
   selector: 'app-home',
-  imports: [Section, InfoBox, Button],
+  imports: [Section, Button, Panel],
   templateUrl: './home.html',
 })
 export class Home {
@@ -17,4 +18,6 @@ export class Home {
   protected switchPage(number: number) {
     this.onPageChange.emit(number);
   }
+
+  protected readonly formatBody = formatBody;
 }

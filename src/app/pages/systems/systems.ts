@@ -1,13 +1,16 @@
 import { Component } from '@angular/core';
 import {Section} from '../../components/section/section';
-import {InfoBox} from '../../components/info-box/info-box';
 import {TranslationService} from '../../services/translation/translation.service';
+import {Panel} from 'primeng/panel';
+import {formatBody} from '../../utils/helpers';
 
 @Component({
   selector: 'app-systems',
-  imports: [Section, InfoBox],
+  imports: [Section, Panel],
   templateUrl: './systems.html',
 })
 export class Systems {
   constructor(public t: TranslationService) {}
+
+  protected readonly formatBody = formatBody;
 }

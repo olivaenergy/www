@@ -157,6 +157,10 @@
     width: 50%;
 }
 
+.width-three-quarter-size {
+  width: 75%;
+}
+
 .full-width {
   width: 100%;
 }
