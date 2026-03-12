@@ -1,7 +1,7 @@
 <div class="app-root">
 <nav>
   <div class="nav-body">
-    <img class="logo" src="images/oliva-logo.png" alt="Oliva Energy Logo" (click)="setPageIndex(0)">
+    <img class="logo" width="317" height="150" ngSrc="images/oliva-logo.png" alt="Oliva Energy Logo" (click)="setPageIndex(0)">
     <ul class="navigation">
       <li><a [class]="current_page_index === 0?'nav-menu-item active':'nav-menu-item'" (click)="setPageIndex(0); $event.stopImmediatePropagation()">HOME</a></li>
       <li><a [class]="current_page_index === 1?'nav-menu-item active':'nav-menu-item'" (click)="setPageIndex(1); $event.stopImmediatePropagation()">CARE</a></li>

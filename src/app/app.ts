@@ -4,11 +4,11 @@ import {Care} from './pages/care/care';
 import {Systems} from './pages/systems/systems';
 import {Contact} from './pages/contact/contact';
 import {LanguageSwitcher} from './components/language-switcher/language-switcher';
-import {ViewportScroller} from '@angular/common';
+import {NgOptimizedImage, ViewportScroller} from '@angular/common';
 
 @Component({
   selector: 'app-root',
-  imports: [Home, Care, Systems, Contact, LanguageSwitcher],
+  imports: [Home, Care, Systems, Contact, LanguageSwitcher, NgOptimizedImage],
   templateUrl: './app.html'
 })
 export class App
