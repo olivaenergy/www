@@ -11,7 +11,7 @@ page_0:
   section_3:
     top_label: "Our clients"
     heading: "We offer tailored solutions"
-    text_top: "For energy suppliers, grid operators, installers and end users, to unlock and manage flexibility in the energy system."
+    text_top: "For <b>energy suppliers</b>, <b>grid operators</b>, <b>installers</b> and <b>end users</b>, to unlock and manage flexibility in the energy system."
     text_bottom: "Through strategic partnership and our expertise, we create lasting value together for a future-proof energy system."
   section_4:
     top_label: "How we work"

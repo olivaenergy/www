@@ -77,6 +77,10 @@
     padding-top: 2rem;
 }
 
+.pt-xl {
+  padding-top: 4rem;
+}
+
 .pb-sm {
   padding-bottom: 0.5rem;
 }

@@ -73,17 +73,6 @@ footer {
   justify-content: flex-end;
 }
 
-.app-root {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-.fill-remaining {
-  flex: 1;
-  min-height: 0;
-}
-
 .bleached-text {
   color: white;
 }
@@ -96,15 +85,6 @@ footer {
   background-color: currentColor;
   margin-right: 0.5rem;
   vertical-align: middle;
-}
-
-.text-group {
-  padding: 0;
-  margin: 0;
-}
-
-.text-group p {
-  margin: 0;
 }
 
 .nav-body {
@@ -170,4 +150,9 @@ footer {
 
 .background-frost-dark {
   background-color: rgba(0,0,0,0.5);
+}
+
+.p-panel-clear {
+  border: none;
+  border-radius: 0;
 }
