@@ -1,10 +1,10 @@
 <app-section [hasImage]="true" [imagePath]="'/images/care.png'">
   <div class="card">
     <div class="dash-header">
-      <p>{{ t.translate('page_1.section_1.top_label') }}</p>
-      <h2>{{ t.translate('page_1.section_1.heading') }}</h2>
+      <p [innerHtml]="t.translate('page_1.section_1.top_label')"></p>
+      <h2 [innerHtml]="t.translate('page_1.section_1.heading')"></h2>
     </div>
-    <p>{{ t.translate('page_1.section_1.subheading') }}</p>
+    <p [innerHtml]="t.translate('page_1.section_1.subheading')"></p>
   </div>
 </app-section>
 <p-panel class="panel-section">
@@ -14,11 +14,11 @@
       <p-panel style="width: 75%">
         <ng-template #header>
           <div class="dash-header text-oliva-green">
-            <p>{{ t.translate(`page_1.section_2.card_${i}.heading`) }}</p>
+            <p [innerHtml]="t.translate('page_1.section_2.card_' + i + '.heading')"></p>
           </div>
         </ng-template>
         <div class="subtitle">
-          @for (line of t.translateArray(`page_1.section_2.card_${i}.body`); track $index)
+          @for (line of t.translateArray('page_1.section_2.card_' + i + '.body'); track $index)
           {
             @if (line === '')
             {
@@ -26,7 +26,7 @@
             }
             @else
             {
-              <p style="margin: 0;">{{ line }}</p>
+              <p style="margin: 0;" [innerHtml]="line"></p>
             }
           }
         </div>
@@ -35,15 +35,15 @@
     <p-panel style="width: 75%">
       <ng-template #header>
         <div class="dash-header text-oliva-green">
-          <p>{{ t.translate('page_1.section_2.card_4.heading') }}</p>
+          <p [innerHtml]="t.translate('page_1.section_2.card_4.heading')"></p>
         </div>
       </ng-template>
       <p-accordion value="0">
         @for (faq of getFaqs('page_1.section_2.card_4.body'); track $index; let i = $index)
         {
-          <p-accordion-panel  [value]="i">
+          <p-accordion-panel [value]="i">
             <p-accordion-header>
-              <p class="title">{{ faq.question }}</p>
+              <p class="title" [innerHtml]="faq.question"></p>
             </p-accordion-header>
             <p-accordion-content>
               <div class="subtitle">
@@ -55,7 +55,7 @@
                   }
                   @else
                   {
-                    <p style="margin: 0;">{{ line }}</p>
+                    <p style="margin: 0;" [innerHtml]="line"></p>
                   }
                 }
               </div>
