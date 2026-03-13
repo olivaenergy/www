@@ -3,11 +3,13 @@
   width: 100%;
   text-align: center;
   word-wrap: break-word;
+  display: grid;
+  place-items: center;
 }
 
 :host img {
   width: inherit;
-  height: inherit;
+  height: 50vh;
   object-fit: cover;
   z-index: -1;
 }

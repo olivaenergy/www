@@ -1,15 +1,9 @@
-<style>
-  .cards-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
-    gap: 1rem;
-    width: 100%;
-  }
-</style>
-<p-panel class="p-panel-clear full-width text-center m-text pt-xl pb-lg" style="padding-inline: 7.5%;">
-  <p class="big-dash text-oliva-green m-none text-left">{{ t.translate('page_3.section_1.top_label') }}</p>
-  <h2 class="text-oliva-green m-none text-left">{{ t.translate('page_3.section_1.heading') }}</h2>
-  <div class="cards-grid pt-lg pb-lg">
+<p-panel class="panel-section" style="padding-inline: 7.5%;">
+  <div class="dash-header text-oliva-green">
+    <p>{{ t.translate('page_3.section_1.top_label') }}</p>
+    <h2>{{ t.translate('page_3.section_1.heading') }}</h2>
+  </div>
+  <div class="cards-grid" style="padding-block: 2rem">
     @for (i of [0, 1, 2, 3, 4, 5, 6, 7]; track i)
     {
       @let name = t.translate(`page_3.section_1.card_${i}.body`);
@@ -17,15 +11,15 @@
         <ng-template #header>
           @if(name === `page_3.section_1.card_${i}.body`)
           {
-            <p-skeleton class="p-sm" width="100%" height="700px"></p-skeleton>
+            <p-skeleton style="padding: 1rem" width="100%" height="700px"></p-skeleton>
           }
           @else
           {
             @if(!imageLoaded[i])
             {
-              <p-skeleton class="p-sm" width="100%" height="700px"></p-skeleton>
+              <p-skeleton style="padding: 1rem" width="100%" height="700px"></p-skeleton>
             }
-            <img alt="Card" class="full-width p-sm" style="border-radius: 12px"
+            <img alt="Card" style="border-radius: 12px; padding: 1rem; width: 100%"
               [style.display]="imageLoaded[i] ? 'block' : 'none'"
               [src]="`/images/staff/${name.toLowerCase().replaceAll(' ', '_')}.jpg`"
               (load)="imageLoaded[i] = true" (error)="imageLoaded[i] = true"/>
@@ -35,5 +29,5 @@
       </p-card>
     }
   </div>
-  <p class="m-none text-left pt-lg pb-lg" style="margin-left: 10%">{{ t.translate('page_3.section_1.contact') }}</p>
+  <p style="margin-left: -50%">{{ t.translate('page_3.section_1.contact') }}</p>
 </p-panel>

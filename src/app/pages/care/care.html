@@ -1,19 +1,21 @@
-<app-section [hasImage]="true" [imagePath]="'/images/image_01.png'" class="l-height grid-center">
-  <div class="card" style="left: 5%; width: 30rem;">
-    <div class="flex-col gap-sm bleached-text">
-      <p class="m-none big-dash">{{ t.translate('page_1.section_1.top_label') }}</p>
-      <p class="m-none xl-text title" style="line-height: 1.25;">{{ t.translate('page_1.section_1.heading') }}</p>
-      <p class="m-none small-text">{{ t.translate('page_1.section_1.subheading') }}</p>
+<app-section [hasImage]="true" [imagePath]="'/images/image_01.png'">
+  <div class="card">
+    <div class="dash-header">
+      <p>{{ t.translate('page_1.section_1.top_label') }}</p>
+      <h2>{{ t.translate('page_1.section_1.heading') }}</h2>
     </div>
+    <p>{{ t.translate('page_1.section_1.subheading') }}</p>
   </div>
 </app-section>
-<p-panel class="p-panel-clear full-width pb-lg">
-  <div class="flex-col flex-center gap-lg mt-lg">
+<p-panel class="panel-section">
+  <div class="cards-down">
     @for (i of [0,1,2,3]; track i)
     {
-      <p-panel class="width-three-quarter-size">
+      <p-panel style="width: 75%">
         <ng-template #header>
-          <p class="title big-dash text-oliva-green">{{t.translate(`page_1.section_2.card_${i}.heading`)}}</p>
+          <div class="dash-header text-oliva-green">
+            <p>{{ t.translate(`page_1.section_2.card_${i}.heading`) }}</p>
+          </div>
         </ng-template>
         <div class="subtitle">
           @for (line of t.translateArray(`page_1.section_2.card_${i}.body`); track $index)
@@ -24,15 +26,17 @@
             }
             @else
             {
-              <p class="m-none">{{ line }}</p>
+              <p style="margin: 0;">{{ line }}</p>
             }
           }
         </div>
       </p-panel>
     }
-    <p-panel class="width-three-quarter-size">
+    <p-panel style="width: 75%">
       <ng-template #header>
-        <p class="title big-dash text-oliva-green">{{t.translate('page_1.section_2.card_4.heading')}}</p>
+        <div class="dash-header text-oliva-green">
+          <p>{{ t.translate('page_1.section_2.card_4.heading') }}</p>
+        </div>
       </ng-template>
       <p-accordion value="0">
         @for (faq of getFaqs('page_1.section_2.card_4.body'); track $index; let i = $index)
@@ -51,7 +55,7 @@
                   }
                   @else
                   {
-                    <p class="m-none">{{ line }}</p>
+                    <p style="margin: 0;">{{ line }}</p>
                   }
                 }
               </div>

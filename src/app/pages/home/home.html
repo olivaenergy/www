@@ -1,46 +1,51 @@
-<app-section [hasImage]="true" [imagePath]="'/images/image_01.jpeg'" class="l-height grid-center">
-  <div class="card" style="left: 5%; width: 25rem;">
-    <div class="flex-col gap-sm bleached-text">
-      <p class="m-none big-dash pb-md">{{ t.translate('page_0.section_1.top_label') }}</p>
-      <p class="m-none xl-text title pb-sm" style="line-height: 1.1;">{{ t.translate('page_0.section_1.heading') }}</p>
-      <p class="m-none small-text pb-md" [innerHtml]="t.translate('page_0.section_1.subheading')"></p>
-      <div class="flex-row gap-md">
-        <p-button [label]="t.translate('page_0.section_1.button_left')" (click)="switchPage(1)"></p-button>
-        <p-button [label]="t.translate('page_0.section_1.button_right')" (click)="switchPage(2)" severity="contrast"></p-button>
-      </div>
+<app-section [hasImage]="true" [imagePath]="'/images/image_01.jpeg'">
+  <div class="card">
+    <div class="dash-header">
+      <p>{{ t.translate('page_0.section_1.top_label') }}</p>
+      <h2>{{ t.translate('page_0.section_1.heading') }}</h2>
+    </div>
+    <p [innerHtml]="t.translate('page_0.section_1.subheading')"></p>
+    <div style="display: flex; flex-direction: row; gap: 1rem;">
+      <p-button size="large" [label]="t.translate('page_0.section_1.button_left')" (click)="switchPage(1)"></p-button>
+      <p-button size="large" [label]="t.translate('page_0.section_1.button_right')" (click)="switchPage(2)" severity="contrast"></p-button>
     </div>
   </div>
 </app-section>
-<p-panel class="p-panel-clear full-width text-center l-text pt-xl">
+<p-panel class="panel-section">
   <p>
     <b>{{ t.translate('page_0.section_2.text_top') }}</b><br>
-    {{ t.translate('page_0.section_2.text_bottom') }}
+    <span [innerHtml]="t.translate('page_0.section_2.text_bottom')"></span>
   </p>
 </p-panel>
-<p-panel class="p-panel-clear full-width text-center m-text pt-xl" style="padding-inline: 7.5%;">
-  <p class="big-dash text-oliva-green m-none text-left">{{ t.translate('page_0.section_3.top_label') }}</p>
-  <h2 class="text-oliva-green m-none text-left">{{ t.translate('page_0.section_3.heading') }}</h2>
-  <p class="m-text"><span [innerHtml]="t.translate('page_0.section_3.text_top')"></span><br/>
+<p-panel class="panel-section" style="padding-inline: 7.5%;">
+  <div class="dash-header text-oliva-green">
+    <p>{{ t.translate('page_0.section_3.top_label') }}</p>
+    <h2 class="text-oliva-green m-none text-left">{{ t.translate('page_0.section_3.heading') }}</h2>
+  </div>
+  <p class="normal-text"><span [innerHtml]="t.translate('page_0.section_3.text_top')"></span><br/>
     {{ t.translate('page_0.section_3.text_bottom') }}</p>
 </p-panel>
-<p-panel class="p-panel-clear full-width text-center s-text pt-xl pb-lg" style="padding-inline: 7.5%;"><p class="big-dash text-oliva-green m-text m-none text-left">{{ t.translate('page_0.section_4.top_label') }}</p>
-  <h2 class="text-oliva-green m-none l-text text-left">{{ t.translate('page_0.section_4.heading') }}</h2>
-  <div class="flex-row flex-center gap-md pt-xl" style="padding-inline: 7.5%;">
-    <p-panel class="width-half-size">
+<p-panel class="panel-section" style="padding-inline: 7.5%;">
+  <div class="dash-header text-oliva-green">
+    <p>{{ t.translate('page_0.section_4.top_label') }}</p>
+    <h2>{{ t.translate('page_0.section_4.heading') }}</h2>
+  </div>
+  <div style="display: flex; flex-direction: row; justify-content: space-between; padding-inline: 7.5%; padding-block: 2rem">
+    <p-panel style="width: 49%">
       <ng-template #header>
-        <p class="title">{{ t.translate('page_0.section_4.card_left.heading') }}</p>
+        <p class="title text-oliva-green">{{ t.translate('page_0.section_4.card_left.heading') }}</p>
       </ng-template>
-      <p class="subtitle m-none">{{ t.translate('page_0.section_4.card_left.subheading') }}</p>
+      <p class="subtitle">{{ t.translate('page_0.section_4.card_left.subheading') }}</p>
       <br/>
-      <p-button [label]="t.translate('page_0.section_4.card_left.button')"></p-button>
+      <p-button [label]="t.translate('page_0.section_4.card_left.button')" (click)="switchPage(1)"></p-button>
     </p-panel>
-    <p-panel class="width-half-size">
+    <p-panel style="width: 49%">
       <ng-template #header>
-        <p class="title">{{ t.translate('page_0.section_4.card_right.heading') }}</p>
+        <p class="title text-oliva-green">{{ t.translate('page_0.section_4.card_right.heading') }}</p>
       </ng-template>
-      <p class="subtitle m-none">{{ t.translate('page_0.section_4.card_right.subheading') }}</p>
+      <p class="subtitle">{{ t.translate('page_0.section_4.card_right.subheading') }}</p>
       <br/>
-      <p-button [label]="t.translate('page_0.section_4.card_right.button')"></p-button>
+      <p-button [label]="t.translate('page_0.section_4.card_right.button')" (click)="switchPage(2)"></p-button>
     </p-panel>
   </div>
 </p-panel>
