@@ -2,7 +2,7 @@ page_0:
   section_1:
     top_label: "JOIN THE FLEXIBILITY TRANSITION"
     heading: "Energieflexibiliteit heeft waarde"
-    subheading: "Waarde die je nog niet ziet en gebruikt. Wij gaan het voor je Inzetten"
+    subheading: "Waarde die je nog niet ziet en gebruikt.<br/> Wij gaan het voor je Inzetten."
     button_left: "Ontdek Care"
     button_right: "Ontdek Systems"
   section_2:
@@ -162,8 +162,22 @@ page_2:
 
 page_3:
   section_1:
-    heading: "Neem contact op:"
-    label_1: "Naam:"
-    label_2: "Telefoon:"
-    label_3: "Email:"
-    label_4: "Organisatie:"
+    top_label: "Team"
+    heading: "De mensen achter Oliva Energie"
+    contact: "Neem contact met ons op via: info@olivaenergy.nl"
+    card_0:
+      body: "Ronald Huisman"
+    card_1:
+      body: "Daniël Lodders"
+    card_2:
+      body: "Peter Huisman"
+    card_3:
+      body: "Fred van der Werff"
+    card_4:
+      body: "Martin de Brouwer"
+    card_5:
+      body: "Kostya Grygorev"
+    card_6:
+      body: "Marc Nuijten"
+    card_7:
+      body: "Erik Kloet"

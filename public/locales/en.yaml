@@ -162,8 +162,22 @@ page_2:
 
 page_3:
   section_1:
-    heading: "Get in touch:"
-    label_1: "Name:"
-    label_2: "Phone:"
-    label_3: "Email:"
-    label_4: "Organisation:"
+    top_label: "Team"
+    heading: "The people behind Oliva Energy"
+    contact: "Contact us via: info@olivaenergy.nl"
+    card_0:
+      body: "Ronald Huisman"
+    card_1:
+      body: "Daniël Lodders"
+    card_2:
+      body: "Peter Huisman"
+    card_3:
+      body: "Fred van der Werff"
+    card_4:
+      body: "Martin de Brouwer"
+    card_5:
+      body: "Kostya Grygorev"
+    card_6:
+      body: "Marc Nuijten"
+    card_7:
+      body: "Erik Kloet"

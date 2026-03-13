@@ -3,13 +3,6 @@
     align-items: center;
 }
 
-.flex-center-no-vertical
-{
-    justify-content: space-around;
-    align-content: space-around;
-    align-items: stretch;
-}
-
 .flex-col {
     display: flex;
     flex-direction: column;
@@ -191,4 +184,3 @@
     width: 2rem;
     height: 2rem;
 }
-

@@ -1,40 +1,38 @@
-<main>
-  <app-section [hasImage]="true" [imagePath]="'/images/image_01.jpeg'" class="l-height grid-center">
-    <div class="card" style="left: 5%; width: 30rem;">
-      <div class="flex-col gap-sm bleached-text">
-        <p class="m-none big-dash">{{ t.translate('page_2.section_1.top_label') }}</p>
-        <p class="m-none xl-text title" style="line-height: 1.25;">{{ t.translate('page_2.section_1.heading') }}</p>
-        <p class="m-none small-text">{{ t.translate('page_2.section_1.subheading') }}</p>
-      </div>
+<app-section [hasImage]="true" [imagePath]="'/images/image_01.jpeg'" class="l-height grid-center">
+  <div class="card" style="left: 5%; width: 30rem;">
+    <div class="flex-col gap-sm bleached-text">
+      <p class="m-none big-dash">{{ t.translate('page_2.section_1.top_label') }}</p>
+      <p class="m-none xl-text title" style="line-height: 1.25;">{{ t.translate('page_2.section_1.heading') }}</p>
+      <p class="m-none small-text">{{ t.translate('page_2.section_1.subheading') }}</p>
     </div>
-  </app-section>
-  <p-panel class="p-panel-clear full-width">
-    <div class="flex-col flex-center gap-lg mt-lg">
-      @for (i of [0,1,2,3,4]; track i)
-      {
-        <p-panel class="width-three-quarter-size">
-          <ng-template #header>
-            <p class="title big-dash text-oliva-green">{{t.translate(`page_2.section_3.card_${i}.heading`)}}</p>
-          </ng-template>
-          <div class="subtitle">
-            @for (line of t.translateArray(`page_2.section_3.card_${i}.body`); track $index)
+  </div>
+</app-section>
+<p-panel class="p-panel-clear full-width">
+  <div class="flex-col flex-center gap-lg mt-lg">
+    @for (i of [0,1,2,3,4]; track i)
+    {
+      <p-panel class="width-three-quarter-size">
+        <ng-template #header>
+          <p class="title big-dash text-oliva-green">{{t.translate(`page_2.section_3.card_${i}.heading`)}}</p>
+        </ng-template>
+        <div class="subtitle">
+          @for (line of t.translateArray(`page_2.section_3.card_${i}.body`); track $index)
+          {
+            @if (line === '')
             {
-              @if (line === '')
-              {
-                <br/>
-              }
-              @else
-              {
-                <p class="m-none">{{ line }}</p>
-              }
+              <br/>
             }
-          </div>
-        </p-panel>
-        @if (i === 0)
-        {
-          <br/>
-        }
+            @else
+            {
+              <p class="m-none">{{ line }}</p>
+            }
+          }
+        </div>
+      </p-panel>
+      @if (i === 0)
+      {
+        <br/>
       }
-    </div>
-  </p-panel>
-</main>
+    }
+  </div>
+</p-panel>
