@@ -118,9 +118,30 @@
     padding: 0.5rem 1.25rem;
     border-radius: 6px;
     font-size: 0.875rem !important;
+    text-decoration: none;
+    display: inline-block;
     transition: background .2s !important;
   }
   .nav-cta:hover { background: var(--green-deep) !important; }
+  .nav-portal {
+    background: transparent;
+    color: var(--green-mid) !important;
+    padding: 0.5rem 1.25rem;
+    border-radius: 6px;
+    font-size: 0.875rem !important;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    border: 1.5px solid var(--green-mid) !important;
+    transition: background .2s, color .2s !important;
+  }
+  .nav-portal:hover { background: var(--green-mid) !important; color: var(--white) !important; }
+  .nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    flex-shrink: 0;
+  }
 
   /* ── HERO ── */
   .hero {
@@ -668,6 +689,9 @@
     .process-steps { grid-template-columns: 1fr; }
     .pillars { grid-template-columns: 1fr; }
     .hero-stats { flex-direction: column; gap: 0.75rem; }
+    .nav-actions { gap: 0.4rem; }
+    .nav-actions .nav-cta,
+    .nav-actions .nav-portal { padding: 0.4rem 0.7rem; font-size: 0.75rem !important; }
   }
 </style>
 <link rel="icon" type="image/png" href="https://oliva.energy/wp-content/uploads/2023/10/Oliva_logo.png">
@@ -681,7 +705,11 @@
     <li><a href="#over-oliva"><span data-nl>Over Oliva</span><span data-en>About Us</span><span data-de>Über Oliva</span><span data-fr>À propos</span></a></li>
     <li><a href="#voor-wie"><span data-nl>Voor wie</span><span data-en>For whom</span><span data-de>Für wen</span><span data-fr>Pour qui</span></a></li>
     <li><a href="#afdelingen"><span data-nl>Care & Systems</span><span data-en>Care & Systems</span><span data-de>Care & Systems</span><span data-fr>Care & Systems</span></a></li>
-    <li><a href="javascript:void(0)" onclick="openContactMail()" class="nav-cta"><span data-nl>Mail je vraag</span><span data-en>Email your question</span><span data-de>Frage per Mail senden</span><span data-fr>Envoyez votre question</span></a></li>
+  </ul>
+  <div class="nav-actions">
+    <a href="javascript:void(0)" onclick="openContactMail()" class="nav-cta"><span data-nl>Mail je vraag</span><span data-en>Email your question</span><span data-de>Frage per Mail senden</span><span data-fr>Envoyez votre question</span></a>
+    <a href="https://portal.oliva.energy/login" target="_blank" class="nav-portal"><span data-nl>Mijn Oliva Energy</span><span data-en>My Oliva Energy</span><span data-de>Mein Oliva Energy</span><span data-fr>Mon Oliva Energy</span></a>
+  </div>
   </ul>
   <div class="lang-switcher">
     <button class="lang-btn active" id="btn-nl" onclick="setLang('nl')">NL</button>
