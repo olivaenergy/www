@@ -127,4 +127,8 @@ window.i18n.de = {
   'why.scalable_desc': 'Über Installateure und Partner erreichen wir schnell viele Standorte. Ein Partner kann Dutzende Kundenstandorte aktivieren, ohne dass wir direkt eingebunden sein müssen.',
   'why.scalable_title': 'Skalierbar über Partner',
   'why.title': 'Was uns auszeichnet',
+  '404.title': 'Seite nicht gefunden',
+  '404.desc': 'Die von Ihnen gesuchte Seite existiert nicht, wurde entfernt oder ist vorübergehend nicht erreichbar.',
+  '404.moved': 'Wenn Sie von <strong>oliva.energy</strong> kommen: Wir sind nach <a href="https://olivaenergy.nl/">https://olivaenergy.nl/</a> umgezogen.',
+  '404.btn': 'Zurück zur Startseite',
 };

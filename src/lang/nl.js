@@ -127,4 +127,8 @@ window.i18n.nl = {
   'why.scalable_desc': 'Via installateurs en implementatiepartners bereiken we snel veel locaties. Eén partner kan tientallen klantlocaties activeren zonder dat wij direct betrokken hoeven te zijn.',
   'why.scalable_title': 'Schaalbaar via partners',
   'why.title': 'Wat ons onderscheidt',
+  '404.title': 'Pagina niet gevonden',
+  '404.desc': 'De pagina die u zoekt bestaat niet, is verwijderd of de naam is gewijzigd.',
+  '404.moved': 'Als u via <strong>oliva.energy</strong> bent gekomen: we zijn verhuisd naar <a href="https://olivaenergy.nl/">https://olivaenergy.nl/</a>.',
+  '404.btn': 'Terug naar de homepage',
 };
