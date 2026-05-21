@@ -129,6 +129,6 @@ window.i18n.de = {
   'why.title': 'Was uns auszeichnet',
   '404.title': 'Seite nicht gefunden',
   '404.desc': 'Die von Ihnen gesuchte Seite existiert nicht, wurde entfernt oder ist vorübergehend nicht erreichbar.',
-  '404.moved': 'Wenn Sie von <strong>oliva.energy</strong> kommen: Wir sind nach <a href="https://olivaenergy.nl/">https://olivaenergy.nl/</a> umgezogen.',
+  '404.moved': 'Sie können weitergehen zu <a href="https://olivaenergy.nl/">https://olivaenergy.nl/</a>.',
   '404.btn': 'Zurück zur Startseite',
 };

@@ -129,6 +129,6 @@ window.i18n.fi = {
   'why.title': 'Mikä erottaa meidät',
   '404.title': 'Sivua ei löydy',
   '404.desc': 'Etsimääsi sivua ei ole olemassa, se on poistettu tai on väliaikaisesti poissa käytöstä.',
-  '404.moved': 'Jos saavuit osoitteesta <strong>oliva.energy</strong>: olemme siirtyneet osoitteeseen <a href="https://olivaenergy.nl/">https://olivaenergy.nl/</a>.',
+  '404.moved': 'Voit jatkaa osoitteeseen <a href="https://olivaenergy.nl/">https://olivaenergy.nl/</a>.',
   '404.btn': 'Takaisin etusivulle',
 };

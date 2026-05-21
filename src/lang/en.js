@@ -129,6 +129,6 @@ window.i18n.en = {
   'why.title': 'What sets us apart',
   '404.title': 'Page not found',
   '404.desc': 'The page you are looking for does not exist, has been removed, or is temporarily unavailable.',
-  '404.moved': 'If you have come from <strong>oliva.energy</strong>: we have moved to <a href="https://olivaenergy.nl/">https://olivaenergy.nl/</a>.',
+  '404.moved': 'You can continue to <a href="https://olivaenergy.nl/">https://olivaenergy.nl/</a>.',
   '404.btn': 'Back to homepage',
 };

@@ -129,6 +129,6 @@ window.i18n.nl = {
   'why.title': 'Wat ons onderscheidt',
   '404.title': 'Pagina niet gevonden',
   '404.desc': 'De pagina die u zoekt bestaat niet, is verwijderd of de naam is gewijzigd.',
-  '404.moved': 'Als u via <strong>oliva.energy</strong> bent gekomen: we zijn verhuisd naar <a href="https://olivaenergy.nl/">https://olivaenergy.nl/</a>.',
+  '404.moved': 'U kunt verdergaan naar <a href="https://olivaenergy.nl/">https://olivaenergy.nl/</a>.',
   '404.btn': 'Terug naar de homepage',
 };
