@@ -1,0 +1,17 @@
+/* Gedeelde basisstijlen: kleurvariabelen (herbruikbaar cachebaar bestand) */
+:root {
+  --green-deep: #14261C;
+  --green-mid: #06752E;
+  --green-bright: #5d951a;
+  --green-light: #edf5e1;
+  --green-subtle: #F4F6F4;
+  --navy: #14261C;
+  --slate: #4E5652;
+  --text: #14261C;
+  --muted: #4E5652;
+  --border: #dde8d8;
+  --white: #ffffff;
+  --off-white: #F6F7F8;
+  --amber: #c8842a;
+  --div-bg: #2d5a3d;
+}

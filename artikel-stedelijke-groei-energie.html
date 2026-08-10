@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Steden groeien, het stroomnet niet. Hoe de energieparadox van stedelijke uitbreiding ontstaat en welke oplossingen er zijn voor bedrijven en ontwikkelaars.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.olivaenergy.nl/artikel-stedelijke-groei-energie.html">
+  <title>De energieparadox van stedelijke groei | Oliva Energy</title>
+
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://www.olivaenergy.nl/artikel-stedelijke-groei-energie.html">
+  <meta property="og:title" content="Steden groeien, het stroomnet niet: de energieparadox van stedelijke uitbreiding">
+  <meta property="og:description" content="Woningbouwlocaties en nieuwe bedrijventerreinen stuiten op een harde grens: er is onvoldoende netcapaciteit. Hoe lost de sector dit op?">
+  <meta property="og:locale" content="nl_NL">
+  <meta property="og:site_name" content="Oliva Energy">
+  <meta property="og:image" content="https://www.olivaenergy.nl/og-social.jpeg">
+
+  <script src="cookie-consent.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="oliva-logo.png">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Steden groeien, het stroomnet niet: de energieparadox van stedelijke uitbreiding",
+    "description": "Woningbouwlocaties en bedrijventerreinen stoten steeds vaker op tekortschietende netcapaciteit. Hoe deze paradox ontstaat en wat u nu al kunt doen.",
+    "datePublished": "2026-08-03",
+    "dateModified": "2026-08-03",
+    "image": {"@type": "ImageObject", "url": "https://www.olivaenergy.nl/artikel_afbeelding_2.jpg"},
+    "author": {"@type": "Person", "name": "Michiel Aandewiel"},
+    "publisher": {"@type": "Organization", "name": "Oliva Energy", "url": "https://www.olivaenergy.nl"},
+    "mainEntityOfPage": {"@type": "WebPage", "@id": "https://www.olivaenergy.nl/artikel-stedelijke-groei-energie.html"}
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.olivaenergy.nl/"},
+      {"@type": "ListItem", "position": 2, "name": "Kennisbank", "item": "https://www.olivaenergy.nl/kennisbank.html"},
+      {"@type": "ListItem", "position": 3, "name": "Stedelijke groei en energiecapaciteit"}
+    ]
+  }
+  </script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Lato', sans-serif; color: var(--text); background: var(--white); overflow-x: hidden; line-height: 1.7; }
+
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 5vw; height: 72px;
+      background: rgba(255,255,255,0.95); backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border); gap: 1rem;
+    }
+    .nav-logo img { height: 44px; width: auto; display: block; }
+    .nav-back { display: inline-flex; align-items: center; gap: 0.4rem; color: var(--muted); text-decoration: none; font-size: 0.88rem; font-weight: 500; transition: color .2s; }
+    .nav-back:hover { color: var(--green-bright); }
+    .nav-back svg { width: 16px; height: 16px; stroke: currentColor; fill: none; stroke-width: 2; }
+    .nav-cta { background: var(--green-mid); color: var(--white); padding: 0.5rem 1.25rem; border-radius: 6px; font-size: 0.875rem; font-weight: 600; text-decoration: none; transition: background .2s; }
+    .nav-cta:hover { background: var(--green-deep); }
+    .nav-portal { color: var(--green-mid); border: 1.5px solid var(--green-mid); padding: 0.45rem 1rem; border-radius: 6px; font-size: 0.875rem; font-weight: 600; text-decoration: none; transition: background .2s, color .2s; white-space: nowrap; }
+    .nav-portal:hover { background: var(--green-mid); color: var(--white); }
+    .nav-phone { display: inline-flex; align-items: center; gap: 0.4rem; color: var(--green-mid); text-decoration: none; font-size: 0.875rem; font-weight: 700; padding: 0.4rem 0.75rem; border-radius: 6px; border: 1.5px solid var(--border); transition: border-color .2s, background .2s; white-space: nowrap; flex-shrink: 0; }
+    .nav-phone:hover { border-color: var(--green-mid); background: var(--green-light); }
+    .nav-phone svg { width: 15px; height: 15px; stroke: var(--green-mid); fill: none; stroke-width: 2; flex-shrink: 0; }
+    .nav-actions { display: flex; align-items: center; gap: 0.75rem; flex-shrink: 0; }
+    @media (max-width: 600px) { .nav-phone-number { display: none; } .nav-phone { padding: 0.4rem 0.5rem; } .nav-portal { display: none; } }
+
+    .article-hero {
+      background: var(--green-deep); color: var(--white);
+      padding: 9rem 8vw 4rem;
+    }
+    .breadcrumb { font-size: 0.78rem; color: rgba(255,255,255,0.5); margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.4rem; flex-wrap: wrap; }
+    .breadcrumb a { color: rgba(255,255,255,0.5); text-decoration: none; }
+    .breadcrumb a:hover { color: #8fcb5a; }
+    .breadcrumb-sep { opacity: 0.4; }
+    .article-category-tag { display: inline-block; background: rgba(143,203,90,0.2); color: #8fcb5a; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.25rem 0.8rem; border-radius: 12px; margin-bottom: 1.25rem; }
+    .article-hero h1 { font-family: 'Poppins', sans-serif; font-size: clamp(1.8rem, 3.5vw, 2.8rem); font-weight: 700; line-height: 1.2; margin-bottom: 1.25rem; max-width: 780px; }
+    .article-hero-meta { font-size: 0.82rem; color: rgba(255,255,255,0.5); display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; }
+    .article-hero-img { width: 100%; max-height: 420px; overflow: hidden; }
+    .article-hero-img img { width: 100%; height: 420px; object-fit: cover; display: block; }
+
+    .article-layout {
+      display: grid; grid-template-columns: 1fr 320px; gap: 4rem;
+      padding: 5rem 8vw; max-width: 1200px; margin: 0 auto;
+    }
+
+    .article-body h2 { font-family: 'Poppins', sans-serif; font-size: 1.45rem; font-weight: 700; color: var(--green-deep); margin: 2.5rem 0 1rem; line-height: 1.3; }
+    .article-body h3 { font-family: 'Poppins', sans-serif; font-size: 1.1rem; font-weight: 700; color: var(--green-deep); margin: 2rem 0 0.75rem; }
+    .article-body p { font-size: 1rem; color: var(--muted); line-height: 1.8; margin-bottom: 1.35rem; }
+    .article-body ul, .article-body ol { margin: 1rem 0 1.35rem 1.5rem; color: var(--muted); font-size: 1rem; line-height: 1.8; }
+    .article-body li { margin-bottom: 0.5rem; }
+    .article-body strong { color: var(--green-deep); font-weight: 700; }
+    .article-body a { color: var(--green-mid); text-decoration: underline; }
+
+    .pull-quote {
+      border-left: 4px solid var(--green-bright); padding: 1.25rem 1.5rem;
+      margin: 2rem 0; background: var(--green-light); border-radius: 0 8px 8px 0;
+      font-size: 1.05rem; font-style: italic; color: var(--green-deep); line-height: 1.65;
+    }
+
+    .highlight-box {
+      background: var(--off-white); border: 1px solid var(--border);
+      border-radius: 12px; padding: 1.75rem 2rem; margin: 2rem 0;
+    }
+    .highlight-box h4 { font-family: 'Poppins', sans-serif; font-size: 1rem; font-weight: 700; color: var(--green-deep); margin-bottom: 1rem; }
+    .highlight-box ul { margin-left: 1.25rem; color: var(--muted); font-size: 0.95rem; }
+    .highlight-box li { margin-bottom: 0.5rem; }
+
+    .scenario-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin: 2rem 0; }
+    .scenario-card { border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; }
+    .scenario-card h4 { font-family: 'Poppins', sans-serif; font-size: 0.95rem; font-weight: 700; color: var(--green-deep); margin-bottom: 0.75rem; }
+    .scenario-card p { font-size: 0.875rem; color: var(--muted); line-height: 1.6; margin: 0; }
+    .scenario-card.good { border-color: var(--green-bright); background: var(--green-light); }
+    .scenario-card.good h4 { color: var(--green-mid); }
+    .scenario-card.bad { border-color: #e8b4a0; background: #fdf4f0; }
+    .scenario-card.bad h4 { color: #a04020; }
+
+    .article-sidebar { position: sticky; top: 90px; height: fit-content; }
+    .sidebar-card { background: var(--off-white); border: 1px solid var(--border); border-radius: 16px; padding: 2rem; margin-bottom: 1.5rem; }
+    .sidebar-card h4 { font-family: 'Poppins', sans-serif; font-size: 0.95rem; font-weight: 700; color: var(--green-deep); margin-bottom: 1rem; }
+    .sidebar-card p { font-size: 0.875rem; color: var(--muted); line-height: 1.65; margin-bottom: 1rem; }
+    .sidebar-btn { display: block; background: var(--green-mid); color: var(--white); text-align: center; padding: 0.75rem 1rem; border-radius: 8px; font-size: 0.875rem; font-weight: 600; text-decoration: none; transition: background .2s; }
+    .sidebar-btn:hover { background: var(--green-deep); }
+    .sidebar-related-title { font-family: 'Poppins', sans-serif; font-size: 0.95rem; font-weight: 700; color: var(--green-deep); margin-bottom: 1rem; }
+    .sidebar-related-link { display: flex; gap: 0.75rem; text-decoration: none; color: inherit; padding: 0.75rem 0; border-bottom: 1px solid var(--border); align-items: flex-start; }
+    .sidebar-related-link:last-child { border-bottom: none; }
+    .sidebar-related-link:hover .sidebar-related-title-sm { color: var(--green-mid); }
+    .sidebar-related-cat { font-size: 0.68rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--green-mid); margin-bottom: 0.2rem; }
+    .sidebar-related-title-sm { font-size: 0.82rem; font-weight: 600; color: var(--green-deep); line-height: 1.35; transition: color .2s; }
+
+    .article-cta { background: linear-gradient(135deg, var(--green-mid) 0%, var(--green-deep) 100%); color: var(--white); padding: 5rem 8vw; text-align: center; }
+    .article-cta h2 { font-family: 'Poppins', sans-serif; font-size: clamp(1.5rem, 2.5vw, 2.2rem); font-weight: 700; margin-bottom: 1rem; }
+    .article-cta p { color: rgba(255,255,255,0.75); font-size: 1rem; max-width: 520px; margin: 0 auto 2rem; line-height: 1.7; }
+    .cta-group { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+    .btn-white { background: var(--white); color: var(--green-deep); padding: 0.85rem 2rem; border-radius: 8px; font-size: 0.9rem; font-weight: 700; text-decoration: none; transition: transform .15s; }
+    .btn-white:hover { transform: translateY(-2px); }
+    .btn-outline-white { border: 2px solid rgba(255,255,255,0.5); color: var(--white); padding: 0.85rem 2rem; border-radius: 8px; font-size: 0.9rem; font-weight: 600; text-decoration: none; transition: border-color .2s; }
+    .btn-outline-white:hover { border-color: var(--white); }
+
+    footer { background: var(--navy); color: rgba(255,255,255,0.6); padding: 3rem 8vw 0; display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 2rem; }
+    .footer-tagline { font-size: 0.82rem; color: rgba(255,255,255,0.4); }
+    .footer-address-bar { grid-column: 1 / -1; border-top: 1px solid rgba(255,255,255,0.1); margin-top: 2rem; padding: 1.25rem 0; display: flex; justify-content: center; align-items: center; gap: 2rem; font-size: 0.8rem; color: rgba(255,255,255,0.45); flex-wrap: wrap; text-align: center; }
+    .footer-address-bar a { color: rgba(255,255,255,0.45); text-decoration: none; }
+    .footer-address-bar a:hover { color: var(--green-bright); }
+    .footer-address-bar .sep { opacity: 0.3; }
+
+    @media (max-width: 900px) {
+      .article-layout { grid-template-columns: 1fr; gap: 3rem; }
+      .article-sidebar { position: static; }
+      .scenario-grid { grid-template-columns: 1fr; }
+      footer { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 600px) {
+      .article-layout { padding: 3rem 6vw; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo"><img src="oliva-logo.png" alt="Oliva Energy"></a>
+  <a href="kennisbank.html" class="nav-back">
+    <svg viewBox="0 0 24 24"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+    Terug naar kennisbank
+  </a>
+  <div class="nav-actions">
+    <a href="tel:+31850050440" class="nav-phone">
+      <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.36 2 2 0 0 1 3.6 1.18h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.96a16 16 0 0 0 6.56 6.56l.85-.85a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      <span class="nav-phone-number">085 0050 440</span>
+    </a>
+    <a href="mailto:michiel.aandewiel.nl?subject=Ik%20heb%20een%20vraag" class="nav-cta">Mail je vraag</a>
+    <a href="https://portal.oliva.energy/login" target="_blank" class="nav-portal">Mijn Oliva Energy</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="article-hero">
+  <div class="breadcrumb">
+    <a href="index.html">Home</a>
+    <span class="breadcrumb-sep">/</span>
+    <a href="kennisbank.html">Kennisbank</a>
+    <span class="breadcrumb-sep">/</span>
+    <span>Stedelijke groei en energiecapaciteit</span>
+  </div>
+  <span class="article-category-tag">Netcongestie</span>
+  <h1>Steden groeien, het stroomnet niet: de energieparadox van stedelijke uitbreiding</h1>
+  <div class="article-hero-meta">
+    <span>Augustus 2026</span>
+    <span>&middot;</span>
+    <span>6 minuten leestijd</span>
+    <span>&middot;</span>
+    <span>Door Oliva Energy</span>
+  </div>
+</div>
+
+<div class="article-hero-img">
+  <img src="artikel_afbeelding_2.jpg" alt="Stedelijke uitbreiding en netcongestie">
+</div>
+
+<!-- ARTICLE LAYOUT -->
+<div class="article-layout">
+
+  <article class="article-body">
+
+    <p>Nederland bouwt. Gemeenten als Almere, Utrecht, Breda en Zwolle werken aan grootschalige uitbreiding van hun woningvoorraad en bedrijventerreinen. De druk op de woningmarkt is hoog, de politieke urgentie om te bouwen is groot en de projecten zijn in voorbereiding of al in uitvoering.</p>
+
+    <p>Maar er is een rem die steeds vaker roet in het eten gooit: het stroomnet houdt de groei niet bij. Nieuwe wijken, bedrijfscampussen en gemengde ontwikkellocaties lopen vast op onvoldoende netcapaciteit. De netbeheerder kan niet leveren wat de plannen vereisen &mdash; niet vandaag, en in veel gevallen ook niet binnen vijf jaar.</p>
+
+    <p>Dit is de energieparadox van stedelijke uitbreiding. En het vraagt om een fundamenteel andere manier van denken over energie in gebiedsontwikkeling.</p>
+
+    <h2>Hoe erg is het probleem?</h2>
+
+    <p>De cijfers liegen er niet om. Netbeheerder Liander heeft in Noord-Holland en Flevoland &mdash; het verzorgingsgebied waar Almere onder valt &mdash; al meerdere jaren een wachtlijstenprobleem voor nieuwe of zwaardere aansluitingen. Maar ook Enexis in Noord-Brabant en Stedin in Zeeland en Zuid-Holland rapporteren vergelijkbare knelpunten.</p>
+
+    <p>Wat stedelijke uitbreiding extra kwetsbaar maakt, is de <strong>gelijktijdigheid van de vraag</strong>. Als een nieuwe wijk van tweeduizend woningen in gebruik wordt genomen, komen die aansluitingen allemaal tegelijk. De piekbelasting op het lokale net is daarmee niet lineair maar exponentieel.</p>
+
+    <div class="pull-quote">
+      &ldquo;Gebiedsontwikkelaars die nu plannen maken voor 2028 of 2030, moeten vandaag de energiestrategie meenemen &mdash; niet als bijlage, maar als kernonderdeel van het plan.&rdquo;
+    </div>
+
+    <h2>Waarom loopt de infrastructuur achter?</h2>
+
+    <p>De oorzaken zijn structureel en meervoudig:</p>
+
+    <ul>
+      <li><strong>Lange doorlooptijden</strong>: het verzwaren van een middenspanningsstation duurt gemiddeld vijf tot zeven jaar, inclusief vergunningsprocedures en leveranciersachterstanden</li>
+      <li><strong>Schaarste aan materialen en personeel</strong>: transformatoren, kabels en installateurs zijn wereldwijd schaars na jaren van onderinvestering</li>
+      <li><strong>Gelijktijdige pieken in de vraag</strong>: verduurzaming van bestaande bouw, elektrificatie van mobiliteit en industriegroei vragen allemaal tegelijk om meer capaciteit</li>
+      <li><strong>Onverwachte teruglevering</strong>: grootschalige zonne-energie op bedrijfsdaken en -terreinen levert soms meer stroom terug dan het net aankan</li>
+    </ul>
+
+    <h2>Twee scenario's voor gebiedsontwikkeling</h2>
+
+    <p>In de praktijk zien wij twee sterk verschillende uitkomsten bij nieuwe ontwikkellocaties. Het verschil zit niet in het net zelf, maar in de manier waarop energie van begin af aan in het plan is verankerd.</p>
+
+    <div class="scenario-grid">
+      <div class="scenario-card bad">
+        <h4>Zonder energiestrategie</h4>
+        <p>Vergunning verleend, bouw gestart &mdash; en dan ontdekt de ontwikkelaar dat de netbeheerder de benodigde aansluiting pas over vier jaar kan leveren. Vertraging, meerkosten, gespannen relaties met kopers of huurders.</p>
+      </div>
+      <div class="scenario-card good">
+        <h4>Met energiestrategie</h4>
+        <p>Energiehub op terreinniveau gepland v&oacute;&oacute;r de vergunning. Lokale opwek, opslag en slimme sturing zorgen dat de locatie functioneert binnen de beschikbare netcapaciteit &mdash; en klaar is voor uitbreiding later.</p>
+      </div>
+    </div>
+
+    <h2>De energiehub als gebiedsstrategie</h2>
+
+    <p>De meest effectieve aanpak voor nieuwe ontwikkellocaties met beperkte netcapaciteit is het inzetten van een <strong>lokale energiehub</strong>: een systeem dat opwek, opslag en verbruik op terreinniveau coördineert, zodat het gebied zo min mogelijk afhankelijk is van het publieke net voor piekbelasting.</p>
+
+    <p>Een goed ontworpen energiehub voor een nieuwe wijk of bedrijvencampus omvat:</p>
+
+    <ul>
+      <li><strong>Collectieve zonne-energie</strong> op daken van bedrijfsgebouwen, parkeerplaatsen of openbare gebouwen</li>
+      <li><strong>Gedeelde batterijopslag</strong> die piekproductie buffert en piekverbruik afdekt</li>
+      <li><strong>Slimme laadinfrastructuur</strong> die laadmomenten verschuift naar periodes van overcapaciteit</li>
+      <li><strong>Vraaggestuurde warmteoplossingen</strong> die warmtepompen en e-boilers slim schakelen</li>
+      <li><strong>Real-time energiecoördinatie</strong> via een platform dat alle assets aanstuurt op basis van netsignalen en lokale beschikbaarheid</li>
+    </ul>
+
+    <p>Het resultaat: de benodigde netaansluiting is kleiner, de kosten voor aansluitrechten lager, en het gebied is van meet af aan voorbereid op deelname aan lokale flexibiliteitsmarkten die de komende jaren vorm krijgen.</p>
+
+    <h2>Financieel perspectief: van kostenpost naar opbrengst</h2>
+
+    <p>Energieinfrastructuur op gebiedsniveau wordt traditioneel gezien als kostenpost. Dat is een verouderd perspectief. Een goed ontworpen energiesysteem genereert waarde op drie manieren:</p>
+
+    <ol>
+      <li><strong>Lagere aansluitkosten</strong>: een kleinere netaansluiting is goedkoper in aanleg en in maandelijkse capaciteitskosten</li>
+      <li><strong>Inkomsten via flexibiliteitsmarkten</strong>: netbeheerders betalen voor de mogelijkheid om piekbelasting te verschuiven; op termijn ontstaan ook lokale markten waarop energie op gebiedsniveau wordt verhandeld</li>
+      <li><strong>Hogere vastgoedwaarde</strong>: locaties met een eigen energieoplossing en een lagere energierekening zijn aantrekkelijker voor huurders en kopers, in een markt waar energiekosten steeds zwaarder wegen</li>
+    </ol>
+
+    <div class="highlight-box">
+      <h4>Wat vroeg meenemen in gebiedsontwikkeling oplevert</h4>
+      <ul>
+        <li>Kleinere (goedkopere) netaansluiting door lokaal slimmer gebruik van capaciteit</li>
+        <li>Geen vertraging door wachtlijsten bij de netbeheerder</li>
+        <li>Lagere energielasten voor bewoners en bedrijven op de locatie</li>
+        <li>Toekomstige inkomsten via balans- en congestiemarkt</li>
+        <li>Sterkere businesscase richting financiers en investeerders</li>
+      </ul>
+    </div>
+
+    <h2>Wat betekent dit voor gemeenten en ontwikkelaars?</h2>
+
+    <p>De vraag is niet <em>of</em> u te maken krijgt met netbeperkingen bij nieuwe ontwikkellocaties, maar <em>wanneer</em> en <em>hoe goed u daarop bent voorbereid</em>. Gemeenten die energiecoördinatie opnemen in hun bestemmingsplannen en grondexploitaties doen hun toekomstige bewoners en bedrijven een groot plezier.</p>
+
+    <p>Ontwikkelaars die een energiestrategie integreren in de vroege planfase &mdash; liefst al in de haalbaarheidsanalyse &mdash; vermijden de duurste verrassingen. En zij bouwen aan locaties die niet alleen vandaag werkbaar zijn, maar ook over tien jaar nog aansluiten op de energiemarkt van de toekomst.</p>
+
+    <p>Oliva Energy werkt samen met O&amp;M-partijen, projectontwikkelaars en gemeenten aan energieoplossingen voor complexe locaties. Van het ontwerp en de businesscase tot de real-time aansturing van energieassets na oplevering.</p>
+
+  </article>
+
+  <!-- SIDEBAR -->
+  <aside class="article-sidebar">
+
+    <div class="sidebar-card">
+      <h4>Energiestrategie voor uw locatie?</h4>
+      <p>Oliva analyseert de haalbaarheid van een energiehub voor nieuwe of bestaande locaties, inclusief businesscase en technisch ontwerp.</p>
+      <a href="voor-eindgebruikers.html" class="sidebar-btn">Bekijk Oliva Systems</a>
+    </div>
+
+    <div class="sidebar-card">
+      <p class="sidebar-related-title">Gerelateerde artikelen</p>
+
+      <a href="artikel-energy-hub.html" class="sidebar-related-link">
+        <div>
+          <div class="sidebar-related-cat">Energy Hubs</div>
+          <div class="sidebar-related-title-sm">Wat is een Energy Hub? De sleutel tot slim energiebeheer op bedrijventerreinen</div>
+        </div>
+      </a>
+
+      <a href="artikel-datacenters-netcongestie.html" class="sidebar-related-link">
+        <div>
+          <div class="sidebar-related-cat">Netcongestie</div>
+          <div class="sidebar-related-title-sm">Zijn datacenters echt het probleem? Wat het netcongestiedebat mist</div>
+        </div>
+      </a>
+
+      <a href="artikel-netcongestie.html" class="sidebar-related-link">
+        <div>
+          <div class="sidebar-related-cat">Netcongestie</div>
+          <div class="sidebar-related-title-sm">Netcongestie: wat is het en hoe lossen bedrijven het op?</div>
+        </div>
+      </a>
+
+    </div>
+
+  </aside>
+
+</div>
+
+<!-- CTA -->
+<section class="article-cta">
+  <h2>Energie als onderdeel van uw gebiedsplan</h2>
+  <p>Oliva helpt ontwikkelaars en O&amp;M-partijen om energie vroeg in de planfase mee te nemen &mdash; van haalbaarheidsanalyse tot actieve sturing.</p>
+  <div class="cta-group">
+    <a href="mailto:michiel.aandewiel@olivaenergy.nl?subject=Vraag%20over%20energie%20en%20gebiedsontwikkeling" class="btn-white">Neem contact op</a>
+    <a href="tel:+31850050440" class="btn-outline-white">Bel: 085 0050 440</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div>
+    <a href="index.html"><img src="oliva-logo.png" alt="Oliva Energy" style="height:40px;width:auto;filter:brightness(0) invert(1);margin-bottom:0.5rem;display:block;"></a>
+    <p class="footer-tagline">Onafhankelijk platform voor design, monitoring en sturing van energiesystemen</p>
+  </div>
+  <div class="footer-address-bar">
+    <span>Gouwepoort 1, 4301 RZ Zierikzee, The Netherlands</span>
+    <span class="sep">|</span>
+    <a href="mailto:michiel.aandewiel@olivaenergy.nl">michiel.aandewiel@olivaenergy.nl</a>
+    <span class="sep">|</span>
+    <a href="tel:+31850050440">085 0050 440</a>
+    <span class="sep">|</span>
+    <span>KvK 89238486</span>
+    <span class="sep">|</span>
+    <a href="privacy.html">Privacybeleid</a>
+    <span class="sep">|</span>
+    <span>Copyright &copy; 2025 Oliva Energy</span>
+  </div>
+</footer>
+
+</body>
+</html>

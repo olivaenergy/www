@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Zijn datacenters echt verantwoordelijk voor netcongestie in Nederland? Een nuchtere analyse van waar het piekprobleem werkelijk zit, en wat bedrijven nu al kunnen doen.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.olivaenergy.nl/artikel-datacenters-netcongestie.html">
+  <title>Datacenters en netcongestie: het echte probleem | Oliva Energy</title>
+
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://www.olivaenergy.nl/artikel-datacenters-netcongestie.html">
+  <meta property="og:title" content="Zijn datacenters echt het probleem? Wat het netcongestiedebat mist">
+  <meta property="og:description" content="Datacenters krijgen de schuld van het overvolle stroomnet. Maar de werkelijkheid is genuanceerder, en het piekprobleem zit elders.">
+  <meta property="og:locale" content="nl_NL">
+  <meta property="og:site_name" content="Oliva Energy">
+  <meta property="og:image" content="https://www.olivaenergy.nl/og-social.jpeg">
+
+  <script src="cookie-consent.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="oliva-logo.png">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Zijn datacenters echt het probleem? Wat het netcongestiedebat mist",
+    "description": "Datacenters krijgen de schuld van het overvolle stroomnet. Maar de werkelijkheid is genuanceerder, en het piekprobleem zit elders.",
+    "datePublished": "2026-08-03",
+    "dateModified": "2026-08-03",
+    "image": {"@type": "ImageObject", "url": "https://www.olivaenergy.nl/artikel_afbeelding_1.jpg"},
+    "author": {"@type": "Person", "name": "Michiel Aandewiel"},
+    "publisher": {"@type": "Organization", "name": "Oliva Energy", "url": "https://www.olivaenergy.nl"},
+    "mainEntityOfPage": {"@type": "WebPage", "@id": "https://www.olivaenergy.nl/artikel-datacenters-netcongestie.html"}
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.olivaenergy.nl/"},
+      {"@type": "ListItem", "position": 2, "name": "Kennisbank", "item": "https://www.olivaenergy.nl/kennisbank.html"},
+      {"@type": "ListItem", "position": 3, "name": "Zijn datacenters echt het probleem?"}
+    ]
+  }
+  </script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Lato', sans-serif; color: var(--text); background: var(--white); overflow-x: hidden; line-height: 1.7; }
+
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 5vw; height: 72px;
+      background: rgba(255,255,255,0.95); backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border); gap: 1rem;
+    }
+    .nav-logo img { height: 44px; width: auto; display: block; }
+    .nav-back { display: inline-flex; align-items: center; gap: 0.4rem; color: var(--muted); text-decoration: none; font-size: 0.88rem; font-weight: 500; transition: color .2s; }
+    .nav-back:hover { color: var(--green-bright); }
+    .nav-back svg { width: 16px; height: 16px; stroke: currentColor; fill: none; stroke-width: 2; }
+    .nav-cta { background: var(--green-mid); color: var(--white); padding: 0.5rem 1.25rem; border-radius: 6px; font-size: 0.875rem; font-weight: 600; text-decoration: none; transition: background .2s; }
+    .nav-cta:hover { background: var(--green-deep); }
+    .nav-portal { color: var(--green-mid); border: 1.5px solid var(--green-mid); padding: 0.45rem 1rem; border-radius: 6px; font-size: 0.875rem; font-weight: 600; text-decoration: none; transition: background .2s, color .2s; white-space: nowrap; }
+    .nav-portal:hover { background: var(--green-mid); color: var(--white); }
+    .nav-phone { display: inline-flex; align-items: center; gap: 0.4rem; color: var(--green-mid); text-decoration: none; font-size: 0.875rem; font-weight: 700; padding: 0.4rem 0.75rem; border-radius: 6px; border: 1.5px solid var(--border); transition: border-color .2s, background .2s; white-space: nowrap; flex-shrink: 0; }
+    .nav-phone:hover { border-color: var(--green-mid); background: var(--green-light); }
+    .nav-phone svg { width: 15px; height: 15px; stroke: var(--green-mid); fill: none; stroke-width: 2; flex-shrink: 0; }
+    .nav-actions { display: flex; align-items: center; gap: 0.75rem; flex-shrink: 0; }
+    @media (max-width: 600px) { .nav-phone-number { display: none; } .nav-phone { padding: 0.4rem 0.5rem; } .nav-portal { display: none; } }
+
+    .article-hero {
+      background: var(--green-deep); color: var(--white);
+      padding: 9rem 8vw 4rem;
+    }
+    .breadcrumb { font-size: 0.78rem; color: rgba(255,255,255,0.5); margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.4rem; flex-wrap: wrap; }
+    .breadcrumb a { color: rgba(255,255,255,0.5); text-decoration: none; }
+    .breadcrumb a:hover { color: #8fcb5a; }
+    .breadcrumb-sep { opacity: 0.4; }
+    .article-category-tag { display: inline-block; background: rgba(143,203,90,0.2); color: #8fcb5a; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.25rem 0.8rem; border-radius: 12px; margin-bottom: 1.25rem; }
+    .article-hero h1 { font-family: 'Poppins', sans-serif; font-size: clamp(1.8rem, 3.5vw, 2.8rem); font-weight: 700; line-height: 1.2; margin-bottom: 1.25rem; max-width: 780px; }
+    .article-hero-meta { font-size: 0.82rem; color: rgba(255,255,255,0.5); display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; }
+    .article-hero-img { width: 100%; max-height: 420px; overflow: hidden; }
+    .article-hero-img img { width: 100%; height: 420px; object-fit: cover; display: block; }
+
+    .article-layout {
+      display: grid; grid-template-columns: 1fr 320px; gap: 4rem;
+      padding: 5rem 8vw; max-width: 1200px; margin: 0 auto;
+    }
+
+    /* ARTICLE BODY */
+    .article-body h2 { font-family: 'Poppins', sans-serif; font-size: 1.45rem; font-weight: 700; color: var(--green-deep); margin: 2.5rem 0 1rem; line-height: 1.3; }
+    .article-body h3 { font-family: 'Poppins', sans-serif; font-size: 1.1rem; font-weight: 700; color: var(--green-deep); margin: 2rem 0 0.75rem; }
+    .article-body p { font-size: 1rem; color: var(--muted); line-height: 1.8; margin-bottom: 1.35rem; }
+    .article-body ul, .article-body ol { margin: 1rem 0 1.35rem 1.5rem; color: var(--muted); font-size: 1rem; line-height: 1.8; }
+    .article-body li { margin-bottom: 0.5rem; }
+    .article-body strong { color: var(--green-deep); font-weight: 700; }
+    .article-body a { color: var(--green-mid); text-decoration: underline; }
+
+    .pull-quote {
+      border-left: 4px solid var(--green-bright); padding: 1.25rem 1.5rem;
+      margin: 2rem 0; background: var(--green-light); border-radius: 0 8px 8px 0;
+      font-size: 1.05rem; font-style: italic; color: var(--green-deep); line-height: 1.65;
+    }
+
+    .highlight-box {
+      background: var(--off-white); border: 1px solid var(--border);
+      border-radius: 12px; padding: 1.75rem 2rem; margin: 2rem 0;
+    }
+    .highlight-box h4 { font-family: 'Poppins', sans-serif; font-size: 1rem; font-weight: 700; color: var(--green-deep); margin-bottom: 1rem; }
+    .highlight-box ul { margin-left: 1.25rem; color: var(--muted); font-size: 0.95rem; }
+    .highlight-box li { margin-bottom: 0.5rem; }
+
+    .stat-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin: 2rem 0; }
+    .stat-card { background: var(--green-deep); color: var(--white); border-radius: 12px; padding: 1.5rem; text-align: center; }
+    .stat-number { font-family: 'Poppins', sans-serif; font-size: 2rem; font-weight: 700; color: #8fcb5a; display: block; }
+    .stat-label { font-size: 0.8rem; color: rgba(255,255,255,0.65); margin-top: 0.25rem; line-height: 1.4; }
+
+    /* SIDEBAR */
+    .article-sidebar { position: sticky; top: 90px; height: fit-content; }
+    .sidebar-card { background: var(--off-white); border: 1px solid var(--border); border-radius: 16px; padding: 2rem; margin-bottom: 1.5rem; }
+    .sidebar-card h4 { font-family: 'Poppins', sans-serif; font-size: 0.95rem; font-weight: 700; color: var(--green-deep); margin-bottom: 1rem; }
+    .sidebar-card p { font-size: 0.875rem; color: var(--muted); line-height: 1.65; margin-bottom: 1rem; }
+    .sidebar-btn { display: block; background: var(--green-mid); color: var(--white); text-align: center; padding: 0.75rem 1rem; border-radius: 8px; font-size: 0.875rem; font-weight: 600; text-decoration: none; transition: background .2s; }
+    .sidebar-btn:hover { background: var(--green-deep); }
+    .sidebar-related-title { font-family: 'Poppins', sans-serif; font-size: 0.95rem; font-weight: 700; color: var(--green-deep); margin-bottom: 1rem; }
+    .sidebar-related-link { display: flex; gap: 0.75rem; text-decoration: none; color: inherit; padding: 0.75rem 0; border-bottom: 1px solid var(--border); align-items: flex-start; }
+    .sidebar-related-link:last-child { border-bottom: none; }
+    .sidebar-related-link:hover .sidebar-related-title-sm { color: var(--green-mid); }
+    .sidebar-related-cat { font-size: 0.68rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--green-mid); margin-bottom: 0.2rem; }
+    .sidebar-related-title-sm { font-size: 0.82rem; font-weight: 600; color: var(--green-deep); line-height: 1.35; transition: color .2s; }
+
+    /* CTA */
+    .article-cta { background: linear-gradient(135deg, var(--green-mid) 0%, var(--green-deep) 100%); color: var(--white); padding: 5rem 8vw; text-align: center; }
+    .article-cta h2 { font-family: 'Poppins', sans-serif; font-size: clamp(1.5rem, 2.5vw, 2.2rem); font-weight: 700; margin-bottom: 1rem; }
+    .article-cta p { color: rgba(255,255,255,0.75); font-size: 1rem; max-width: 520px; margin: 0 auto 2rem; line-height: 1.7; }
+    .cta-group { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+    .btn-white { background: var(--white); color: var(--green-deep); padding: 0.85rem 2rem; border-radius: 8px; font-size: 0.9rem; font-weight: 700; text-decoration: none; transition: transform .15s; }
+    .btn-white:hover { transform: translateY(-2px); }
+    .btn-outline-white { border: 2px solid rgba(255,255,255,0.5); color: var(--white); padding: 0.85rem 2rem; border-radius: 8px; font-size: 0.9rem; font-weight: 600; text-decoration: none; transition: border-color .2s; }
+    .btn-outline-white:hover { border-color: var(--white); }
+
+    footer { background: var(--navy); color: rgba(255,255,255,0.6); padding: 3rem 8vw 0; display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 2rem; }
+    .footer-tagline { font-size: 0.82rem; color: rgba(255,255,255,0.4); }
+    .footer-address-bar { grid-column: 1 / -1; border-top: 1px solid rgba(255,255,255,0.1); margin-top: 2rem; padding: 1.25rem 0; display: flex; justify-content: center; align-items: center; gap: 2rem; font-size: 0.8rem; color: rgba(255,255,255,0.45); flex-wrap: wrap; text-align: center; }
+    .footer-address-bar a { color: rgba(255,255,255,0.45); text-decoration: none; }
+    .footer-address-bar a:hover { color: var(--green-bright); }
+    .footer-address-bar .sep { opacity: 0.3; }
+
+    @media (max-width: 900px) {
+      .article-layout { grid-template-columns: 1fr; gap: 3rem; }
+      .article-sidebar { position: static; }
+      .stat-grid { grid-template-columns: 1fr 1fr; }
+      footer { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 600px) {
+      .article-layout { padding: 3rem 6vw; }
+      .stat-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo"><img src="oliva-logo.png" alt="Oliva Energy"></a>
+  <a href="kennisbank.html" class="nav-back">
+    <svg viewBox="0 0 24 24"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+    Terug naar kennisbank
+  </a>
+  <div class="nav-actions">
+    <a href="tel:+31850050440" class="nav-phone">
+      <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.36 2 2 0 0 1 3.6 1.18h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.96a16 16 0 0 0 6.56 6.56l.85-.85a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      <span class="nav-phone-number">085 0050 440</span>
+    </a>
+    <a href="mailto:michiel.aandewiel.nl?subject=Ik%20heb%20een%20vraag" class="nav-cta">Mail je vraag</a>
+    <a href="https://portal.oliva.energy/login" target="_blank" class="nav-portal">Mijn Oliva Energy</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="article-hero">
+  <div class="breadcrumb">
+    <a href="index.html">Home</a>
+    <span class="breadcrumb-sep">/</span>
+    <a href="kennisbank.html">Kennisbank</a>
+    <span class="breadcrumb-sep">/</span>
+    <span>Datacenters en netcongestie</span>
+  </div>
+  <span class="article-category-tag">Netcongestie</span>
+  <h1>Zijn datacenters echt het probleem? Wat het netcongestiedebat mist</h1>
+  <div class="article-hero-meta">
+    <span>Augustus 2026</span>
+    <span>&middot;</span>
+    <span>7 minuten leestijd</span>
+    <span>&middot;</span>
+    <span>Door Oliva Energy</span>
+  </div>
+</div>
+
+<div class="article-hero-img">
+  <img src="artikel_afbeelding_1.jpg" alt="Datacenters en netcongestie in Nederland">
+</div>
+
+<!-- ARTICLE LAYOUT -->
+<div class="article-layout">
+
+  <article class="article-body">
+
+    <p>In het publieke debat over netcongestie zijn datacenters uitgegroeid tot de favoriete zondebok. Ze vreten stroom, bezetten transportcapaciteit en staan nieuwe woningbouw in de weg. Gemeenten weigeren vergunningen, provincies stellen moratoria in, en in de media wordt de datacenter als synoniem voor het overvolle stroomnet gepresenteerd.</p>
+
+    <p>Maar is dat beeld juist? En &mdash; belangrijker voor bedrijven die vandaag met netcongestie te maken hebben &mdash; helpt het ons om de werkelijke oorzaken te begrijpen en op te lossen?</p>
+
+    <h2>Wat zeggen de cijfers?</h2>
+
+    <p>Datacenters verbruiken in Nederland inderdaad substantieel elektriciteitsverbruik. In 2024 vertegenwoordigden ze naar schatting 4 tot 5 procent van het totale nationale elektriciteitsverbruik. Dat is niet niks &mdash; maar het is ook geen overheersend aandeel.</p>
+
+    <div class="stat-grid">
+      <div class="stat-card">
+        <span class="stat-number">4&ndash;5%</span>
+        <span class="stat-label">Aandeel datacenters in totaal Nederlands elektriciteitsverbruik</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-number">~40%</span>
+        <span class="stat-label">Aandeel industrie en grootverbruikers in netbelasting</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-number">2031</span>
+        <span class="stat-label">Verwacht jaar waarop netbeheerders de achterstanden inlopen</span>
+      </div>
+    </div>
+
+    <p>Wat datacenters wél onderscheidt van andere grootverbruikers, is hun geografische concentratie. De Amsterdam Internet Exchange (AMS-IX) is een van de grootste knooppunten ter wereld, en de concentratie van datacenters in Noord-Holland en Flevoland legt een disproportionele druk op lokale netknooppunten. Daar is de congestie reëel en meetbaar.</p>
+
+    <p>Maar: netcongestie is een nationaal verschijnsel dat zich ook manifesteert in regio's <em>zonder</em> datacenters. Zeeland, Brabant, Friesland &mdash; ook daar staan bedrijven op wachtlijsten van meerdere jaren voor uitbreiding van hun netaansluiting.</p>
+
+    <div class="pull-quote">
+      &ldquo;Netcongestie is geen datacenterprobleem. Het is een infrastructuurprobleem dat tientallen jaren van onderinvestering weerspiegelt.&rdquo;
+    </div>
+
+    <h2>Waar zit het piekprobleem dan wél?</h2>
+
+    <p>De kern van het Nederlandse netcongestieprobleem is niet het totale verbruik, maar de <strong>ongelijkmatige belasting in de tijd</strong>. Het stroomnet is ontworpen voor het gemiddelde verbruik, niet voor de piek. En die piekmomenten worden bepaald door een breed scala aan afnemers.</p>
+
+    <p>De belangrijkste bijdragers aan piekbelasting zijn:</p>
+
+    <ul>
+      <li><strong>Industrie en grootverbruikers</strong> met inflexibele productieprocessen die overdag volop draaien</li>
+      <li><strong>Glastuinbouw</strong>, die in de winter gelijktijdig warmtevraag en lichtbehoefte heeft</li>
+      <li><strong>Laadinfrastructuur voor elektrisch vervoer</strong>, die zich concentreert in de avonduren</li>
+      <li><strong>Verduurzaming van de gebouwde omgeving</strong>, waarbij warmtepompen op koude winterdagen gelijktijdig aanslaan</li>
+      <li><strong>Teruglevering van zonnestroom</strong>, die op zomerse middagen het net overvolt</li>
+    </ul>
+
+    <p>Datacenters zijn, ironisch genoeg, relatief <em>gunstige</em> netgebruikers wat piekvermogen betreft: ze verbruiken 24 uur per dag op een vrij constant niveau. Er is nauwelijks sprake van pieken. De piekproblematiek zit elders.</p>
+
+    <h2>Waarom is dit relevant voor uw bedrijf?</h2>
+
+    <p>Als uw bedrijf last heeft van netcongestie &mdash; geen of beperkte transportcapaciteit, wachtlijsten bij de netbeheerder, of hoge capaciteitstarieven &mdash; is het van belang te begrijpen dat de oorzaak structureel is en niet snel verdwijnt. De netbeheerders investeren volop in uitbreiding, maar de verwachting is dat de achterstanden pas rond 2031 zijn ingelopen.</p>
+
+    <p>Dat betekent dat bedrijven nu zelf aan de slag moeten met <strong>flexibiliteit</strong>. Niet wachten op de netbeheerder, maar de eigen energievraag slimmer organiseren.</p>
+
+    <div class="highlight-box">
+      <h4>Wat bedrijven nu al kunnen doen</h4>
+      <ul>
+        <li>Verschuif energieverbruik naar dal-uren (s&rsquo;nachts, in het weekend) via slimme automatisering</li>
+        <li>Gebruik batterijopslag om piekverbruik af te vlakken en de netaansluiting ontlast te houden</li>
+        <li>Koppel solar, laadinfrastructuur en productieprocessen in een Energy Hub</li>
+        <li>Bied flexibiliteit aan via congestieprogramma&rsquo;s van de netbeheerder en verdien hier direct aan</li>
+        <li>Zet slimme PLC-sturing in om real-time te reageren op netsignalen</li>
+      </ul>
+    </div>
+
+    <h2>De rol van flexibiliteitstechnologie</h2>
+
+    <p>Wat het datacenterprobleem en het bredere netcongestiedebat gemeen hebben, is dat ze beide wijzen op dezelfde fundamentele uitdaging: het stroomnet is te star voor een energiemix die steeds grilliger wordt. De oplossing is niet alleen meer kabels en transformatoren &mdash; die komen te laat en kosten te veel &mdash; maar ook <strong>slimmere aansturing van de vraagkant</strong>.</p>
+
+    <p>Moderne energiebeheersystemen, zoals het <a href="voor-eindgebruikers.html">Oliva Energy platform</a>, maken het mogelijk om energieassets real-time aan te sturen op basis van netsignalen en marktprijzen. Daarmee kunnen industriële bedrijven en O&amp;M-partijen hun verbruik afstemmen op het moment dat netcapaciteit beschikbaar is, in plaats van te concurreren om schaarse piektijd.</p>
+
+    <p>Dit is niet alleen kostenbesparend. Het opent ook de deur naar nieuwe inkomstenstromen: via de balansmarkt, via congestieprogramma&rsquo;s van netbeheerders, en via lokale energiemarkten die de komende jaren ontstaan op bedrijventerreinen en in gebieden met hoge concentratie van hernieuwbare opwek.</p>
+
+    <h2>Conclusie: focus op wat u kunt beïnvloeden</h2>
+
+    <p>Datacenters zijn niet de hoofdschuldige van netcongestie in Nederland. Ze zijn een symptoom van een bredere uitdaging: een stroomnet dat niet is ontworpen voor de energietransitie die nu razendsnel plaatsvindt.</p>
+
+    <p>Voor bedrijven die nú met netcongestie te maken hebben, is de meest productieve vraag niet &ldquo;wie is schuldig?&rdquo; maar: <strong>hoe maken wij onze energievraag flexibeler?</strong> Dat is de vraag waar Oliva Energy dagelijks mee werkt &mdash; bij industriële productiebedrijven, O&amp;M-partijen en complexe bedrijventerreinprojecten.</p>
+
+  </article>
+
+  <!-- SIDEBAR -->
+  <aside class="article-sidebar">
+
+    <div class="sidebar-card">
+      <h4>Netcongestie op uw locatie?</h4>
+      <p>Oliva helpt industriële bedrijven en O&amp;M-partijen hun energievraag flexibel te maken &mdash; zonder te wachten op de netbeheerder.</p>
+      <a href="voor-eindgebruikers.html" class="sidebar-btn">Bekijk Oliva Systems</a>
+    </div>
+
+    <div class="sidebar-card">
+      <p class="sidebar-related-title">Gerelateerde artikelen</p>
+
+      <a href="artikel-netcongestie.html" class="sidebar-related-link">
+        <div>
+          <div class="sidebar-related-cat">Netcongestie</div>
+          <div class="sidebar-related-title-sm">Netcongestie: wat is het en hoe lossen bedrijven het op?</div>
+        </div>
+      </a>
+
+      <a href="artikel-energy-hub.html" class="sidebar-related-link">
+        <div>
+          <div class="sidebar-related-cat">Energy Hubs</div>
+          <div class="sidebar-related-title-sm">Wat is een Energy Hub? De sleutel tot slim energiebeheer</div>
+        </div>
+      </a>
+
+      <a href="artikel-energieflexibiliteit.html" class="sidebar-related-link">
+        <div>
+          <div class="sidebar-related-cat">Flexibiliteit</div>
+          <div class="sidebar-related-title-sm">Energieflexibiliteit: van bijproduct naar nieuw verdienmodel</div>
+        </div>
+      </a>
+
+    </div>
+
+  </aside>
+
+</div>
+
+<!-- CTA -->
+<section class="article-cta">
+  <h2>Hoe flexibel is uw energiesysteem?</h2>
+  <p>Oliva analyseert uw situatie en laat zien welke mogelijkheden er zijn &mdash; ook als u nu al last heeft van netcongestie.</p>
+  <div class="cta-group">
+    <a href="mailto:michiel.aandewiel@olivaenergy.nl?subject=Vraag%20over%20netcongestie%20en%20flexibiliteit" class="btn-white">Neem contact op</a>
+    <a href="tel:+31850050440" class="btn-outline-white">Bel: 085 0050 440</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div>
+    <a href="index.html"><img src="oliva-logo.png" alt="Oliva Energy" style="height:40px;width:auto;filter:brightness(0) invert(1);margin-bottom:0.5rem;display:block;"></a>
+    <p class="footer-tagline">Onafhankelijk platform voor design, monitoring en sturing van energiesystemen</p>
+  </div>
+  <div class="footer-address-bar">
+    <span>Gouwepoort 1, 4301 RZ Zierikzee, The Netherlands</span>
+    <span class="sep">|</span>
+    <a href="mailto:michiel.aandewiel@olivaenergy.nl">michiel.aandewiel@olivaenergy.nl</a>
+    <span class="sep">|</span>
+    <a href="tel:+31850050440">085 0050 440</a>
+    <span class="sep">|</span>
+    <span>KvK 89238486</span>
+    <span class="sep">|</span>
+    <a href="privacy.html">Privacybeleid</a>
+    <span class="sep">|</span>
+    <span>Copyright &copy; 2025 Oliva Energy</span>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,66 +1,37 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
- 
-  <!-- Google Tag Manager -->
- <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
- new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
- j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
- 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
- })(window,document,'script','dataLayer','GTM-TQMBKC68');</script>
- <!-- End Google Tag Manager -—>
-
   <meta charset="UTF-8">
-  <meta name="description" id="meta-desc" content="Oliva Energy | onafhankelijk platform voor design, monitoring en sturing van energiesystemen. Voor installateurs en organisaties met complexe energievraagstukken.">
+  <script src="cookie-consent.js" defer></script>
+  <meta name="description" id="meta-desc" content="Oliva Energy | onafhankelijk platform voor design, monitoring en sturing van energiesystemen. Voor installateurs en eindgebruikers.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://www.olivaenergy.nl/">
-  <title>Oliva Energy: Platform voor energiebeheer</title>
+  <title>Oliva Energy | Energiebeheer & netcongestie voor bedrijven</title>
   <!-- Open Graph / LinkedIn -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.olivaenergy.nl/">
   <meta property="og:title" id="og-title" content="Oliva Energy | Grip op energie, vandaag en voor de toekomst">
-  <meta property="og:description" id="og-desc" content="Onafhankelijk platform voor design, monitoring en sturing van energiesystemen. Voor installateurs en organisaties met complexe energievraagstukken.">
+  <meta property="og:description" id="og-desc" content="Onafhankelijk platform voor design, monitoring en sturing van energiesystemen. Voor installateurs en eindgebruikers.">
   <meta property="og:locale" content="nl_NL">
   <meta property="og:locale:alternate" content="en_GB">
   <meta property="og:locale:alternate" content="de_DE">
   <meta property="og:locale:alternate" content="fr_FR">
   <meta property="og:locale:alternate" content="fi_FI">
   <meta property="og:site_name" content="Oliva Energy">
-  <meta property="og:image" content="https://www.olivaenergy.nl/og-image.jpg">
-  <meta property="og:image:width" content="1584">
-  <meta property="og:image:height" content="396">
+  <meta property="og:image" content="https://www.olivaenergy.nl/og-social.jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
   <!-- Twitter / X -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" id="tw-title" content="Oliva Energy | Grip op energie, vandaag en voor de toekomst">
   <meta name="twitter:description" id="tw-desc" content="Onafhankelijk platform voor design, monitoring en sturing van energiesystemen.">
-  <meta name="twitter:image" content="https://www.olivaenergy.nl/og-image.jpg">
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-B9XW14P4K5"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-B9XW14P4K5');
-  </script>
+  <meta name="twitter:image" content="https://www.olivaenergy.nl/og-social.jpeg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
   <style>
-    :root {
-      --green-deep:   #14261C;
-      --green-mid:    #06752E;
-      --green-bright: #5d951a;
-      --green-light:  #edf5e1;
-      --green-subtle: #F4F6F4;
-      --navy:         #14261C;
-      --slate:        #4E5652;
-      --text:         #14261C;
-      --muted:        #4E5652;
-      --border:       #dde8d8;
-      --white:        #ffffff;
-      --off-white:    #F6F7F8;
-      --amber:        #c8842a;
-    }
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
     body {
@@ -156,6 +127,17 @@
       gap: 0.75rem;
       flex-shrink: 0;
     }
+    .nav-phone {
+      display: inline-flex; align-items: center; gap: 0.4rem;
+      color: var(--green-mid); text-decoration: none;
+      font-size: 0.875rem; font-weight: 700;
+      padding: 0.4rem 0.75rem; border-radius: 6px;
+      border: 1.5px solid var(--border);
+      transition: border-color .2s, background .2s;
+      white-space: nowrap; flex-shrink: 0;
+    }
+    .nav-phone:hover { border-color: var(--green-mid); background: var(--green-light); }
+    .nav-phone svg { width: 15px; height: 15px; stroke: var(--green-mid); fill: none; stroke-width: 2; flex-shrink: 0; }
     /* ── HERO ── */
     .hero {
       min-height: 100vh;
@@ -340,6 +322,9 @@
     .pillar h4 { font-size: 0.9rem; font-weight: 600; color: var(--green-deep); margin-bottom: 0.3rem; }
     .pillar p { font-size: 0.82rem; color: var(--muted); line-height: 1.5; }
     .about-visual {
+      display: flex; flex-direction: column; gap: 1.5rem;
+    }
+    .about-card-wrap {
       position: relative;
     }
     .about-card {
@@ -376,6 +361,10 @@
       border-radius: 10px;
       font-size: 0.8rem; font-weight: 600;
       box-shadow: 0 4px 16px rgba(200,132,42,0.3);
+    }
+    .float-badge--green {
+      background: var(--green-bright);
+      box-shadow: 0 4px 16px rgba(93,149,26,0.35);
     }
     /* ── VOOR WIE ── */
     .for-who { background: var(--white); }
@@ -433,7 +422,7 @@
     }
     .feature-list li:last-child { border-bottom: none; }
     .feature-list li::before {
-      content: '✓';
+      content: '\2713';
       color: var(--green-bright);
       font-weight: 700;
       font-size: 0.85rem;
@@ -693,6 +682,88 @@
     .footer-address-bar a { color: rgba(255,255,255,0.45); text-decoration: none; }
     .footer-address-bar a:hover { color: var(--green-bright); }
     .footer-address-bar .sep { opacity: 0.3; }
+    /* ── KENNISBANK ── */
+    .kb-section { background: var(--off-white); }
+    .kb-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      margin-top: 3rem;
+    }
+    .kb-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 0;
+      text-decoration: none;
+      color: inherit;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      transition: transform .2s, box-shadow .2s;
+    }
+    .kb-card:hover { transform: translateY(-3px); box-shadow: 0 10px 32px rgba(20,38,28,0.1); }
+    .kb-card-img { height: 160px; overflow: hidden; flex-shrink: 0; }
+    .kb-card-img img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .4s; }
+    .kb-card:hover .kb-card-img img { transform: scale(1.04); }
+    .kb-card-body { padding: 1.5rem; display: flex; flex-direction: column; gap: 0.75rem; flex: 1; }
+    .kb-cat {
+      display: inline-block;
+      font-size: 0.68rem; font-weight: 700; letter-spacing: 0.1em;
+      text-transform: uppercase; color: var(--green-mid);
+    }
+    .kb-title {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1rem; font-weight: 700;
+      color: var(--green-deep); line-height: 1.35;
+    }
+    .kb-excerpt { font-size: 0.875rem; color: var(--muted); line-height: 1.65; flex: 1; }
+    .kb-read {
+      display: inline-flex; align-items: center; gap: 0.3rem;
+      font-size: 0.82rem; font-weight: 700; color: var(--green-mid);
+      margin-top: 0.25rem;
+    }
+    .kb-read svg { width: 13px; height: 13px; stroke: currentColor; fill: none; stroke-width: 2.5; transition: transform .2s; }
+    .kb-card:hover .kb-read svg { transform: translateX(3px); }
+    .kb-footer { text-align: center; margin-top: 2.5rem; }
+    .kb-all-link {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      font-size: 0.9rem; font-weight: 700; color: var(--green-mid);
+      text-decoration: none; border: 2px solid var(--green-mid);
+      padding: 0.7rem 1.75rem; border-radius: 8px; transition: background .2s, color .2s;
+    }
+    .kb-all-link:hover { background: var(--green-mid); color: var(--white); }
+    .kb-all-link svg { width: 14px; height: 14px; stroke: currentColor; fill: none; stroke-width: 2.5; }
+    /* ── ONTZORGING ── */
+    .ontzorging { background: var(--green-mid); }
+    .ontzorging .section-eyebrow { color: rgba(255,255,255,0.75); }
+    .ontzorging .section-eyebrow::before { background: rgba(255,255,255,0.5); }
+    .ontzorging .section-title { color: var(--white); }
+    .ontzorging .section-lead { color: rgba(255,255,255,0.85); max-width: 680px; }
+    .ontzorging-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 3rem; }
+    .ontzorging-card { background: rgba(0,0,0,0.15); border: 1px solid rgba(255,255,255,0.15); border-radius: 14px; padding: 2rem; display: flex; flex-direction: column; gap: 1rem; }
+    .ontzorging-icon { width: 48px; height: 48px; background: rgba(255,255,255,0.15); border-radius: 10px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .ontzorging-icon svg { width: 24px; height: 24px; stroke: var(--white); fill: none; stroke-width: 1.75; }
+    .ontzorging-card h3 { font-family: 'Poppins', sans-serif; font-size: 1rem; font-weight: 700; color: var(--white); line-height: 1.3; }
+    .ontzorging-card p { font-size: 0.9rem; color: rgba(255,255,255,0.85); line-height: 1.7; flex: 1; }
+    .ontzorging-promise { margin-top: 2.5rem; background: var(--white); border-radius: 14px; padding: 2rem 2.5rem; text-align: center; }
+    .ontzorging-promise p { font-size: 1.1rem; color: var(--green-deep); line-height: 1.6; margin: 0; }
+    .ontzorging-promise strong { color: var(--green-mid); font-size: 1.15rem; }
+    /* ── HAMBURGER ── */
+    .hamburger { display: none; flex-direction: column; justify-content: center; gap: 5px; padding: 6px; background: none; border: none; cursor: pointer; z-index: 1001; flex-shrink: 0; }
+    .hamburger span { display: block; width: 22px; height: 2px; background: var(--green-deep); border-radius: 2px; transition: transform .25s, opacity .25s; }
+    .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .hamburger.open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+    .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+    /* ── CONTACT FORM ── */
+    .cta-form-wrap { margin-top: 2.5rem; max-width: 560px; margin-left: auto; margin-right: auto; }
+    .cta-form { display: flex; flex-direction: column; gap: 0.85rem; }
+    .cta-form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 0.85rem; }
+    .cta-input, .cta-textarea { padding: 0.8rem 1rem; border: 1.5px solid rgba(255,255,255,0.35); border-radius: 8px; background: rgba(255,255,255,0.12); color: var(--white); font-family: 'Lato', sans-serif; font-size: 0.95rem; width: 100%; box-sizing: border-box; transition: border-color .2s, background .2s; }
+    .cta-input::placeholder, .cta-textarea::placeholder { color: rgba(255,255,255,0.55); }
+    .cta-input:focus, .cta-textarea:focus { outline: none; border-color: rgba(255,255,255,0.75); background: rgba(255,255,255,0.18); }
+    .cta-textarea { resize: vertical; min-height: 96px; }
+    .cta-form-success { color: rgba(255,255,255,0.92); font-size: 1.05rem; padding: 1.5rem 0; }
     /* ── ANIMATIONS ── */
     @keyframes fadeUp {
       from { opacity: 0; transform: translateY(24px); }
@@ -711,22 +782,39 @@
       .hero-right { display: none; }
       .about-grid, .audience-grid, .divisions-grid { grid-template-columns: 1fr; }
       .why-grid { grid-template-columns: 1fr 1fr; }
+      .kb-grid { grid-template-columns: 1fr 1fr; }
       .process-steps { grid-template-columns: 1fr 1fr; }
       .process-steps::before { display: none; }
       nav .nav-links { display: none; }
+      nav .nav-links.open {
+        display: flex; flex-direction: column; gap: 0;
+        position: fixed; top: 64px; left: 0; right: 0;
+        background: var(--white); padding: 0.5rem 5vw 1rem;
+        box-shadow: 0 8px 32px rgba(20,38,28,0.15);
+        z-index: 1000;
+      }
+      nav .nav-links.open li { border-bottom: 1px solid var(--border); }
+      nav .nav-links.open li a { display: block; padding: 0.85rem 0; font-size: 1rem; color: var(--green-deep); }
+      .hamburger { display: flex; }
       nav .lang-switcher { margin-left: auto; flex-shrink: 0; }
       footer { grid-template-columns: 1fr; }
       .pillars { grid-template-columns: 1fr 1fr; }
+      .ontzorging-grid { grid-template-columns: 1fr 1fr; }
     }
     @media (max-width: 600px) {
       section { padding: 4rem 6vw; }
       .why-grid { grid-template-columns: 1fr; }
+      .kb-grid { grid-template-columns: 1fr; }
       .process-steps { grid-template-columns: 1fr; }
       .pillars { grid-template-columns: 1fr; }
       .hero-stats { flex-direction: column; gap: 0.75rem; }
       .nav-actions { gap: 0.4rem; }
       .nav-actions .nav-cta,
       .nav-actions .nav-portal { padding: 0.4rem 0.7rem; font-size: 0.75rem !important; }
+      .nav-phone-number { display: none; }
+      .nav-phone { padding: 0.4rem 0.5rem; }
+      .cta-form-row { grid-template-columns: 1fr; }
+      .ontzorging-grid { grid-template-columns: 1fr; }
     }
   </style>
   <link rel="icon" type="image/png" href="oliva-logo.png">
@@ -755,20 +843,24 @@
 </head>
 <body>
 
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TQMBKC68"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
 
 <!-- NAV -->
 <nav>
   <a href="#" class="nav-logo"><img src="oliva-logo.png" alt="Oliva Energy"></a>
   <ul class="nav-links">
     <li><a href="#over-oliva"><span data-i18n="nav.about">Over Oliva</span></a></li>
-    <li><a href="#voor-wie"><span data-i18n="nav.for_whom">Voor wie</span></a></li>
-    <li><a href="#afdelingen"><span data-i18n="nav.care_systems">Care & Systems</span></a></li>
+    <li><a href="voor-installateurs.html"><span data-i18n="nav.for_installers">Voor Installateurs</span></a></li>
+    <li><a href="voor-eindgebruikers.html"><span data-i18n="nav.for_endusers">Voor Eindgebruikers</span></a></li>
+    <li><a href="kennisbank.html"><span data-i18n="nav.articles">Kennisbank</span></a></li>
   </ul>
+  <button class="hamburger" id="nav-hamburger" onclick="toggleNav()" aria-label="Navigatie openen" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
   <div class="nav-actions">
+    <a href="tel:+31850050440" class="nav-phone">
+      <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.36 2 2 0 0 1 3.6 1.18h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.96a16 16 0 0 0 6.56 6.56l.85-.85a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      <span class="nav-phone-number">085 0050 440</span>
+    </a>
     <a href="javascript:void(0)" onclick="openContactMail()" class="nav-cta"><span data-i18n="nav.cta">Mail je vraag</span></a>
     <a href="https://portal.oliva.energy/login" target="_blank" class="nav-portal"><span data-i18n="nav.portal">Mijn Oliva Energy</span></a>
   </div>
@@ -786,13 +878,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <span class="hero-eyebrow animate"><span data-i18n="hero.eyebrow">Join the flexibility transition</span></span>
     <div class="hero-badges animate delay-1">
       <span class="hero-badge"><span data-i18n="hero.badge1">Voor installateurs</span></span>
-      <span class="hero-badge"><span data-i18n="hero.badge2">Voor organisaties</span></span>
+      <span class="hero-badge"><span data-i18n="hero.badge2">Voor eindgebruikers</span></span>
     </div>
     <h1 class="hero-title animate delay-2">
       <span data-i18n="hero.title">Grip op energie,<br>vandaag en voor de<br><em>toekomst</em></span>
     </h1>
     <p class="hero-sub animate delay-3">
-      <span data-i18n="hero.subtitle">Oliva Energy is het onafhankelijke platform voor design, monitoring en sturing van energiesystemen. Voor installateurs én voor organisaties waar energie een strategische factor is.</span>
+      <span data-i18n="hero.subtitle">Oliva Energy is het onafhankelijke platform voor design, monitoring en sturing van energiesystemen. Voor installateurs én voor eindgebruikers waar energie een strategische factor is.</span>
     </p>
     <div class="hero-actions animate delay-4">
       <a href="#afdelingen" class="btn-primary"><span data-i18n="hero.btn_primary">Ontdek onze oplossingen</span></a>
@@ -814,10 +906,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <span class="stat-num">100%</span>
         <span class="stat-label"><span data-i18n="hero.stat_independent">Onafhankelijk</span></span>
       </div>
-      <div class="stat-pill">
-        <span class="stat-num">6</span>
-        <span class="stat-label"><span data-i18n="hero.stat_countries">Landen actief</span></span>
-      </div>
+
     </div>
   </div>
 </section>
@@ -876,19 +965,38 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </div>
     <div class="about-visual">
-      <div class="float-badge"><span data-i18n="about.card_badge">Onafhankelijk platform</span></div>
-      <div class="about-card">
-        <p class="about-card-title">
-          <span data-i18n="about.card_title">Niet gebonden aan één leverancier of één hardwaremerk</span>
-        </p>
-        <p class="about-card-body">
-          <span data-i18n="about.card_body">Wij sturen vrijwel alle PLC's aan en werken samen met alle hardwarefabrikanten. Bij Oliva zit u niet vast aan één energieleverancier. Uw vrijheid, onze technologie.</span>
-        </p>
-        <div class="tag-row">
-          <span class="tag"><span data-i18n="about.tag1">PLC-onafhankelijk</span></span>
-          <span class="tag"><span data-i18n="about.tag2">Alle hardwaremerken</span></span>
-          <span class="tag"><span data-i18n="about.tag3">Vrije leverancierskeuze</span></span>
-          <span class="tag"><span data-i18n="about.tag4">Open platform</span></span>
+      <div class="about-card-wrap">
+        <div class="float-badge"><span data-i18n="about.card_badge">Onafhankelijk platform</span></div>
+        <div class="about-card">
+          <p class="about-card-title">
+            <span data-i18n="about.card_title">Niet gebonden aan één leverancier of één hardwaremerk</span>
+          </p>
+          <p class="about-card-body">
+            <span data-i18n="about.card_body">Wij sturen vrijwel alle PLC's aan en werken samen met alle hardwarefabrikanten. Bij Oliva zit u niet vast aan één energieleverancier. Uw vrijheid, onze technologie.</span>
+          </p>
+          <div class="tag-row">
+            <span class="tag"><span data-i18n="about.tag1">PLC-onafhankelijk</span></span>
+            <span class="tag"><span data-i18n="about.tag2">Alle hardwaremerken</span></span>
+            <span class="tag"><span data-i18n="about.tag3">Vrije leverancierskeuze</span></span>
+            <span class="tag"><span data-i18n="about.tag4">Open platform</span></span>
+          </div>
+        </div>
+      </div>
+      <div class="about-card-wrap">
+        <div class="float-badge float-badge--green"><span data-i18n="about.card2_badge">Gecertificeerde partners</span></div>
+        <div class="about-card">
+          <p class="about-card-title">
+            <span data-i18n="about.card2_title">Gecertificeerde installatiepartners klaar voor uw installatie</span>
+          </p>
+          <p class="about-card-body">
+            <span data-i18n="about.card2_body">Ons netwerk van gecertificeerde partners rijdt naar bestaande installaties voor onderhoud, optimalisaties en storingen. Snel ter plaatse, professioneel uitgevoerd, zonder dat u er zelf iets voor hoeft te regelen.</span>
+          </p>
+          <div class="tag-row">
+            <span class="tag"><span data-i18n="about.card2_tag1">Gecertificeerd netwerk</span></span>
+            <span class="tag"><span data-i18n="about.card2_tag2">Op locatie</span></span>
+            <span class="tag"><span data-i18n="about.card2_tag3">Snel inzetbaar</span></span>
+            <span class="tag"><span data-i18n="about.card2_tag4">NL & BE</span></span>
+          </div>
         </div>
       </div>
     </div>
@@ -898,7 +1006,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <section class="for-who" id="voor-wie">
   <div class="section-eyebrow"><span data-i18n="forwho.eyebrow">Voor wie</span></div>
   <h2 class="section-title"><span data-i18n="forwho.title">Twee typen klanten, één missie</span></h2>
-  <p class="section-lead"><span data-i18n="forwho.lead">Oliva werkt voor installateurs die hun verdienmodel willen uitbreiden, én voor organisaties waar energie een strategische factor is.</span></p>
+  <p class="section-lead"><span data-i18n="forwho.lead">Oliva werkt voor installateurs die hun verdienmodel willen uitbreiden, én voor eindgebruikers waar energie een strategische factor is.</span></p>
   <div class="audience-grid">
     <!-- INSTALLATEURS -->
     <div class="audience-card primary">
@@ -914,7 +1022,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <li><span data-i18n="forwho.inst_li2">Plug & play, binnen één dag operationeel</span></li>
           <li><span data-i18n="forwho.inst_li3">Standaard op te nemen in uw offerte</span></li>
         </ul>
-        <a href="#afdelingen" class="audience-link">
+        <a href="voor-installateurs.html" class="audience-link">
           <span data-i18n="forwho.inst_btn">Bekijk Oliva Care</span>
           <svg viewBox="0 0 24 24">
             <path d="M5 12h14M12 5l7 7-7 7"/>
@@ -926,7 +1034,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="audience-card">
       <div class="audience-card-header">
         <span class="audience-badge">Oliva Systems</span>
-        <h3 class="audience-title"><span data-i18n="forwho.org_title">Organisaties met complexe energievraagstukken</span></h3>
+        <h3 class="audience-title"><span data-i18n="forwho.org_title">Eindgebruikers</span></h3>
         <p class="audience-sub"><span data-i18n="forwho.org_sub">Industriële bedrijven, O&M-partijen en energiehub initiatieven waar energie strategisch is</span></p>
       </div>
       <div class="audience-card-body">
@@ -936,7 +1044,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <li><span data-i18n="forwho.org_li2">O&M-partijen met meerdere solarlocaties in beheer</span></li>
           <li><span data-i18n="forwho.org_li3">Organisaties die grip willen op lokale flexibiliteitsmarkten</span></li>
         </ul>
-        <a href="#afdelingen" class="audience-link">
+        <a href="voor-eindgebruikers.html" class="audience-link">
           <span data-i18n="forwho.org_btn">Bekijk Oliva Systems</span>
           <svg viewBox="0 0 24 24">
             <path d="M5 12h14M12 5l7 7-7 7"/>
@@ -944,6 +1052,38 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </a>
       </div>
     </div>
+  </div>
+</section>
+<!-- ONTZORGING -->
+<section class="ontzorging section-pad" id="ontzorging">
+  <div class="section-eyebrow"><span data-i18n="ontzorging.eyebrow">Onze belofte</span></div>
+  <h2 class="section-title"><span data-i18n="ontzorging.title">Volledige ontzorging: Ook voor bestaande installaties</span></h2>
+  <p class="section-lead"><span data-i18n="ontzorging.lead">Energie managen is complex. Wij nemen dat volledig van u over, zowel softwarematig als hardwarematig, zodat u kunt blijven doen waar u goed in bent.</span></p>
+  <div class="ontzorging-grid">
+    <div class="ontzorging-card">
+      <div class="ontzorging-icon">
+        <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+      </div>
+      <h3><span data-i18n="ontzorging.software_title">Platform & softwaresturing</span></h3>
+      <p><span data-i18n="ontzorging.software_desc">Real-time monitoring van alle energieassets. Actieve sturing op basis van marktsignalen, energieprijzen en netsignalen. Volledig geautomatiseerd, zonder handmatige ingrepen.</span></p>
+    </div>
+    <div class="ontzorging-card">
+      <div class="ontzorging-icon">
+        <svg viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+      </div>
+      <h3><span data-i18n="ontzorging.hardware_title">Hardware & installatie</span></h3>
+      <p><span data-i18n="ontzorging.hardware_desc">De Flexbox Plug & Play wordt standaard meegeleverd en is binnen één dag operationeel. Hardware-onafhankelijk: we werken met vrijwel alle PLC's, omvormers en merken, zonder vervanging van bestaande installaties.</span></p>
+    </div>
+    <div class="ontzorging-card">
+      <div class="ontzorging-icon">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="7" r="4"/><path d="M5.5 21a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 17 0 8.38 8.38 0 0 1-.9 3.8"/></svg>
+      </div>
+      <h3><span data-i18n="ontzorging.field_title">Gecertificeerde monteurs op locatie</span></h3>
+      <p><span data-i18n="ontzorging.field_desc">Wij beschikken over een netwerk van gecertificeerde installateurs die ad-hoc op locatie kunnen komen. Storingen worden snel en professioneel opgelost, zonder dat u zelf iets hoeft te regelen.</span></p>
+    </div>
+  </div>
+  <div class="ontzorging-promise">
+    <p><span data-i18n="ontzorging.tagline">Of u nu installateur, energieleverancier of eindgebruiker bent:</span><br><strong><span data-i18n="ontzorging.tagline_strong">U blijft doen waar u goed in bent. Wij doen de rest.</span></strong></p>
   </div>
 </section>
 <!-- TWO DIVISIONS -->
@@ -987,7 +1127,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
           </li>
         </ul>
-        <a href="#contact" class="division-cta">
+        <a href="voor-installateurs.html" class="division-cta">
           <span data-i18n="div.care_btn">Meer over Care</span>
           <svg viewBox="0 0 24 24">
             <path d="M5 12h14M12 5l7 7-7 7"/>
@@ -1000,10 +1140,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="division-header">
         <span class="division-label">Afdeling 2</span>
         <h3 class="division-name">Oliva Systems</h3>
-        <p class="division-tagline"><span data-i18n="div.sys_tagline">Voor organisaties waar energie een strategische factor is. Maatwerk integraties en complexe energy hub oplossingen.</span></p>
+        <p class="division-tagline"><span data-i18n="div.sys_tagline">Voor eindgebruikers waar energie een strategische factor is. Maatwerk integraties en complexe energy hub oplossingen.</span></p>
       </div>
       <div class="division-body">
-        <p class="division-audience"><span data-i18n="div.sys_audience">Voor organisaties met complexe energievraagstukken</span></p>
+        <p class="division-audience"><span data-i18n="div.sys_audience">Voor eindgebruikers</span></p>
         <ul class="product-list">
           <li class="product-item">
             <div class="product-dot">
@@ -1050,7 +1190,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </a>
           </li>
         </ul>
-        <a href="#contact" class="division-cta">
+        <a href="voor-eindgebruikers.html" class="division-cta">
           <span data-i18n="div.sys_btn">Meer over Systems</span>
           <svg viewBox="0 0 24 24">
             <path d="M5 12h14M12 5l7 7-7 7"/>
@@ -1125,7 +1265,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- BETONFABRIEKEN -->
     <div class="sector-card">
       <div class="sector-img sector-img--beton" style="background:none;padding:0;">
-        <img src="sector-betonfabriek.jpg" alt="Betonfabriek productievloer" style="width:100%;height:100%;object-fit:cover;object-position:center 45%;display:block;" />
+        <img src="sector-betonfabriek.jpg" alt="Betonfabriek productievloer" loading="lazy" style="width:100%;height:100%;object-fit:cover;object-position:center 45%;display:block;" />
       </div>
       <div class="sector-body">
         <p class="sector-title">
@@ -1139,7 +1279,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- BEDRIJVENTERREINEN -->
     <div class="sector-card">
       <div class="sector-img sector-img--terrein" style="background:none;padding:0;">
-        <img src="sector-bedrijventerrein.jpg" alt="Bedrijventerrein Zierikzee" style="width:100%;height:100%;object-fit:cover;object-position:center 50%;display:block;" />
+        <img src="sector-bedrijventerrein.jpg" alt="Bedrijventerrein Zierikzee" loading="lazy" style="width:100%;height:100%;object-fit:cover;object-position:center 50%;display:block;" />
       </div>
       <div class="sector-body">
         <p class="sector-title">
@@ -1153,7 +1293,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- GROEN, GROND EN INFRA -->
     <div class="sector-card">
       <div class="sector-img sector-img--infra" style="background:none;padding:0;">
-        <img src="sector-groen-grond-infra.jpg" alt="Groen, grond en infra" style="width:100%;height:100%;object-fit:cover;object-position:center 40%;display:block;" />
+        <img src="sector-groen-grond-infra.jpg" alt="Groen, grond en infra" loading="lazy" style="width:100%;height:100%;object-fit:cover;object-position:center 40%;display:block;" />
       </div>
       <div class="sector-body">
         <p class="sector-title">
@@ -1167,7 +1307,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- SOLAR O&M -->
     <div class="sector-card">
       <div class="sector-img sector-img--solar" style="background:none;padding:0;">
-        <img src="sector-solar-park.jpg" alt="Solar park Zeelandbrug" style="width:100%;height:100%;object-fit:cover;object-position:center 40%;display:block;" />
+        <img src="sector-solar-park.jpg" alt="Solar park Zeelandbrug" loading="lazy" style="width:100%;height:100%;object-fit:cover;object-position:center 40%;display:block;" />
       </div>
       <div class="sector-body">
         <p class="sector-title">
@@ -1272,8 +1412,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
-    align-items: center;
-    margin-top: 3rem;
+    align-items: start;
+    margin-top: 2rem;
   }
   .origin-story p {
     color: var(--muted); font-size: 1rem; line-height: 1.75;
@@ -1281,42 +1421,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   }
   .origin-story strong { color: var(--green-deep); font-weight: 600; }
   .origin-quote {
-    background: var(--green-deep);
-    color: var(--white);
+    background: var(--green-light);
+    color: var(--green-deep);
     border-radius: 14px;
-    padding: 2rem 2.25rem;
+    border-left: 4px solid var(--green-mid);
+    padding: 1.5rem 2rem;
     font-size: 1.05rem;
     line-height: 1.7;
-    font-style: italic;
-    position: relative;
-    margin-top: 1.5rem;
+    font-weight: 500;
+    margin-top: 2rem;
   }
-  .origin-quote::before {
-    content: '\201C';
-    font-size: 3rem;
-    font-style: normal;
-    color: var(--green-bright);
-    position: absolute;
-    top: 0.5rem; left: 1.25rem;
-    line-height: 1;
-  }
-  .origin-quote::after {
-    content: '\201D';
-    font-size: 3rem;
-    font-style: normal;
-    color: var(--green-bright);
-    position: absolute;
-    bottom: 0.5rem; right: 1.25rem;
-    line-height: 1;
-  }
-  .origin-quote p { padding-top: 1.25rem; margin: 0; }
-  .origin-quote-author {
-    font-style: normal;
-    font-size: 0.85rem;
-    color: rgba(255,255,255,0.6);
-    margin-top: 1rem;
-    display: block;
-  }
+  .origin-quote p { margin: 0; }
   .active-team-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -1373,13 +1488,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <p><span data-i18n="origin.p1">Het idee voor Oliva Energy ontstond toen een aantal mensen uit de energie- en installatiesector zagen dat de energiemarkt fundamenteel zou gaan veranderen. Bestaande technische installaties en energiesystemen bij bedrijven zijn gebouwd voor een systeem van <strong>centrale opwekking en distributie</strong>. <strong>Dat systeem verdwijnt.</strong></span></p>
       <p><span data-i18n="origin.p2">We zitten midden in een energietransitie waarin het produceren van energie verschuift van <strong>centraal naar decentraal</strong>. Dit zal alleen maar toenemen. De meeste installaties zijn daar niet op ingericht.</span></p>
       <p><span data-i18n="origin.p3">In 2023 richtten zij <strong>Oliva Energy</strong> op. Oliva helpt bedrijven de juiste keuzes te maken in deze transitie, maakt energiesystemen flexibeler en geeft toegang tot <strong>lokale energiemarkten</strong> waar door die flexibiliteit <strong>nieuwe verdienmodellen</strong> ontstaan.</span></p>
-    </div>
-    <div>
-      <img src="team-oprichters.jpeg" alt="De oprichters van Oliva Energy" style="width:100%;border-radius:14px;margin-bottom:1.5rem;box-shadow:0 4px 20px rgba(20,38,28,0.12);">
       <div class="origin-quote">
         <p><span data-i18n="origin.quote">Het energiesysteem verandert. Bedrijven die daar nu op inspelen, creëren de verdienmodellen van morgen.</span></p>
-        <span class="origin-quote-author">&mdash; Ronald Huisman, <span data-i18n="origin.quote_author">oprichter Oliva Energy</span></span>
       </div>
+    </div>
+    <div>
+      <img src="Team_oprichters.jpg" alt="De oprichters van Oliva Energy" loading="lazy" style="width:100%;border-radius:14px;box-shadow:0 4px 20px rgba(20,38,28,0.12);">
     </div>
   </div>
   <div style="margin-top:5rem;">
@@ -1388,28 +1502,28 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="active-team-grid">
       <div class="active-team-card">
         <div class="active-team-avatar">
-          <img src="team-luke.png" alt="Luke Shore">
+          <img src="team-luke.jpg" alt="Luke Shore" loading="lazy">
         </div>
         <p class="active-team-name">Luke Shore</p>
         <p class="active-team-role">Energy Management Specialist</p>
       </div>
       <div class="active-team-card">
         <div class="active-team-avatar">
-          <img src="team-michiel.jpg" alt="Michiel Aandewiel">
+          <img src="team-michiel.jpg" alt="Michiel Aandewiel" loading="lazy">
         </div>
         <p class="active-team-name">Michiel Aandewiel</p>
         <p class="active-team-role">Commercieel</p>
       </div>
       <div class="active-team-card">
         <div class="active-team-avatar">
-          <img src="team-slavy.png" alt="Slavy Traykov">
+          <img src="team-slavy.jpg" alt="Slavy Traykov" loading="lazy">
         </div>
         <p class="active-team-name">Slavy Traykov</p>
         <p class="active-team-role">Energy Management Specialist</p>
       </div>
       <div class="active-team-card">
         <div class="active-team-avatar">
-          <img src="team-shaw.jpg" alt="T. E. Shaw" style="object-position: center 30%;">
+          <img src="team-shaw.jpg" alt="T. E. Shaw" loading="lazy" style="object-position: center 30%;">
         </div>
         <p class="active-team-name">T. E. Shaw</p>
         <p class="active-team-role">Platform</p>
@@ -1417,15 +1531,107 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 </section>
+<!-- KENNISBANK -->
+<section class="kb-section section-pad" id="kennisbank">
+  <div class="section-eyebrow"><span data-i18n="kb.eyebrow">Kennisbank</span></div>
+  <h2 class="section-title"><span data-i18n="kb.title">Kennis over energie: voor bedrijven die vooruitdenken</span></h2>
+  <p class="section-lead"><span data-i18n="kb.lead">Artikelen geschreven door mensen die dagelijks in de praktijk werken.</span></p>
+  <div class="kb-grid">
+
+    <a href="artikel-datacenters-netcongestie.html" class="kb-card">
+      <div class="kb-card-img"><img src="artikel_afbeelding_1.jpg" alt="Datacenters en netcongestie" loading="lazy"></div>
+      <div class="kb-card-body">
+        <span class="kb-cat">Netcongestie</span>
+        <p class="kb-title">Zijn datacenters echt het probleem? Wat het netcongestiedebat mist</p>
+        <p class="kb-excerpt">Datacenters krijgen de schuld van het overvolle stroomnet. Maar het piekprobleem zit elders &mdash; en de oplossing ook.</p>
+        <span class="kb-read">Lees meer <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+      </div>
+    </a>
+
+    <a href="artikel-stedelijke-groei-energie.html" class="kb-card">
+      <div class="kb-card-img"><img src="artikel_afbeelding_2.jpg" alt="Stedelijke uitbreiding en netcongestie" loading="lazy"></div>
+      <div class="kb-card-body">
+        <span class="kb-cat">Netcongestie</span>
+        <p class="kb-title">Steden groeien, het stroomnet niet: de energieparadox van stedelijke uitbreiding</p>
+        <p class="kb-excerpt">Nieuwe wijken en bedrijventerreinen stuiten steeds vaker op onvoldoende netcapaciteit. Hoe lossen ontwikkelaars dit op?</p>
+        <span class="kb-read">Lees meer <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+      </div>
+    </a>
+
+    <a href="artikel-netcongestie.html" class="kb-card">
+      <div class="kb-card-img"><img src="artikel_afbeelding_3.jpg" alt="Netcongestie bij bedrijven" loading="lazy"></div>
+      <div class="kb-card-body">
+        <span class="kb-cat">Netcongestie</span>
+        <p class="kb-title">Netcongestie: wat is het en hoe lossen bedrijven het op?</p>
+        <p class="kb-excerpt">Het stroomnet zit vol. Duizenden bedrijven wachten op een zwaardere aansluiting. Er zijn alternatieven die bedrijven n&uacute; al inzetten.</p>
+        <span class="kb-read">Lees meer <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+      </div>
+    </a>
+
+    <a href="artikel-energy-hub.html" class="kb-card">
+      <div class="kb-card-img"><img src="artikel_afbeelding_4.jpg" alt="Energy Hub energiebeheer" loading="lazy"></div>
+      <div class="kb-card-body">
+        <span class="kb-cat">Energy Hubs</span>
+        <p class="kb-title">Wat is een Energy Hub? De sleutel tot slim energiebeheer op bedrijventerreinen</p>
+        <p class="kb-excerpt">Een Energy Hub koppelt meerdere energieassets op terreinniveau en lost netcongestie op zonder te wachten op de netbeheerder.</p>
+        <span class="kb-read">Lees meer <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+      </div>
+    </a>
+
+    <a href="artikel-energieflexibiliteit.html" class="kb-card">
+      <div class="kb-card-img"><img src="artikel_afbeelding_5.jpg" alt="Energieflexibiliteit als verdienmodel" loading="lazy"></div>
+      <div class="kb-card-body">
+        <span class="kb-cat">Flexibiliteit</span>
+        <p class="kb-title">Energieflexibiliteit: van bijproduct naar nieuw verdienmodel</p>
+        <p class="kb-excerpt">De flexibiliteit in uw solar, batterij of productieproces kan worden omgezet in directe euro&rsquo;s via energiemarkten.</p>
+        <span class="kb-read">Lees meer <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+      </div>
+    </a>
+
+    <a href="artikel-recurring-omzet.html" class="kb-card">
+      <div class="kb-card-img"><img src="artikel_afbeelding_6.jpg" alt="Energiemonitoring als dienst" loading="lazy"></div>
+      <div class="kb-card-body">
+        <span class="kb-cat">Installateurs</span>
+        <p class="kb-title">Recurring omzet voor installateurs: zo werkt energiemonitoring als dienst</p>
+        <p class="kb-excerpt">Installateurs die energiemonitoring aanbieden als doorlopende dienst bouwen stabiele maandelijkse inkomsten op bestaande installaties.</p>
+        <span class="kb-read">Lees meer <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+      </div>
+    </a>
+
+  </div>
+  <div class="kb-footer">
+    <a href="kennisbank.html" class="kb-all-link" data-i18n-href="kennisbank.html">
+      <span data-i18n="kb.all">Bekijk alle artikelen in de kennisbank</span>
+      <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </a>
+  </div>
+</section>
+<!-- FAQ -->
 <!-- CTA -->
 <section class="cta-section" id="contact">
   <div class="section-eyebrow" style="color:rgba(255,255,255,0.6);justify-content:center;"><span data-i18n="cta.eyebrow">Aan de slag</span></div>
   <h2 class="section-title"><span data-i18n="cta.title">Klaar om te starten?</span></h2>
-  <p><span data-i18n="cta.subtitle">Of u nu installateur bent, of een organisatie met een complex energievraagstuk: Oliva helpt u verder.</span></p>
+  <p><span data-i18n="cta.subtitle">Of u nu installateur of eindgebruiker bent met een complex energievraagstuk: Oliva helpt u verder.</span></p>
   <div class="cta-group">
     <button class="btn-white" onclick="openContactMail()"><span data-i18n="cta.btn_email">Neem per mail contact op</span></button>
     <span style="color:rgba(255,255,255,0.7);font-size:0.95rem;display:flex;align-items:center;"><span data-i18n="cta.or">of</span></span>
     <a href="tel:+31850050440" class="btn-outline-white"><span data-i18n="cta.btn_call">Bel: 085 0050 440</span></a>
+  </div>
+  <div class="cta-form-wrap">
+    <form action="https://api.web3forms.com/submit" method="POST" class="cta-form" id="contact-form">
+      <input type="hidden" name="access_key" value="70f0cbd0-8868-4a9f-b497-788c19e12a52">
+      <input type="hidden" name="subject" value="Nieuw bericht via contactformulier Oliva Energy">
+      <input type="checkbox" name="botcheck" style="display:none;" tabindex="-1" autocomplete="off">
+      <div class="cta-form-row">
+        <input type="text" name="naam" placeholder="Uw naam" required class="cta-input">
+        <input type="email" name="email" placeholder="Uw e-mailadres" required class="cta-input">
+      </div>
+      <textarea name="bericht" placeholder="Uw vraag of opmerking" rows="4" required class="cta-textarea"></textarea>
+      <button type="submit" class="btn-white" style="align-self:flex-start;">Verstuur bericht</button>
+    </form>
+    <div class="cta-form-success" id="form-success" style="display:none;">
+      <p>&#10003; Bedankt! We nemen binnen één werkdag contact met u op.</p>
+    </div>
   </div>
 </section>
 <!-- FOOTER -->
@@ -1445,15 +1651,54 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <span class="sep">|</span>
     <span>BTW NL860749058B01</span>
     <span class="sep">|</span>
+    <a href="privacy.html">Privacybeleid</a>
+    <span class="sep">|</span>
     <span>Copyright &copy; 2025 Oliva Energy</span>
   </div>
 </footer>
-<script src="lang/nl.js"></script>
-<script src="lang/en.js"></script>
-<script src="lang/de.js"></script>
-<script src="lang/fr.js"></script>
-<script src="lang/fi.js"></script>
 <script>
+  function toggleNav() {
+    var links = document.querySelector('nav .nav-links');
+    var btn = document.getElementById('nav-hamburger');
+    var open = links.classList.toggle('open');
+    btn.classList.toggle('open', open);
+    btn.setAttribute('aria-expanded', String(open));
+  }
+  document.addEventListener('click', function(e) {
+    if (!e.target.closest('nav')) {
+      var links = document.querySelector('nav .nav-links');
+      var btn = document.getElementById('nav-hamburger');
+      if (links && links.classList.contains('open')) {
+        links.classList.remove('open');
+        btn.classList.remove('open');
+        btn.setAttribute('aria-expanded', 'false');
+      }
+    }
+  });
+
+  var cf = document.getElementById('contact-form');
+  if (cf) {
+    cf.addEventListener('submit', function(e) {
+      e.preventDefault();
+      var formData = new FormData(cf);
+      var payload = JSON.stringify(Object.fromEntries(formData));
+      fetch(cf.action, {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json', 'Accept': 'application/json'},
+        body: payload
+      }).then(function(r) { return r.json(); }).then(function(json) {
+        if (json.success) {
+          cf.style.display = 'none';
+          document.getElementById('form-success').style.display = 'block';
+        } else {
+          alert('Er ging iets mis bij het versturen. Probeer het later opnieuw of mail ons direct.');
+        }
+      }).catch(function() {
+        alert('Er ging iets mis bij het versturen. Probeer het later opnieuw of mail ons direct.');
+      });
+    });
+  }
+
   let currentLang = 'nl';
 
   function openContactMail() {
@@ -1467,17 +1712,35 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     window.location.href = 'mailto:michiel.aandewiel@olivaenergy.nl?subject=' + encodeURIComponent(subjects[currentLang]);
   }
 
+  var loadedLangScripts = {};
+  function loadLangScript(lang, callback) {
+    if (window.i18n && window.i18n[lang]) { callback(); return; }
+    var pending = loadedLangScripts[lang];
+    if (pending) { pending.push(callback); return; }
+    loadedLangScripts[lang] = [callback];
+    var s = document.createElement('script');
+    s.src = 'lang/' + lang + '.js';
+    s.onload = function() {
+      loadedLangScripts[lang].forEach(function(cb) { cb(); });
+    };
+    document.head.appendChild(s);
+  }
+
   function setLang(lang) {
+    loadLangScript(lang, function() { applyLang(lang); });
+  }
+
+  function applyLang(lang) {
     currentLang = lang;
     document.documentElement.lang = lang;
     var titles = {nl:'Oliva Energy: Platform voor energiebeheer', en:'Oliva Energy: Energy Management Platform', de:'Oliva Energy: Energiemanagement-Plattform', fr:'Oliva Energy: Plateforme de gestion d\'énergie', fi:'Oliva Energy: Energianhallintaalusta'};
     document.title = titles[lang] || titles.nl;
     var descs = {
-      nl:'Oliva Energy | onafhankelijk platform voor design, monitoring en sturing van energiesystemen. Voor installateurs en organisaties met complexe energievraagstukken.',
-      en:'Oliva Energy | independent platform for the design, monitoring and control of energy systems. For installers and organisations with complex energy challenges.',
-      de:'Oliva Energy | unabhängige Plattform für Design, Monitoring und Steuerung von Energiesystemen. Für Installateure und Organisationen mit komplexen Energiefragen.',
-      fr:'Oliva Energy | plateforme indépendante pour la conception, la surveillance et le pilotage des systèmes énergétiques. Pour les installateurs et les organisations.',
-      fi:'Oliva Energy | riippumaton alusta energiajärjestelmien suunnitteluun, valvontaan ja ohjaukseen. Asentajille ja organisaatioille.'
+      nl:'Oliva Energy | onafhankelijk platform voor design, monitoring en sturing van energiesystemen. Voor installateurs en eindgebruikers.',
+      en:'Oliva Energy | independent platform for the design, monitoring and control of energy systems. For installers and end users.',
+      de:'Oliva Energy | unabhängige Plattform für Design, Monitoring und Steuerung von Energiesystemen. Für Installateure und Endnutzer.',
+      fr:'Oliva Energy | plateforme indépendante pour la conception, la surveillance et le pilotage des systèmes énergétiques. Pour les installateurs et les utilisateurs finaux.',
+      fi:'Oliva Energy | riippumaton alusta energiajärjestelmien suunnitteluun, valvontaan ja ohjaukseen. Asentajille ja loppukäyttäjille.'
     };
     var ogTitles = {
       nl:'Oliva Energy | Grip op energie, vandaag en voor de toekomst',

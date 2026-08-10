@@ -7,7 +7,6 @@
   <meta name="robots" content="noindex, follow">
   <title>404 - Pagina niet gevonden | Oliva Energy</title>
   <link rel="canonical" href="https://www.olivaenergy.nl/">
-  <title>Oliva Energy: Platform voor energiebeheer</title>
   <!-- Open Graph / LinkedIn -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.olivaenergy.nl/">
@@ -19,43 +18,21 @@
   <meta property="og:locale:alternate" content="fr_FR">
   <meta property="og:locale:alternate" content="fi_FI">
   <meta property="og:site_name" content="Oliva Energy">
-  <meta property="og:image" content="https://www.olivaenergy.nl/og-image.jpg">
+  <meta property="og:image" content="https://www.olivaenergy.nl/og-social.jpeg">
   <meta property="og:image:width" content="1584">
   <meta property="og:image:height" content="396">
   <!-- Twitter / X -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" id="tw-title" content="Oliva Energy | Grip op energie, vandaag en voor de toekomst">
   <meta name="twitter:description" id="tw-desc" content="Onafhankelijk platform voor design, monitoring en sturing van energiesystemen.">
-  <meta name="twitter:image" content="https://www.olivaenergy.nl/og-image.jpg">
+  <meta name="twitter:image" content="https://www.olivaenergy.nl/og-social.jpeg">
 
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-B9XW14P4K5"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-B9XW14P4K5');
-  </script>
-
+  <script src="cookie-consent.js" defer></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
   <style>
-    :root {
-      --green-deep:   #14261C;
-      --green-mid:    #06752E;
-      --green-bright: #5d951a;
-      --green-light:  #edf5e1;
-      --green-subtle: #F4F6F4;
-      --navy:         #14261C;
-      --slate:        #4E5652;
-      --text:         #14261C;
-      --muted:        #4E5652;
-      --border:       #dde8d8;
-      --white:        #ffffff;
-      --off-white:    #F6F7F8;
-      --amber:        #c8842a;
-    }
-
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     html { scroll-behavior: smooth; }
@@ -219,16 +196,28 @@
     <button class="lang-btn" id="btn-fi" onclick="setLang('fi')">FI</button>
   </div>
 </section>
-<script src="lang/nl.js"></script>
-<script src="lang/en.js"></script>
-<script src="lang/de.js"></script>
-<script src="lang/fr.js"></script>
-<script src="lang/fi.js"></script>
-
 <script>
   let currentLang = 'nl';
 
+  var loadedLangScripts = {};
+  function loadLangScript(lang, callback) {
+    if (window.i18n && window.i18n[lang]) { callback(); return; }
+    var pending = loadedLangScripts[lang];
+    if (pending) { pending.push(callback); return; }
+    loadedLangScripts[lang] = [callback];
+    var s = document.createElement('script');
+    s.src = 'lang/' + lang + '.js';
+    s.onload = function() {
+      loadedLangScripts[lang].forEach(function(cb) { cb(); });
+    };
+    document.head.appendChild(s);
+  }
+
   function setLang(lang) {
+    loadLangScript(lang, function() { applyLang(lang); });
+  }
+
+  function applyLang(lang) {
     currentLang = lang;
     document.documentElement.lang = lang;
 
