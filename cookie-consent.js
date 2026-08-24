@@ -1,6 +1,18 @@
 (function () {
   var KEY = 'oliva_cookie_consent';
 
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { window.dataLayer.push(arguments); }
+
+  function setDefaultConsent(granted) {
+    gtag('consent', 'default', {
+      'analytics_storage': granted ? 'granted' : 'denied',
+      'ad_storage': 'denied',
+      'ad_user_data': 'denied',
+      'ad_personalization': 'denied'
+    });
+  }
+
   function loadTracking() {
     (function (w, d, s, l, i) {
       w[l] = w[l] || [];
@@ -32,7 +44,8 @@
     banner.id = 'oliva-cookie';
     banner.innerHTML =
       '<div class="oliva-cookie-inner">' +
-      '<p>Wij gebruiken analytische cookies om bezoekersgedrag te meten en de website te verbeteren. ' +
+      '<p>Met analytische cookies zien we welke informatie installateurs en eindgebruikers het meest helpt, ' +
+      'zodat we de site daarop kunnen verbeteren. Uw gegevens worden geanonimiseerd verwerkt. ' +
       'Lees ons <a href="privacy.html">privacybeleid</a> voor meer informatie.</p>' +
       '<div class="oliva-cookie-btns">' +
       '<button class="oliva-btn-accept">Accepteer cookies</button>' +
@@ -43,7 +56,7 @@
     banner.querySelector('.oliva-btn-accept').addEventListener('click', function () {
       localStorage.setItem(KEY, 'accepted');
       banner.remove();
-      loadTracking();
+      gtag('consent', 'update', { 'analytics_storage': 'granted' });
     });
     banner.querySelector('.oliva-btn-decline').addEventListener('click', function () {
       localStorage.setItem(KEY, 'declined');
@@ -52,9 +65,10 @@
   }
 
   var consent = localStorage.getItem(KEY);
-  if (consent === 'accepted') {
-    loadTracking();
-  } else if (!consent) {
+  setDefaultConsent(consent === 'accepted');
+  loadTracking();
+
+  if (!consent) {
     if (document.readyState === 'loading') {
       document.addEventListener('DOMContentLoaded', showBanner);
     } else {

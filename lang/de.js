@@ -109,6 +109,8 @@ window.i18n.de = {
   'origin.quote': 'Das Energiesystem ver&auml;ndert sich. Unternehmen, die jetzt darauf reagieren, schaffen die Gesch&auml;ftsmodelle von morgen.',
   'origin.quote_author': 'Gr&uuml;nder Oliva Energy',
   'origin.title': 'Wie Oliva Energy entstand',
+  'sectors.assetmanagers_desc': 'Netzengpässe lösen und Immobilien zukunftssicher machen. Für Asset Manager und Immobilienverwalter mit einem wachsenden Portfolio.',
+  'sectors.assetmanagers_title': 'Asset Manager',
   'sectors.eyebrow': 'Branchen',
   'sectors.factories_desc': 'Energiesteuerung in Umgebungen mit hoher, kontinuierlicher Leistung ist unsere Spezialität. Wir arbeiten mit führenden Unternehmen der Zementbranche zusammen.',
   'sectors.factories_title': '(Beton) fabriken',

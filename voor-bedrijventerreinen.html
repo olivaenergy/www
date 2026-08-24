@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Oliva Systems coördineert en stuurt energie op bedrijventerreinen: minder netcongestie, lokale energie-uitwisseling tussen bedrijven en toegang tot flexibiliteitsmarkten.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.olivaenergy.nl/voor-bedrijventerreinen.html">
+  <title>Oliva Systems voor bedrijventerreinen | Energie Hub per terrein</title>
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.olivaenergy.nl/voor-bedrijventerreinen.html">
+  <meta property="og:title" content="Oliva Systems | Energiesturing voor bedrijventerreinen">
+  <meta property="og:description" content="Van netcongestie tot lokale energie-uitwisseling tussen bedrijven: Oliva Systems coördineert en stuurt alle energieassets op uw terrein.">
+  <meta property="og:locale" content="nl_NL">
+  <meta property="og:site_name" content="Oliva Energy">
+  <meta property="og:image" content="https://www.olivaenergy.nl/og-social.jpeg">
+
+  <script src="cookie-consent.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="oliva-logo.png">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Oliva Systems voor bedrijventerreinen",
+    "description": "Van netcongestie tot lokale energie-uitwisseling tussen bedrijven: Oliva Systems coördineert en stuurt alle energieassets op uw terrein.",
+    "url": "https://www.olivaenergy.nl/voor-bedrijventerreinen.html",
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.olivaenergy.nl/"},
+        {"@type": "ListItem", "position": 2, "name": "Voor bedrijventerreinen", "item": "https://www.olivaenergy.nl/voor-bedrijventerreinen.html"}
+      ]
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Hoe organiseren we dit met meerdere bedrijven op het terrein?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Oliva richt de coördinatie in via een Energy Hub: één centraal systeem dat de assets van alle deelnemende bedrijven aanstuurt. Wij begeleiden ook de organisatorische kant, inclusief afspraken tussen deelnemers."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wie is contractpartij: het terrein of de individuele bedrijven?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Dat is afhankelijk van hoe het terrein is georganiseerd. Vaak is dat een parkmanagement- of terreinvereniging, soms de individuele bedrijven zelf. We bespreken de beste opzet in het eerste gesprek."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kan een deel van het terrein starten, en de rest later aansluiten?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja. Een Energy Hub kan groeien met een beperkt aantal deelnemers starten en later uitbreiden. Niet elk bedrijf hoeft vanaf dag één mee te doen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Lost een Energy Hub echt de wachtlijst voor een nieuwe aansluiting op?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Een Energy Hub is ontworpen om optimaal gebruik te maken van de bestaande aansluiting van het terrein. Door slim te sturen en lokaal uit te wisselen, lost Oliva het congestieprobleem vaak op zonder dat een zwaardere aansluiting nodig is."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wat als niet alle bedrijven op het terrein mee willen doen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Geen probleem. Een Energy Hub werkt ook met een deel van de bedrijven op een terrein. Deelname is niet verplicht voor de bedrijven die niet mee willen doen."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Lato', sans-serif; font-weight: 400; color: var(--text); background: var(--white); overflow-x: hidden; line-height: 1.6; }
+
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 5vw; height: 72px;
+      background: rgba(255,255,255,0.95); backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border); gap: 1rem;
+    }
+    .nav-logo img { height: 44px; width: auto; display: block; }
+    .nav-back { display: inline-flex; align-items: center; gap: 0.4rem; color: var(--muted); text-decoration: none; font-size: 0.88rem; font-weight: 500; transition: color .2s; }
+    .nav-back:hover { color: var(--green-bright); }
+    .nav-back svg { width: 16px; height: 16px; stroke: currentColor; fill: none; stroke-width: 2; }
+    .nav-cta { background: var(--green-mid); color: var(--white); padding: 0.5rem 1.25rem; border-radius: 6px; font-size: 0.875rem; font-weight: 600; text-decoration: none; display: inline-block; transition: background .2s; }
+    .nav-cta:hover { background: var(--green-deep); }
+    .nav-phone {
+      display: inline-flex; align-items: center; gap: 0.4rem;
+      color: var(--green-mid); text-decoration: none;
+      font-size: 0.875rem; font-weight: 700;
+      padding: 0.4rem 0.75rem; border-radius: 6px;
+      border: 1.5px solid var(--border);
+      transition: border-color .2s, background .2s;
+      white-space: nowrap; flex-shrink: 0;
+    }
+    .nav-phone:hover { border-color: var(--green-mid); background: var(--green-light); }
+    .nav-phone svg { width: 15px; height: 15px; stroke: var(--green-mid); fill: none; stroke-width: 2; flex-shrink: 0; }
+    .nav-portal { color: var(--green-mid); border: 1.5px solid var(--green-mid); padding: 0.45rem 1rem; border-radius: 6px; font-size: 0.875rem; font-weight: 600; text-decoration: none; transition: background .2s, color .2s; white-space: nowrap; }
+    .nav-portal:hover { background: var(--green-mid); color: var(--white); }
+    .nav-actions { display: flex; align-items: center; gap: 0.75rem; flex-shrink: 0; }
+    @media (max-width: 600px) {
+      .nav-phone-number { display: none; }
+      .nav-phone { padding: 0.4rem 0.5rem; }
+      .nav-portal { display: none; }
+    }
+
+    section { padding: 6rem 8vw; }
+    .section-eyebrow { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--green-bright); margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.5rem; }
+    .section-eyebrow::before { content: ''; width: 20px; height: 2px; background: var(--green-bright); }
+    .section-title { font-family: 'Poppins', sans-serif; font-size: clamp(1.7rem, 2.8vw, 2.4rem); color: var(--green-deep); line-height: 1.2; letter-spacing: -0.01em; font-weight: 700; margin-bottom: 1rem; }
+    .section-lead { font-size: 1.05rem; color: var(--muted); line-height: 1.7; max-width: 600px; }
+
+    /* HERO */
+    .hero { background: linear-gradient(135deg, var(--green-deep) 0%, #2d5a3d 100%); color: var(--white); padding: 12rem 8vw 8rem; }
+    .hero-inner { max-width: 780px; }
+    .hero-label { display: inline-block; background: rgba(143,203,90,0.15); border: 1px solid rgba(143,203,90,0.4); color: #8fcb5a; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.3rem 0.9rem; border-radius: 20px; margin-bottom: 1.5rem; }
+    .hero-title { font-family: 'Poppins', sans-serif; font-size: clamp(2rem, 3.5vw, 3.2rem); line-height: 1.15; font-weight: 700; margin-bottom: 1.5rem; letter-spacing: -0.01em; }
+    .hero-title em { font-style: normal; color: #8fcb5a; }
+    .hero-sub { font-size: 1.1rem; color: rgba(255,255,255,0.75); line-height: 1.7; max-width: 560px; margin-bottom: 2.5rem; }
+    .hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 3rem; }
+    .btn-hero-primary { background: #8fcb5a; color: var(--green-deep); padding: 0.9rem 2rem; border-radius: 8px; font-size: 0.95rem; font-weight: 700; text-decoration: none; display: inline-block; transition: background .2s, transform .15s; }
+    .btn-hero-primary:hover { background: #a8dd72; transform: translateY(-1px); }
+    .btn-hero-secondary { border: 1.5px solid rgba(255,255,255,0.4); color: var(--white); padding: 0.9rem 2rem; border-radius: 8px; font-size: 0.95rem; font-weight: 500; text-decoration: none; display: inline-block; transition: border-color .2s; }
+    .btn-hero-secondary:hover { border-color: rgba(255,255,255,0.8); }
+    .hero-stats { display: flex; gap: 3rem; flex-wrap: wrap; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.1); }
+    .hero-stat-num { font-family: 'Poppins', sans-serif; font-size: 1.8rem; color: #8fcb5a; display: block; font-weight: 700; }
+    .hero-stat-label { font-size: 0.8rem; color: rgba(255,255,255,0.55); font-weight: 500; text-transform: uppercase; letter-spacing: 0.06em; }
+
+    /* CHALLENGES */
+    .challenges { background: var(--white); }
+    .challenges-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; margin-top: 3rem; }
+    .challenge-card { border: 1px solid var(--border); border-radius: 14px; padding: 1.75rem; transition: border-color .2s; }
+    .challenge-card:hover { border-color: var(--amber); }
+    .challenge-icon { width: 40px; height: 40px; background: #fff5e6; border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; }
+    .challenge-icon svg { width: 18px; height: 18px; stroke: var(--amber); fill: none; stroke-width: 2; }
+    .challenge-title { font-size: 1rem; font-weight: 600; color: var(--green-deep); margin-bottom: 0.5rem; }
+    .challenge-desc { font-size: 0.88rem; color: var(--muted); line-height: 1.65; }
+
+    /* PRODUCTS */
+    .products { background: #2d5a3d; color: var(--white); }
+    .products .section-eyebrow { color: rgba(255,255,255,0.6); }
+    .products .section-eyebrow::before { background: rgba(255,255,255,0.4); }
+    .products .section-title { color: var(--white); }
+    .products .section-lead { color: rgba(255,255,255,0.65); }
+    .products-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 3rem; }
+    .product-card { border: 1px solid rgba(255,255,255,0.12); background: rgba(255,255,255,0.07); border-radius: 16px; padding: 2rem; transition: border-color .2s, background .2s; }
+    .product-card:hover { border-color: rgba(143,203,90,0.4); background: rgba(255,255,255,0.1); }
+    .product-dot { width: 44px; height: 44px; border-radius: 10px; background: rgba(143,203,90,0.12); border: 1px solid rgba(143,203,90,0.3); display: flex; align-items: center; justify-content: center; margin-bottom: 1.25rem; }
+    .product-dot svg { width: 20px; height: 20px; stroke: #8fcb5a; fill: none; stroke-width: 2; }
+    .product-tag { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #8fcb5a; margin-bottom: 0.4rem; display: block; }
+    .product-name { font-family: 'Poppins', sans-serif; font-size: 1.2rem; color: var(--white); margin-bottom: 0.75rem; }
+    .product-desc { font-size: 0.88rem; color: rgba(255,255,255,0.6); line-height: 1.65; margin-bottom: 1.25rem; }
+    .product-features { list-style: none; }
+    .product-features li { font-size: 0.83rem; color: rgba(255,255,255,0.7); padding: 0.3rem 0; display: flex; align-items: flex-start; gap: 0.5rem; line-height: 1.45; }
+    .product-features li::before { content: '→'; color: #8fcb5a; flex-shrink: 0; }
+    .product-new { display: inline-block; background: #8fcb5a; color: var(--green-deep); font-size: 0.62rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; padding: 0.15rem 0.45rem; border-radius: 4px; margin-left: 0.5rem; vertical-align: middle; }
+
+    /* SECTORS (cross-link) */
+    .sectors { background: var(--off-white); }
+    .sectors-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; margin-top: 3rem; }
+    .sector-card { border-radius: 14px; overflow: hidden; background: var(--white); box-shadow: 0 4px 20px rgba(20,38,28,0.07); transition: transform .2s, box-shadow .2s; display: block; color: inherit; text-decoration: none; }
+    .sector-card:hover { transform: translateY(-4px); box-shadow: 0 10px 32px rgba(20,38,28,0.13); }
+    .sector-img { width: 100%; height: 140px; overflow: hidden; }
+    .sector-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .sector-body { padding: 1.1rem 1.25rem 1.4rem; }
+    .sector-title { font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 0.95rem; color: var(--green-deep); margin-bottom: 0.4rem; }
+    .sector-desc { font-size: 0.82rem; color: var(--muted); line-height: 1.55; }
+
+    /* PROCESS */
+    .process { background: var(--white); }
+    .process-steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; margin-top: 3.5rem; position: relative; }
+    .process-steps::before { content: ''; position: absolute; top: 28px; left: 12.5%; right: 12.5%; height: 1px; background: var(--border); }
+    .process-step { padding: 0 1rem; text-align: center; }
+    .step-circle { width: 56px; height: 56px; border-radius: 50%; background: var(--green-light); border: 2px solid var(--green-bright); display: flex; align-items: center; justify-content: center; margin: 0 auto 1.25rem; position: relative; z-index: 1; }
+    .step-circle svg { width: 20px; height: 20px; stroke: var(--green-deep); fill: none; stroke-width: 2; }
+    .step-label { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--green-bright); margin-bottom: 0.4rem; }
+    .step-title { font-size: 0.95rem; font-weight: 600; color: var(--green-deep); margin-bottom: 0.4rem; }
+    .step-desc { font-size: 0.82rem; color: var(--muted); line-height: 1.55; }
+
+    /* FAQ */
+    .faq-section { background: var(--off-white); }
+    .faq-list { margin-top: 3rem; max-width: 780px; }
+    .faq-item { border-bottom: 1px solid var(--border); }
+    .faq-item:first-child { border-top: 1px solid var(--border); }
+    .faq-question { width: 100%; background: none; border: none; text-align: left; padding: 1.25rem 0; display: flex; justify-content: space-between; align-items: center; gap: 1rem; cursor: pointer; font-family: 'Lato', sans-serif; font-size: 0.98rem; font-weight: 600; color: var(--green-deep); line-height: 1.4; }
+    .faq-question:hover { color: var(--green-mid); }
+    .faq-chevron { width: 20px; height: 20px; flex-shrink: 0; stroke: var(--green-bright); fill: none; stroke-width: 2; transition: transform 0.25s; }
+    .faq-item.open .faq-chevron { transform: rotate(180deg); }
+    .faq-answer { display: none; padding: 0 2rem 1.25rem 0; font-size: 0.95rem; color: var(--muted); line-height: 1.75; }
+    .faq-item.open .faq-answer { display: block; }
+
+    /* CTA */
+    .cta-section { background: linear-gradient(135deg, var(--green-mid) 0%, var(--green-deep) 100%); color: var(--white); padding: 6rem 8vw; text-align: center; }
+    .cta-section .section-title { color: var(--white); margin-bottom: 1rem; }
+    .cta-section p { color: rgba(255,255,255,0.75); font-size: 1.05rem; max-width: 560px; margin: 0 auto 2.5rem; line-height: 1.7; }
+    .cta-group { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+    .btn-white { background: var(--white); color: var(--green-deep); padding: 0.9rem 2.25rem; border-radius: 8px; font-size: 0.95rem; font-weight: 700; text-decoration: none; display: inline-block; transition: transform .15s; }
+    .btn-white:hover { transform: translateY(-2px); }
+    .btn-outline-white { border: 2px solid rgba(255,255,255,0.5); color: var(--white); padding: 0.9rem 2.25rem; border-radius: 8px; font-size: 0.95rem; font-weight: 600; text-decoration: none; display: inline-block; transition: border-color .2s; }
+    .btn-outline-white:hover { border-color: var(--white); }
+
+    /* FOOTER */
+    footer { background: var(--navy); color: rgba(255,255,255,0.6); padding: 3rem 8vw 0; display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 2rem; }
+    .footer-tagline { font-size: 0.82rem; color: rgba(255,255,255,0.4); }
+    .footer-address-bar { grid-column: 1 / -1; border-top: 1px solid rgba(255,255,255,0.1); margin-top: 2rem; padding: 1.25rem 0; display: flex; justify-content: center; align-items: center; gap: 2rem; font-size: 0.8rem; color: rgba(255,255,255,0.45); flex-wrap: wrap; text-align: center; }
+    .footer-address-bar a { color: rgba(255,255,255,0.45); text-decoration: none; }
+    .footer-address-bar a:hover { color: var(--green-bright); }
+    .footer-address-bar .sep { opacity: 0.3; }
+
+    /* ── ONTZORG ── */
+    .ontzorg { background: var(--green-light); }
+    .ontzorg-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; margin-top: 2.5rem; }
+    .ontzorg-card { background: var(--white); border: 1px solid #d0e8c0; border-radius: 12px; padding: 1.5rem; }
+    .ontzorg-icon { width: 40px; height: 40px; background: rgba(6,117,46,0.1); border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; }
+    .ontzorg-icon svg { width: 20px; height: 20px; stroke: var(--green-mid); fill: none; stroke-width: 1.75; }
+    .ontzorg-card h3 { font-family: 'Poppins', sans-serif; font-size: 0.95rem; font-weight: 700; color: var(--green-deep); margin-bottom: 0.5rem; }
+    .ontzorg-card p { font-size: 0.875rem; color: var(--muted); line-height: 1.65; }
+    .ontzorg-promise { margin-top: 2rem; background: var(--green-deep); color: var(--white); border-radius: 12px; padding: 1.5rem 2rem; text-align: center; font-size: 1rem; line-height: 1.6; }
+    .ontzorg-promise strong { color: #8fcb5a; }
+    @media (max-width: 900px) {
+      .challenges-grid, .products-grid { grid-template-columns: 1fr; }
+      .sectors-grid { grid-template-columns: 1fr 1fr; }
+      .process-steps { grid-template-columns: 1fr 1fr; }
+      .process-steps::before { display: none; }
+      .ontzorg-grid { grid-template-columns: 1fr 1fr; }
+      footer { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 600px) {
+      section { padding: 4rem 6vw; }
+      .sectors-grid { grid-template-columns: 1fr; }
+      .process-steps { grid-template-columns: 1fr; }
+      .ontzorg-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo"><img src="oliva-logo.png" alt="Oliva Energy"></a>
+  <a href="index.html" class="nav-back">
+    <svg viewBox="0 0 24 24"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+    Terug naar olivaenergy.nl
+  </a>
+  <div class="nav-actions">
+    <a href="tel:+31850050440" class="nav-phone">
+      <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.36 2 2 0 0 1 3.6 1.18h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.96a16 16 0 0 0 6.56 6.56l.85-.85a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      <span class="nav-phone-number">085 0050 440</span>
+    </a>
+    <a href="mailto:michiel.aandewiel@olivaenergy.nl?subject=Ik%20heb%20een%20vraag" class="nav-cta">Mail je vraag</a>
+    <a href="https://portal.oliva.energy/login" target="_blank" class="nav-portal">Mijn Oliva Energy</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <span class="hero-label">Oliva Systems · voor bedrijventerreinen</span>
+    <h1 class="hero-title">Eén bedrijventerrein, één slimme <em>energie-aanpak</em></h1>
+    <p class="hero-sub">Van netcongestie tot lokale energie-uitwisseling tussen bedrijven: Oliva Systems coördineert en stuurt alle energieassets op uw terrein.</p>
+    <div class="hero-actions">
+      <a href="mailto:michiel.aandewiel@olivaenergy.nl?subject=Ik%20wil%20meer%20weten%20over%20Oliva%20Systems%20voor%20bedrijventerreinen" class="btn-hero-primary">Plan een gesprek</a>
+      <a href="#uitdagingen" class="btn-hero-secondary">Bekijk onze oplossingen</a>
+    </div>
+    <div class="hero-stats">
+      <div>
+        <span class="hero-stat-num">200+</span>
+        <span class="hero-stat-label">PV parken in beheer</span>
+      </div>
+      <div>
+        <span class="hero-stat-num">25+</span>
+        <span class="hero-stat-label">Jaar marktexpertise</span>
+      </div>
+      <div>
+        <span class="hero-stat-num">6</span>
+        <span class="hero-stat-label">Landen actief</span>
+      </div>
+      <div>
+        <span class="hero-stat-num">100%</span>
+        <span class="hero-stat-label">Hardware-onafhankelijk</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CHALLENGES -->
+<section class="challenges" id="uitdagingen">
+  <div class="section-eyebrow">Uitdagingen</div>
+  <h2 class="section-title">Waar bedrijventerreinen tegenaan lopen</h2>
+  <p class="section-lead">Meerdere bedrijven, één net. Dat brengt eigen uitdagingen met zich mee. Oliva Systems lost ze op.</p>
+  <div class="challenges-grid">
+    <div class="challenge-card">
+      <div class="challenge-icon">
+        <svg viewBox="0 0 24 24"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+      </div>
+      <h3 class="challenge-title">Netcongestie raakt het hele terrein</h3>
+      <p class="challenge-desc">Eén overbelast aansluitpunt kan uitbreiding voor alle bedrijven op het terrein blokkeren, ook voor bedrijven die zelf nog ruimte hebben.</p>
+    </div>
+    <div class="challenge-card">
+      <div class="challenge-icon">
+        <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+      </div>
+      <h3 class="challenge-title">Losse bedrijven, los energiebeheer</h3>
+      <p class="challenge-desc">Elk bedrijf regelt energie apart, zonder onderlinge afstemming, terwijl juist die afstemming waarde oplevert voor het hele terrein.</p>
+    </div>
+    <div class="challenge-card">
+      <div class="challenge-icon">
+        <svg viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+      </div>
+      <h3 class="challenge-title">Gemiste kans op lokale energie-uitwisseling</h3>
+      <p class="challenge-desc">Overschot bij het ene bedrijf kan tekort bij het andere opvangen, maar dat vraagt coördinatie die er nu niet is.</p>
+    </div>
+    <div class="challenge-card">
+      <div class="challenge-icon">
+        <svg viewBox="0 0 24 24"><circle cx="9" cy="7" r="4"/><path d="M17 11V7a4 4 0 0 0-3-3.87"/><path d="M2 21v-2a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4v2"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/></svg>
+      </div>
+      <h3 class="challenge-title">Trage besluitvorming door versnipperd eigenaarschap</h3>
+      <p class="challenge-desc">Meerdere eigenaren en huurders op één terrein maken gezamenlijke energieprojecten lastig te organiseren, zonder een partij die de regie neemt.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section class="products" id="oplossingen">
+  <div class="section-eyebrow">Oliva Systems oplossingen</div>
+  <h2 class="section-title">Van losse bedrijven naar een samenhangend energiesysteem</h2>
+  <p class="section-lead">Dezelfde kernexpertise in design, monitoring en sturing, toegepast op terreinniveau.</p>
+  <div class="products-grid">
+    <div class="product-card">
+      <div class="product-dot">
+        <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+      </div>
+      <span class="product-tag">Oplossing 1</span>
+      <h3 class="product-name">Maatwerk Integraties</h3>
+      <p class="product-desc">Wij koppelen de energie-assets van de deelnemende bedrijven aan het Oliva platform, ongeacht merk of protocol. Inclusief businesscase en engineering.</p>
+      <ul class="product-features">
+        <li>Alle hardware merken en protocollen (Modbus, MQTT, REST)</li>
+        <li>Solar, batterij, laadinfrastructuur en procesapparatuur</li>
+        <li>Haalbaarheidsanalyse en ROI-berekening per terrein</li>
+        <li>Volledige engineering en implementatiebegeleiding</li>
+      </ul>
+    </div>
+    <div class="product-card">
+      <div class="product-dot">
+        <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+      </div>
+      <span class="product-tag">Oplossing 2</span>
+      <h3 class="product-name">Energy Hubs</h3>
+      <p class="product-desc">Coördinatie en sturing van meerdere assets op terreinniveau. Dé oplossing voor netcongestie en voorbereiding op lokale flexibiliteitsmarkten.</p>
+      <ul class="product-features">
+        <li>Centrale sturing van alle assets op het terrein</li>
+        <li>Lokale energie-uitwisseling tussen deelnemende bedrijven</li>
+        <li>Vermindering van piekbelasting op het net</li>
+        <li>Directe oplossing voor netcongestieproblemen</li>
+      </ul>
+    </div>
+    <div class="product-card">
+      <div class="product-dot">
+        <svg viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+      </div>
+      <span class="product-tag">Oplossing 3</span>
+      <h3 class="product-name">Flexibiliteit Platform <span class="product-new">Nieuw</span></h3>
+      <p class="product-desc">Wij ontsluiten verborgen flexibiliteit op het terrein en maken die beschikbaar voor de energiemarkt. Real-time, per 15-minuten slot.</p>
+      <ul class="product-features">
+        <li>Automatische detectie van beschikbare flexibiliteit</li>
+        <li>Real-time deelname aan balans- en congestiemarkt</li>
+        <li>Per 15-minuten slot, volledig geautomatiseerd</li>
+        <li>Transparante rapportage per deelnemend bedrijf</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- SECTORS (cross-link) -->
+<section class="sectors" id="sectoren">
+  <div class="section-eyebrow">Ook actief in</div>
+  <h2 class="section-title">Oliva Systems werkt in meer sectoren</h2>
+  <p class="section-lead">Dezelfde expertise in energiesturing, toegepast op andere omgevingen.</p>
+  <div class="sectors-grid">
+    <a class="sector-card" href="voor-betonfabrieken.html">
+      <div class="sector-img"><img src="sector-betonfabriek.jpg" alt="Betonfabriek productievloer"></div>
+      <div class="sector-body">
+        <p class="sector-title">(Beton) fabrieken</p>
+        <p class="sector-desc">Energiesturing bij hoge, continue vermogens in de productie-industrie.</p>
+      </div>
+    </a>
+    <a class="sector-card" href="voor-groen-grond-infra.html">
+      <div class="sector-img"><img src="sector-groen-grond-infra.jpg" alt="Groen, grond en infra"></div>
+      <div class="sector-body">
+        <p class="sector-title">Groen, grond en infra</p>
+        <p class="sector-desc">Energiesturing in complexe buitenomgevingen, van gemalen tot infrastructuur.</p>
+      </div>
+    </a>
+    <a class="sector-card" href="voor-solar-om.html">
+      <div class="sector-img"><img src="sector-solar-park.jpg" alt="Solar park"></div>
+      <div class="sector-body">
+        <p class="sector-title">Solar O&amp;M</p>
+        <p class="sector-desc">Realtime inzicht en sturing over uw volledige solarportfolio.</p>
+      </div>
+    </a>
+    <a class="sector-card" href="voor-asset-managers.html">
+      <div class="sector-img"><img src="sector-kantoor.jpg" alt="Vastgoedportfolio"></div>
+      <div class="sector-body">
+        <p class="sector-title">Asset Managers</p>
+        <p class="sector-desc">Netcongestie oplossen en vastgoed toekomstbestendig maken.</p>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="process" id="aanpak">
+  <div class="section-eyebrow">Onze aanpak</div>
+  <h2 class="section-title">Van eerste gesprek tot actieve Energy Hub</h2>
+  <div class="process-steps">
+    <div class="process-step">
+      <div class="step-circle">
+        <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+      </div>
+      <p class="step-label">Stap 1</p>
+      <p class="step-title">Situatie-analyse</p>
+      <p class="step-desc">We brengen de energiesystemen van de deelnemende bedrijven, de knelpunten en de kansen op het terrein in kaart.</p>
+    </div>
+    <div class="process-step">
+      <div class="step-circle">
+        <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+      </div>
+      <p class="step-label">Stap 2</p>
+      <p class="step-title">Businesscase &amp; ontwerp</p>
+      <p class="step-desc">Haalbaarheidsanalyse, systeemontwerp en ROI-berekening voor het terrein als geheel.</p>
+    </div>
+    <div class="process-step">
+      <div class="step-circle">
+        <svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+      </div>
+      <p class="step-label">Stap 3</p>
+      <p class="step-title">Implementatie</p>
+      <p class="step-desc">Integratie van alle assets, softwarekoppeling en activatie van de Energy Hub op het terrein.</p>
+    </div>
+    <div class="process-step">
+      <div class="step-circle">
+        <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      </div>
+      <p class="step-label">Stap 4</p>
+      <p class="step-title">Doorlopende optimalisatie</p>
+      <p class="step-desc">Monitoring, rapportage en continue optimalisatie. Elke maand ziet u wat Oliva oplevert in euro's.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ONTZORGING -->
+<section class="ontzorg" style="padding:5rem 8vw;" id="ontzorging">
+  <div class="section-eyebrow">Wat wij voor u regelen</div>
+  <h2 class="section-title">U onderneemt. Wij managen de energie van het terrein.</h2>
+  <p class="section-lead">Energiemanagement is uw kernactiviteit niet, maar die van ons wel. Wij nemen het volledig over, zowel softwarematig als hardwarematig, inclusief gecertificeerde monteurs op locatie wanneer dat nodig is.</p>
+  <div class="ontzorg-grid">
+    <div class="ontzorg-card">
+      <div class="ontzorg-icon">
+        <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+      </div>
+      <h3>Platform &amp; actieve sturing</h3>
+      <p>Real-time monitoring en actieve sturing van alle energieassets op het terrein: 24/7 geautomatiseerd op basis van marktsignalen en de behoeften per bedrijf.</p>
+    </div>
+    <div class="ontzorg-card">
+      <div class="ontzorg-icon">
+        <svg viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+      </div>
+      <h3>Hardware &amp; integraties</h3>
+      <p>Wij koppelen alle bestaande assets van de deelnemende bedrijven. U hoeft niets te vervangen. Hardware-onafhankelijk.</p>
+    </div>
+    <div class="ontzorg-card">
+      <div class="ontzorg-icon">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="7" r="4"/><path d="M5.5 21a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 17 0 8.38 8.38 0 0 1-.9 3.8"/></svg>
+      </div>
+      <h3>Gecertificeerde monteurs op locatie</h3>
+      <p>Technische storingen worden snel opgelost door onze gecertificeerde installateurs die ad-hoc naar het terrein komen. U belt ons. Wij fixen het.</p>
+    </div>
+  </div>
+  <div class="ontzorg-promise">
+    Uw bedrijven blijven doen waar ze goed in zijn. <strong>Wij zorgen dat de energie op het terrein optimaal wordt benut, dag na dag.</strong>
+  </div>
+</section>
+<!-- FAQ -->
+<section class="faq-section" id="faq">
+  <div class="section-eyebrow">Veelgestelde vragen</div>
+  <h2 class="section-title">Vragen over Oliva Systems voor bedrijventerreinen</h2>
+  <div class="faq-list">
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFaq(this)">
+        Hoe organiseren we dit met meerdere bedrijven op het terrein?
+        <svg class="faq-chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+      </button>
+      <div class="faq-answer">Oliva richt de coördinatie in via een Energy Hub: één centraal systeem dat de assets van alle deelnemende bedrijven aanstuurt. Wij begeleiden ook de organisatorische kant, inclusief afspraken tussen deelnemers.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFaq(this)">
+        Wie is contractpartij: het terrein of de individuele bedrijven?
+        <svg class="faq-chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+      </button>
+      <div class="faq-answer">Dat is afhankelijk van hoe het terrein is georganiseerd. Vaak is dat een parkmanagement- of terreinvereniging, soms de individuele bedrijven zelf. We bespreken de beste opzet in het eerste gesprek.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFaq(this)">
+        Kan een deel van het terrein starten, en de rest later aansluiten?
+        <svg class="faq-chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+      </button>
+      <div class="faq-answer">Ja. Een Energy Hub kan met een beperkt aantal deelnemers starten en later uitbreiden. Niet elk bedrijf hoeft vanaf dag één mee te doen.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFaq(this)">
+        Lost een Energy Hub echt de wachtlijst voor een nieuwe aansluiting op?
+        <svg class="faq-chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+      </button>
+      <div class="faq-answer">Een Energy Hub is ontworpen om optimaal gebruik te maken van de bestaande aansluiting van het terrein. Door slim te sturen en lokaal uit te wisselen, lost Oliva het congestieprobleem vaak op zonder dat een zwaardere aansluiting nodig is.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFaq(this)">
+        Wat als niet alle bedrijven op het terrein mee willen doen?
+        <svg class="faq-chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+      </button>
+      <div class="faq-answer">Geen probleem. Een Energy Hub werkt ook met een deel van de bedrijven op een terrein. Deelname is niet verplicht voor de bedrijven die niet mee willen doen.</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section" id="contact">
+  <div class="section-eyebrow" style="color:rgba(255,255,255,0.6);justify-content:center;">Aan de slag</div>
+  <h2 class="section-title">Klaar om uw bedrijventerrein energieklaar te maken?</h2>
+  <p>Of u nu last heeft van netcongestie, versnipperd energiebeheer of gewoon meer overzicht wilt over het terrein: Oliva Systems helpt u verder. Neem contact op voor een vrijblijvend gesprek.</p>
+  <div class="cta-group">
+    <a href="mailto:michiel.aandewiel@olivaenergy.nl?subject=Ik%20wil%20meer%20weten%20over%20Oliva%20Systems%20voor%20bedrijventerreinen" class="btn-white">Plan een gesprek</a>
+    <a href="tel:+31850050440" class="btn-outline-white">Bel: 085 0050 440</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div>
+    <a href="index.html"><img src="oliva-logo.png" alt="Oliva Energy" style="height:40px;width:auto;filter:brightness(0) invert(1);margin-bottom:0.5rem;display:block;"></a>
+    <p class="footer-tagline">Onafhankelijk platform voor design, monitoring en sturing van energiesystemen</p>
+  </div>
+  <div class="footer-address-bar">
+    <span>Gouwepoort 1, 4301 RZ Zierikzee, The Netherlands</span>
+    <span class="sep">|</span>
+    <a href="mailto:michiel.aandewiel@olivaenergy.nl">michiel.aandewiel@olivaenergy.nl</a>
+    <span class="sep">|</span>
+    <a href="tel:+31850050440">085 0050 440</a>
+    <span class="sep">|</span>
+    <span>KvK 89238486</span>
+    <span class="sep">|</span>
+    <a href="privacy.html">Privacybeleid</a>
+    <span class="sep">|</span>
+    <span>Copyright &copy; 2025 Oliva Energy</span>
+  </div>
+</footer>
+
+<script>
+  function toggleFaq(btn) {
+    var item = btn.closest('.faq-item');
+    var wasOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item.open').forEach(function(el) { el.classList.remove('open'); });
+    if (!wasOpen) item.classList.add('open');
+  }
+</script>
+</body>
+</html>
