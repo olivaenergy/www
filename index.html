@@ -862,7 +862,7 @@
       <span class="nav-phone-number">085 0050 440</span>
     </a>
     <a href="javascript:void(0)" onclick="openContactMail()" class="nav-cta"><span data-i18n="nav.cta">Mail je vraag</span></a>
-    <a href="https://portal.olivaenergy.nl/login" target="_blank" class="nav-portal"><span data-i18n="nav.portal">Mijn Oliva Energy</span></a>
+    <a href="https://portal.oliva.energy/login" target="_blank" class="nav-portal"><span data-i18n="nav.portal">Mijn Oliva Energy</span></a>
   </div>
   <div class="lang-switcher">
     <button class="lang-btn active" id="btn-nl" onclick="setLang('nl')">NL</button>
@@ -1207,7 +1207,7 @@
   .sectors .section-title { text-align: center; }
   .sectors-grid {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 1.5rem;
     margin: 3rem 0 0;
   }
@@ -1220,7 +1220,6 @@
     text-align: left;
   }
   .sector-card:hover { transform: translateY(-4px); box-shadow: 0 10px 32px rgba(20,38,28,0.14); }
-  a.sector-card { display: block; color: inherit; text-decoration: none; }
   .sector-img {
     width: 100%;
     height: 160px;
@@ -1249,7 +1248,6 @@
     line-height: 1.6;
     margin: 0;
   }
-  @media (max-width: 1100px) { .sectors-grid { grid-template-columns: repeat(3, 1fr); } }
   @media (max-width: 900px) { .sectors-grid { grid-template-columns: repeat(2, 1fr); } }
   @media (max-width: 500px) { .sectors-grid { grid-template-columns: 1fr; } }
 </style>
@@ -1265,7 +1263,7 @@
   </p>
   <div class="sectors-grid">
     <!-- BETONFABRIEKEN -->
-    <a class="sector-card" href="voor-betonfabrieken.html">
+    <div class="sector-card">
       <div class="sector-img sector-img--beton" style="background:none;padding:0;">
         <img src="sector-betonfabriek.jpg" alt="Betonfabriek productievloer" loading="lazy" style="width:100%;height:100%;object-fit:cover;object-position:center 45%;display:block;" />
       </div>
@@ -1277,9 +1275,9 @@
           <span data-i18n="sectors.factories_desc">Energiesturing in omgevingen met hoge, continue vermogens is onze specialiteit. Wij werken samen met toonaangevende bedrijven in de cementsector.</span>
         </p>
       </div>
-    </a>
+    </div>
     <!-- BEDRIJVENTERREINEN -->
-    <a class="sector-card" href="voor-bedrijventerreinen.html">
+    <div class="sector-card">
       <div class="sector-img sector-img--terrein" style="background:none;padding:0;">
         <img src="sector-bedrijventerrein.jpg" alt="Bedrijventerrein Zierikzee" loading="lazy" style="width:100%;height:100%;object-fit:cover;object-position:center 50%;display:block;" />
       </div>
@@ -1291,9 +1289,9 @@
           <span data-i18n="sectors.parks_desc">Energy hub projecten waarbij meerdere bedrijven lokaal energie uitwisselen. Oliva verzorgt de coördinatie en sturing van alle assets op terreinniveau.</span>
         </p>
       </div>
-    </a>
+    </div>
     <!-- GROEN, GROND EN INFRA -->
-    <a class="sector-card" href="voor-groen-grond-infra.html">
+    <div class="sector-card">
       <div class="sector-img sector-img--infra" style="background:none;padding:0;">
         <img src="sector-groen-grond-infra.jpg" alt="Groen, grond en infra" loading="lazy" style="width:100%;height:100%;object-fit:cover;object-position:center 40%;display:block;" />
       </div>
@@ -1305,9 +1303,9 @@
           <span data-i18n="sectors.green_desc">Van gemeentelijke installaties tot infrastructuurprojecten: Oliva monitort en stuurt energiesystemen in complexe buitenomgevingen.</span>
         </p>
       </div>
-    </a>
+    </div>
     <!-- SOLAR O&M -->
-    <a class="sector-card" href="voor-solar-om.html">
+    <div class="sector-card">
       <div class="sector-img sector-img--solar" style="background:none;padding:0;">
         <img src="sector-solar-park.jpg" alt="Solar park Zeelandbrug" loading="lazy" style="width:100%;height:100%;object-fit:cover;object-position:center 40%;display:block;" />
       </div>
@@ -1319,21 +1317,7 @@
           <span data-i18n="sectors.solar_desc">Meer dan 200 solarparken in beheer. Voor O&M-partijen die realtime inzicht én sturing willen over hun gehele portfolio.</span>
         </p>
       </div>
-    </a>
-    <!-- ASSET MANAGERS -->
-    <a class="sector-card" href="voor-asset-managers.html">
-      <div class="sector-img" style="background:none;padding:0;">
-        <img src="sector-kantoor.jpg" alt="Kantoorpand, vastgoedportfolio" loading="lazy" style="width:100%;height:100%;object-fit:cover;object-position:center 50%;display:block;" />
-      </div>
-      <div class="sector-body">
-        <p class="sector-title">
-          <span data-i18n="sectors.assetmanagers_title">Asset Managers</span>
-        </p>
-        <p class="sector-desc">
-          <span data-i18n="sectors.assetmanagers_desc">Netcongestie oplossen en vastgoed toekomstbestendig maken. Voor asset managers en vastgoedbeheerders met een groeiende portfolio.</span>
-        </p>
-      </div>
-    </a>
+    </div>
   </div>
 </section>
 <!-- WHY OLIVA -->
@@ -1610,6 +1594,16 @@
         <span class="kb-cat">Installateurs</span>
         <p class="kb-title">Recurring omzet voor installateurs: zo werkt energiemonitoring als dienst</p>
         <p class="kb-excerpt">Installateurs die energiemonitoring aanbieden als doorlopende dienst bouwen stabiele maandelijkse inkomsten op bestaande installaties.</p>
+        <span class="kb-read">Lees meer <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+      </div>
+    </a>
+
+    <a href="artikel-dynamische-nettarieven.html" class="kb-card">
+      <div class="kb-card-img"><img src="dynamische-nettarieven-hero.svg" alt="Grafiek van een nettarief dat varieert over de dag" loading="lazy"></div>
+      <div class="kb-card-body">
+        <span class="kb-cat">Netcongestie</span>
+        <p class="kb-title">Dynamische nettarieven: wat verandert er voor uw energiekosten?</p>
+        <p class="kb-excerpt">Netbeheerders voeren tijdsafhankelijke nettarieven in om netcongestie te bestrijden. Wat betekent dat voor uw rekening, en hoe bereidt u zich voor?</p>
         <span class="kb-read">Lees meer <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
       </div>
     </a>

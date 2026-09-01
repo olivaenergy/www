@@ -109,8 +109,6 @@ window.i18n.fr = {
   'origin.quote': 'Le syst&egrave;me &eacute;nerg&eacute;tique change. Les entreprises qui agissent maintenant cr&eacute;eront les mod&egrave;les de revenus de demain.',
   'origin.quote_author': 'fondateur Oliva Energy',
   'origin.title': 'Comment Oliva Energy est n&eacute;e',
-  'sectors.assetmanagers_desc': 'Résoudre la congestion du réseau et rendre l\'immobilier durable pour l\'avenir. Pour les gestionnaires d\'actifs et gestionnaires immobiliers avec un portefeuille en croissance.',
-  'sectors.assetmanagers_title': 'Gestionnaires d\'actifs',
   'sectors.eyebrow': 'Secteurs',
   'sectors.factories_desc': 'La gestion énergétique dans des environnements à haute puissance continue est notre spécialité. Nous travaillons avec des entreprises leaders du secteur du ciment.',
   'sectors.factories_title': 'Usines (à béton)',

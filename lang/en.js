@@ -109,8 +109,6 @@ window.i18n.en = {
   'origin.quote': 'The energy system is changing. Companies that act on this now will create tomorrow\'s revenue models.',
   'origin.quote_author': 'founder Oliva Energy',
   'origin.title': 'How Oliva Energy started',
-  'sectors.assetmanagers_desc': 'Solving grid congestion and future-proofing real estate. For asset managers and property managers with a growing portfolio.',
-  'sectors.assetmanagers_title': 'Asset Managers',
   'sectors.eyebrow': 'Sectors',
   'sectors.factories_desc': 'Energy control in high continuous-power environments is our speciality. We work with leading companies in the cement sector.',
   'sectors.factories_title': '(Concrete) factories',

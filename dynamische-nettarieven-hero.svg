@@ -1,0 +1,153 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 500" width="1600" height="500" role="img" aria-label="Grafiek van een nettarief dat gedurende de dag varieert, laag in de nacht en op de middag, hoog tijdens de avondpiek">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1b3226"/>
+      <stop offset="55%" stop-color="#14261C"/>
+      <stop offset="100%" stop-color="#0c1912"/>
+    </linearGradient>
+
+    <linearGradient id="curveFill" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#5d951a"/>
+      <stop offset="17%" stop-color="#06752E"/>
+      <stop offset="34%" stop-color="#5d951a"/>
+      <stop offset="55%" stop-color="#5d951a"/>
+      <stop offset="72%" stop-color="#e0a23f"/>
+      <stop offset="78%" stop-color="#c8842a"/>
+      <stop offset="86%" stop-color="#e0a23f"/>
+      <stop offset="100%" stop-color="#5d951a"/>
+    </linearGradient>
+
+    <linearGradient id="curveStroke" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#a9d878"/>
+      <stop offset="34%" stop-color="#cfe9ac"/>
+      <stop offset="55%" stop-color="#eef6df"/>
+      <stop offset="78%" stop-color="#f5c778"/>
+      <stop offset="100%" stop-color="#a9d878"/>
+    </linearGradient>
+
+    <radialGradient id="peakGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#f5c778" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#f5c778" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="nightGlowL" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#5d951a" stop-opacity="0.30"/>
+      <stop offset="100%" stop-color="#5d951a" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="nightGlowR" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#5d951a" stop-opacity="0.30"/>
+      <stop offset="100%" stop-color="#5d951a" stop-opacity="0"/>
+    </radialGradient>
+
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="7" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="softBlur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="10"/>
+    </filter>
+  </defs>
+
+  <rect x="0" y="0" width="1600" height="500" fill="url(#bg)"/>
+
+  <!-- ambient glows -->
+  <ellipse cx="1243" cy="150" rx="260" ry="170" fill="url(#peakGlow)"/>
+  <ellipse cx="90" cy="230" rx="220" ry="170" fill="url(#nightGlowL)"/>
+  <ellipse cx="1520" cy="230" rx="220" ry="170" fill="url(#nightGlowR)"/>
+
+  <!-- hour grid -->
+  <g stroke="#ffffff" stroke-opacity="0.06" stroke-width="1">
+    <line x1="40" y1="60" x2="40" y2="420"/>
+    <line x1="167" y1="60" x2="167" y2="420"/>
+    <line x1="293" y1="60" x2="293" y2="420"/>
+    <line x1="420" y1="60" x2="420" y2="420"/>
+    <line x1="547" y1="60" x2="547" y2="420"/>
+    <line x1="673" y1="60" x2="673" y2="420"/>
+    <line x1="800" y1="60" x2="800" y2="420"/>
+    <line x1="927" y1="60" x2="927" y2="420"/>
+    <line x1="1053" y1="60" x2="1053" y2="420"/>
+    <line x1="1180" y1="60" x2="1180" y2="420"/>
+    <line x1="1307" y1="60" x2="1307" y2="420"/>
+    <line x1="1433" y1="60" x2="1433" y2="420"/>
+    <line x1="1560" y1="60" x2="1560" y2="420"/>
+  </g>
+  <line x1="40" y1="420" x2="1560" y2="420" stroke="#ffffff" stroke-opacity="0.14" stroke-width="1.5"/>
+
+  <!-- tariff area under curve (24h: night low, midday dip, evening peak, night low) -->
+  <path d="M40,341
+           C100,350 160,362 230,359
+           C280,357 340,330 420,315
+           C460,308 500,295 546,289
+           C610,283 670,300 736,322
+           C780,335 820,332 863,328
+           C930,320 990,290 1053,263
+           C1100,240 1140,190 1180,159
+           C1205,145 1225,125 1243,120
+           C1262,125 1285,145 1306,159
+           C1345,190 1390,240 1433,276
+           C1470,300 1520,320 1560,341
+           L1560,420 L40,420 Z"
+        fill="url(#curveFill)" fill-opacity="0.34"/>
+
+  <!-- tariff curve line -->
+  <path d="M40,341
+           C100,350 160,362 230,359
+           C280,357 340,330 420,315
+           C460,308 500,295 546,289
+           C610,283 670,300 736,322
+           C780,335 820,332 863,328
+           C930,320 990,290 1053,263
+           C1100,240 1140,190 1180,159
+           C1205,145 1225,125 1243,120
+           C1262,125 1285,145 1306,159
+           C1345,190 1390,240 1433,276
+           C1470,300 1520,320 1560,341"
+        fill="none" stroke="url(#curveStroke)" stroke-width="4.5" stroke-linecap="round" filter="url(#glow)"/>
+
+  <!-- peak marker -->
+  <line x1="1243" y1="120" x2="1243" y2="420" stroke="#f5c778" stroke-opacity="0.35" stroke-width="1.5" stroke-dasharray="3 7"/>
+  <circle cx="1243" cy="120" r="7" fill="#f5c778"/>
+  <circle cx="1243" cy="120" r="14" fill="none" stroke="#f5c778" stroke-opacity="0.5" stroke-width="1.5"/>
+
+  <!-- low-tariff markers (night + midday dip) -->
+  <circle cx="230" cy="359" r="5" fill="#a9d878" fill-opacity="0.9"/>
+  <circle cx="546" cy="289" r="5" fill="#a9d878" fill-opacity="0.9"/>
+
+  <!-- sun icon above midday dip: cheap, solar-rich hours -->
+  <g transform="translate(546,84)" stroke="#eef6df" stroke-opacity="0.75" stroke-width="2.4" fill="none" stroke-linecap="round">
+    <circle r="15"/>
+    <line x1="0" y1="-27" x2="0" y2="-21"/>
+    <line x1="0" y1="21" x2="0" y2="27"/>
+    <line x1="-27" y1="0" x2="-21" y2="0"/>
+    <line x1="21" y1="0" x2="27" y2="0"/>
+    <line x1="-19" y1="-19" x2="-15" y2="-15"/>
+    <line x1="15" y1="15" x2="19" y2="19"/>
+    <line x1="-19" y1="19" x2="-15" y2="15"/>
+    <line x1="15" y1="-15" x2="19" y2="-19"/>
+  </g>
+
+  <!-- moon icons at both night edges -->
+  <g transform="translate(90,84)" fill="#cfe9ac" fill-opacity="0.55">
+    <path d="M10,-16 A16,16 0 1 0 10,16 A12.5,12.5 0 0 1 10,-16 Z"/>
+  </g>
+  <g transform="translate(1520,84)" fill="#cfe9ac" fill-opacity="0.55">
+    <path d="M10,-16 A16,16 0 1 0 10,16 A12.5,12.5 0 0 1 10,-16 Z"/>
+  </g>
+
+  <!-- lightning bolt above peak: expensive evening hours -->
+  <g transform="translate(1243,58)" fill="#f5c778">
+    <path d="M2,-18 L-9,3 L-1,3 L-3,18 L10,-4 L1,-4 Z"/>
+  </g>
+
+  <!-- decorative clock-arc accent, bottom right -->
+  <g transform="translate(1480,455)" stroke="#5d951a" stroke-opacity="0.4" fill="none" stroke-width="1.5">
+    <circle r="30" stroke-dasharray="2 6"/>
+    <line x1="0" y1="0" x2="0" y2="-19"/>
+    <line x1="0" y1="0" x2="12" y2="5"/>
+  </g>
+</svg>

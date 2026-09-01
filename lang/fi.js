@@ -109,8 +109,6 @@ window.i18n.fi = {
   'origin.quote': 'Energiajärjestelmä muuttuu. Yritykset, jotka reagoivat nyt, luovat huomisen ansaintamallit.',
   'origin.quote_author': 'perustaja, Oliva Energy',
   'origin.title': 'Miten Oliva Energy syntyi',
-  'sectors.assetmanagers_desc': 'Verkkoruuhkien ratkaiseminen ja kiinteistöjen tulevaisuuden turvaaminen. Omaisuudenhoitajille ja kiinteistönhoitajille, joiden portfolio kasvaa.',
-  'sectors.assetmanagers_title': 'Omaisuudenhoitajat',
   'sectors.eyebrow': 'Toimialat',
   'sectors.factories_desc': 'Energianohjaus korkean jatkuvan tehon ympäristöissä on erikoisalamme. Työskentelemme johtavien sementtialan yritysten kanssa.',
   'sectors.factories_title': '(Betoni)tehtaat',
