@@ -777,14 +777,8 @@
     .delay-3 { animation-delay: 0.35s; }
     .delay-4 { animation-delay: 0.5s; }
     /* ── RESPONSIVE ── */
-    @media (max-width: 900px) {
-      .hero { grid-template-columns: 1fr; }
-      .hero-right { display: none; }
-      .about-grid, .audience-grid, .divisions-grid { grid-template-columns: 1fr; }
-      .why-grid { grid-template-columns: 1fr 1fr; }
-      .kb-grid { grid-template-columns: 1fr 1fr; }
-      .process-steps { grid-template-columns: 1fr 1fr; }
-      .process-steps::before { display: none; }
+    .nav-links a { white-space: nowrap; }
+    @media (max-width: 1400px) {
       nav .nav-links { display: none; }
       nav .nav-links.open {
         display: flex; flex-direction: column; gap: 0;
@@ -797,6 +791,15 @@
       nav .nav-links.open li a { display: block; padding: 0.85rem 0; font-size: 1rem; color: var(--green-deep); }
       .hamburger { display: flex; }
       nav .lang-switcher { margin-left: auto; flex-shrink: 0; }
+    }
+    @media (max-width: 900px) {
+      .hero { grid-template-columns: 1fr; }
+      .hero-right { display: none; }
+      .about-grid, .audience-grid, .divisions-grid { grid-template-columns: 1fr; }
+      .why-grid { grid-template-columns: 1fr 1fr; }
+      .kb-grid { grid-template-columns: 1fr 1fr; }
+      .process-steps { grid-template-columns: 1fr 1fr; }
+      .process-steps::before { display: none; }
       footer { grid-template-columns: 1fr; }
       .pillars { grid-template-columns: 1fr 1fr; }
       .ontzorging-grid { grid-template-columns: 1fr 1fr; }
@@ -849,6 +852,7 @@
   <a href="#" class="nav-logo"><img src="oliva-logo.png" alt="Oliva Energy"></a>
   <ul class="nav-links">
     <li><a href="#over-oliva"><span data-i18n="nav.about">Over Oliva</span></a></li>
+    <li><a href="#projecten"><span data-i18n="nav.projects">Projecten</span></a></li>
     <li><a href="voor-installateurs.html"><span data-i18n="nav.for_installers">Voor Installateurs</span></a></li>
     <li><a href="voor-eindgebruikers.html"><span data-i18n="nav.for_endusers">Voor Eindgebruikers</span></a></li>
     <li><a href="kennisbank.html"><span data-i18n="nav.articles">Kennisbank</span></a></li>
@@ -1320,6 +1324,105 @@
     </div>
   </div>
 </section>
+<!-- PROJECTEN -->
+<style>
+  .projects { background: var(--white); }
+  .projects .section-eyebrow { justify-content: center; }
+  .projects .section-title { text-align: center; }
+  .projects .section-lead { margin: 0 auto; text-align: center; max-width: 640px; }
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 3rem;
+  }
+  .project-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    transition: transform .2s, box-shadow .2s;
+  }
+  .project-card:hover { transform: translateY(-4px); box-shadow: 0 10px 32px rgba(20,38,28,0.12); }
+  .project-card-img { aspect-ratio: 3 / 2; overflow: hidden; position: relative; }
+  .project-card-img img, .project-card-img video { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .4s; }
+  .project-card:hover .project-card-img img, .project-card:hover .project-card-img video { transform: scale(1.04); }
+  .project-status {
+    position: absolute; top: 0.85rem; left: 0.85rem;
+    background: var(--amber); color: var(--white);
+    font-size: 0.68rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;
+    padding: 0.25rem 0.7rem; border-radius: 20px;
+  }
+  .project-card-body { padding: 1.5rem; display: flex; flex-direction: column; gap: 0.6rem; flex: 1; }
+  .project-cat { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--green-mid); }
+  .project-figure { padding: 0.25rem 0 0.75rem; border-bottom: 1px solid var(--border); margin-bottom: 0.25rem; }
+  .project-figure-num { font-family: 'Poppins', sans-serif; font-size: 2rem; font-weight: 700; color: var(--green-deep); line-height: 1.1; display: block; }
+  .project-figure-label { font-size: 0.78rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; }
+  .project-title { font-family: 'Poppins', sans-serif; font-size: 1.05rem; font-weight: 700; color: var(--green-deep); line-height: 1.35; }
+  .project-excerpt { font-size: 0.875rem; color: var(--muted); line-height: 1.65; flex: 1; }
+  .project-read { display: inline-flex; align-items: center; gap: 0.3rem; font-size: 0.82rem; font-weight: 700; color: var(--green-mid); margin-top: 0.25rem; }
+  .project-read svg { width: 13px; height: 13px; stroke: currentColor; fill: none; stroke-width: 2.5; transition: transform .2s; }
+  .project-card:hover .project-read svg { transform: translateX(3px); }
+  @media (max-width: 900px) { .projects-grid { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 600px) { .projects-grid { grid-template-columns: 1fr; } }
+</style>
+<section class="projects" id="projecten">
+  <div class="section-eyebrow"><span data-i18n="projects.eyebrow">Uit de praktijk</span></div>
+  <h2 class="section-title"><span data-i18n="projects.title">Projecten waar we trots op zijn</span></h2>
+  <p class="section-lead"><span data-i18n="projects.lead">Drie bedrijven die wilden verduurzamen, maar vastliepen op hun aansluiting. Samen met onze partners vonden we toch een weg.</span></p>
+  <div class="projects-grid">
+
+    <a href="project-pekso.html" class="project-card">
+      <div class="project-card-img"><video autoplay muted loop playsinline preload="metadata" poster="project-pekso-portaal-poster.jpg" aria-label="Live weergave van de sturing bij Pekso in het Oliva-portaal" style="object-fit:contain;background:#fff;"><source src="project-pekso-portaal.mp4" type="video/mp4"></video></div>
+      <div class="project-card-body">
+        <span class="project-cat">Industrie &middot; Noord-Brabant</span>
+        <div class="project-figure">
+          <span class="project-figure-num">60.000 m&sup3;</span>
+          <span class="project-figure-label">minder aardgas per jaar</span>
+        </div>
+        <p class="project-title">Pekso: warmte uit zonnestroom, binnen een volle aansluiting</p>
+        <p class="project-excerpt">Nooit terugleveren, nooit boven 370 kW, en het zonne-overschot gaat het productieproces in.</p>
+        <span class="project-read"><span data-i18n="projects.read">Bekijk het project</span> <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+      </div>
+    </a>
+
+    <a href="project-landal-schouwse-valleien.html" class="project-card">
+      <div class="project-card-img">
+        <img src="project-landal-batterijen.jpg" alt="Batterijopstellingen op Landal Schouwse Valleien tijdens de bouw" loading="lazy">
+        <span class="project-status"><span data-i18n="projects.status_delivery">In oplevering</span></span>
+      </div>
+      <div class="project-card-body">
+        <span class="project-cat">Recreatie &middot; Zeeland</span>
+        <div class="project-figure">
+          <span class="project-figure-num">3x200 A</span>
+          <span class="project-figure-label">voor 135 gasloze vakantiewoningen</span>
+        </div>
+        <p class="project-title">Landal Schouwse Valleien: volledig elektrisch, zonder te wachten op het net</p>
+        <p class="project-excerpt">Zonder sturing was 1.800 kVA nodig. Met batterijen en een slimme volgorde past het park op een fractie daarvan.</p>
+        <span class="project-read"><span data-i18n="projects.read">Bekijk het project</span> <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+      </div>
+    </a>
+
+    <a href="project-laadplein.html" class="project-card">
+      <div class="project-card-img"><img src="project-laadplein-laadpalen.jpg" alt="Laadpalen op een bedrijfsparkeerplaats" loading="lazy"></div>
+      <div class="project-card-body">
+        <span class="project-cat">Laadplein &middot; Midden-Nederland</span>
+        <div class="project-figure">
+          <span class="project-figure-num">16</span>
+          <span class="project-figure-label">laadpunten op dezelfde aansluiting</span>
+        </div>
+        <p class="project-title">De laadplicht van 2027 halen zonder netverzwaring</p>
+        <p class="project-excerpt">Slim laden plus een batterij voor de ochtendpiek: zestien laadpunten erbij, de aansluiting blijft gelijk.</p>
+        <span class="project-read"><span data-i18n="projects.read">Bekijk het project</span> <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+      </div>
+    </a>
+
+  </div>
+</section>
 <!-- WHY OLIVA -->
 <section class="why">
   <div class="section-eyebrow"><span data-i18n="why.eyebrow">Waarom Oliva</span></div>
@@ -1352,7 +1455,7 @@
     </div>
     <div class="why-card">
       <div class="why-number">06</div>
-      <h4><span data-i18n="why.proven_title">Bewezen in de praktijk</span></h4>
+      <h4><a href="#projecten" style="color:inherit;text-decoration:none;"><span data-i18n="why.proven_title">Bewezen in de praktijk</span> &rarr;</a></h4>
       <p><span data-i18n="why.proven_desc">Meer dan 200 solarparken in beheer. Actief bij O&M-bedrijven, industriële productielocaties en complexe energiehub projecten.</span></p>
     </div>
   </div>
