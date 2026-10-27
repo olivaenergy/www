@@ -21,7 +21,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/png" href="oliva-logo.png">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
   <script type="application/ld+json">
   {
@@ -65,6 +67,7 @@
     .nav-back { display: inline-flex; align-items: center; gap: 0.4rem; color: var(--muted); text-decoration: none; font-size: 0.88rem; font-weight: 500; transition: color .2s; }
     .nav-back:hover { color: var(--green-bright); }
     .nav-back svg { width: 16px; height: 16px; stroke: currentColor; fill: none; stroke-width: 2; }
+    @media (max-width: 600px) { .nav-back { font-size: 0; gap: 0; padding: 0.5rem; } } /* nav-back-mobile: alleen pijl op telefoons */
     .nav-cta { background: var(--green-mid); color: var(--white); padding: 0.5rem 1.25rem; border-radius: 6px; font-size: 0.875rem; font-weight: 600; text-decoration: none; transition: background .2s; }
     .nav-cta:hover { background: var(--green-deep); }
     .nav-portal { color: var(--green-mid); border: 1.5px solid var(--green-mid); padding: 0.45rem 1rem; border-radius: 6px; font-size: 0.875rem; font-weight: 600; text-decoration: none; transition: background .2s, color .2s; white-space: nowrap; }
@@ -214,11 +217,11 @@
 
     <p>In het publieke debat over netcongestie zijn datacenters uitgegroeid tot de favoriete zondebok. Ze vreten stroom, bezetten transportcapaciteit en staan nieuwe woningbouw in de weg. Gemeenten weigeren vergunningen, provincies stellen moratoria in, en in de media wordt de datacenter als synoniem voor het overvolle stroomnet gepresenteerd.</p>
 
-    <p>Maar is dat beeld juist? En &mdash; belangrijker voor bedrijven die vandaag met netcongestie te maken hebben &mdash; helpt het ons om de werkelijke oorzaken te begrijpen en op te lossen?</p>
+    <p>Maar is dat beeld juist? En, belangrijker voor bedrijven die vandaag met netcongestie te maken hebben: helpt het ons om de werkelijke oorzaken te begrijpen en op te lossen?</p>
 
     <h2>Wat zeggen de cijfers?</h2>
 
-    <p>Datacenters verbruiken in Nederland inderdaad substantieel elektriciteitsverbruik. In 2024 vertegenwoordigden ze naar schatting 4 tot 5 procent van het totale nationale elektriciteitsverbruik. Dat is niet niks &mdash; maar het is ook geen overheersend aandeel.</p>
+    <p>Datacenters verbruiken in Nederland inderdaad substantieel elektriciteitsverbruik. In 2024 vertegenwoordigden ze naar schatting 4 tot 5 procent van het totale nationale elektriciteitsverbruik. Dat is niet niks, maar het is ook geen overheersend aandeel.</p>
 
     <div class="stat-grid">
       <div class="stat-card">
@@ -237,7 +240,7 @@
 
     <p>Wat datacenters wél onderscheidt van andere grootverbruikers, is hun geografische concentratie. De Amsterdam Internet Exchange (AMS-IX) is een van de grootste knooppunten ter wereld, en de concentratie van datacenters in Noord-Holland en Flevoland legt een disproportionele druk op lokale netknooppunten. Daar is de congestie reëel en meetbaar.</p>
 
-    <p>Maar: netcongestie is een nationaal verschijnsel dat zich ook manifesteert in regio's <em>zonder</em> datacenters. Zeeland, Brabant, Friesland &mdash; ook daar staan bedrijven op wachtlijsten van meerdere jaren voor uitbreiding van hun netaansluiting.</p>
+    <p>Maar: netcongestie is een nationaal verschijnsel dat zich ook manifesteert in regio's <em>zonder</em> datacenters. Zeeland, Brabant, Friesland: ook daar staan bedrijven op wachtlijsten van meerdere jaren voor uitbreiding van hun netaansluiting.</p>
 
     <div class="pull-quote">
       &ldquo;Netcongestie is geen datacenterprobleem. Het is een infrastructuurprobleem dat tientallen jaren van onderinvestering weerspiegelt.&rdquo;
@@ -261,7 +264,7 @@
 
     <h2>Waarom is dit relevant voor uw bedrijf?</h2>
 
-    <p>Als uw bedrijf last heeft van netcongestie &mdash; geen of beperkte transportcapaciteit, wachtlijsten bij de netbeheerder, of hoge capaciteitstarieven &mdash; is het van belang te begrijpen dat de oorzaak structureel is en niet snel verdwijnt. De netbeheerders investeren volop in uitbreiding, maar de verwachting is dat de achterstanden pas rond 2031 zijn ingelopen.</p>
+    <p>Als uw bedrijf last heeft van netcongestie (geen of beperkte transportcapaciteit, wachtlijsten bij de netbeheerder of hoge capaciteitstarieven), is het van belang te begrijpen dat de oorzaak structureel is en niet snel verdwijnt. De netbeheerders investeren volop in uitbreiding, maar de verwachting is dat de achterstanden pas rond 2031 zijn ingelopen.</p>
 
     <p>Dat betekent dat bedrijven nu zelf aan de slag moeten met <strong>flexibiliteit</strong>. Niet wachten op de netbeheerder, maar de eigen energievraag slimmer organiseren.</p>
 
@@ -278,7 +281,7 @@
 
     <h2>De rol van flexibiliteitstechnologie</h2>
 
-    <p>Wat het datacenterprobleem en het bredere netcongestiedebat gemeen hebben, is dat ze beide wijzen op dezelfde fundamentele uitdaging: het stroomnet is te star voor een energiemix die steeds grilliger wordt. De oplossing is niet alleen meer kabels en transformatoren &mdash; die komen te laat en kosten te veel &mdash; maar ook <strong>slimmere aansturing van de vraagkant</strong>.</p>
+    <p>Wat het datacenterprobleem en het bredere netcongestiedebat gemeen hebben, is dat ze beide wijzen op dezelfde fundamentele uitdaging: het stroomnet is te star voor een energiemix die steeds grilliger wordt. De oplossing is niet alleen meer kabels en transformatoren (die komen te laat en kosten te veel), maar ook <strong>slimmere aansturing van de vraagkant</strong>.</p>
 
     <p>Moderne energiebeheersystemen, zoals het <a href="voor-eindgebruikers.html">Oliva Energy platform</a>, maken het mogelijk om energieassets real-time aan te sturen op basis van netsignalen en marktprijzen. Daarmee kunnen industriële bedrijven en O&amp;M-partijen hun verbruik afstemmen op het moment dat netcapaciteit beschikbaar is, in plaats van te concurreren om schaarse piektijd.</p>
 
@@ -288,7 +291,7 @@
 
     <p>Datacenters zijn niet de hoofdschuldige van netcongestie in Nederland. Ze zijn een symptoom van een bredere uitdaging: een stroomnet dat niet is ontworpen voor de energietransitie die nu razendsnel plaatsvindt.</p>
 
-    <p>Voor bedrijven die nú met netcongestie te maken hebben, is de meest productieve vraag niet &ldquo;wie is schuldig?&rdquo; maar: <strong>hoe maken wij onze energievraag flexibeler?</strong> Dat is de vraag waar Oliva Energy dagelijks mee werkt &mdash; bij industriële productiebedrijven, O&amp;M-partijen en complexe bedrijventerreinprojecten.</p>
+    <p>Voor bedrijven die nú met netcongestie te maken hebben, is de meest productieve vraag niet &ldquo;wie is schuldig?&rdquo; maar: <strong>hoe maken wij onze energievraag flexibeler?</strong> Dat is de vraag waar Oliva Energy dagelijks mee werkt: bij industriële productiebedrijven, O&amp;M-partijen en complexe bedrijventerreinprojecten.</p>
 
   </article>
 
@@ -297,7 +300,7 @@
 
     <div class="sidebar-card">
       <h4>Netcongestie op uw locatie?</h4>
-      <p>Oliva helpt industriële bedrijven en O&amp;M-partijen hun energievraag flexibel te maken &mdash; zonder te wachten op de netbeheerder.</p>
+      <p>Oliva helpt industriële bedrijven en O&amp;M-partijen hun energievraag flexibel te maken, zonder te wachten op de netbeheerder.</p>
       <a href="voor-eindgebruikers.html" class="sidebar-btn">Bekijk Oliva Systems</a>
     </div>
 
@@ -334,7 +337,7 @@
 <!-- CTA -->
 <section class="article-cta">
   <h2>Hoe flexibel is uw energiesysteem?</h2>
-  <p>Oliva analyseert uw situatie en laat zien welke mogelijkheden er zijn &mdash; ook als u nu al last heeft van netcongestie.</p>
+  <p>Oliva analyseert uw situatie en laat zien welke mogelijkheden er zijn, ook als u nu al last heeft van netcongestie.</p>
   <div class="cta-group">
     <a href="mailto:michiel.aandewiel@olivaenergy.nl?subject=Vraag%20over%20netcongestie%20en%20flexibiliteit" class="btn-white">Neem contact op</a>
     <a href="tel:+31850050440" class="btn-outline-white">Bel: 085 0050 440</a>

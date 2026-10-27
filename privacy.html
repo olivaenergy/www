@@ -11,7 +11,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/png" href="oliva-logo.png">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <script src="cookie-consent.js" defer></script>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -28,6 +30,7 @@
     .nav-back { display: inline-flex; align-items: center; gap: 0.4rem; color: var(--muted); text-decoration: none; font-size: 0.88rem; font-weight: 500; }
     .nav-back:hover { color: var(--green-mid); }
     .nav-back svg { width: 16px; height: 16px; stroke: currentColor; fill: none; stroke-width: 2; }
+    @media (max-width: 600px) { .nav-back { font-size: 0; gap: 0; padding: 0.5rem; } } /* nav-back-mobile: alleen pijl op telefoons */
 
     .page-header { background: var(--green-deep); color: var(--white); padding: 9rem 8vw 4rem; }
     .page-header h1 { font-family: 'Poppins', sans-serif; font-size: clamp(1.8rem, 3vw, 2.6rem); font-weight: 700; margin-bottom: 0.5rem; }
@@ -43,6 +46,7 @@
     .content table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.9rem; }
     .content table th { background: var(--green-light); color: var(--green-deep); font-weight: 700; padding: 0.6rem 1rem; text-align: left; border: 1px solid var(--border); }
     .content table td { padding: 0.6rem 1rem; border: 1px solid var(--border); color: var(--muted); vertical-align: top; }
+    @media (max-width: 600px) { .content table { font-size: 0.8rem; } .content table th, .content table td { padding: 0.5rem; overflow-wrap: anywhere; } }
     .content .contact-box { background: var(--green-light); border-radius: 12px; padding: 1.5rem 2rem; margin-top: 2rem; }
     .content .contact-box p { margin: 0; }
 
@@ -106,7 +110,7 @@
   <h2>3. Op welke grondslag verwerken wij uw gegevens?</h2>
   <ul>
     <li><strong>Contactformulier:</strong> Uitvoering van een overeenkomst of pre-contractuele stappen (art. 6 lid 1 sub b AVG)</li>
-    <li><strong>Analytics:</strong> Toestemming (art. 6 lid 1 sub a AVG) — u kunt deze toestemming te allen tijde intrekken door uw browsercookies te verwijderen</li>
+    <li><strong>Analytics:</strong> Toestemming (art. 6 lid 1 sub a AVG). U kunt deze toestemming te allen tijde intrekken door uw browsercookies te verwijderen</li>
   </ul>
 
   <h2>4. Cookies</h2>
@@ -123,12 +127,12 @@
     </tr>
     <tr>
       <td>_ga, _ga_*</td>
-      <td>Google Analytics — meten van websitegebruik</td>
+      <td>Google Analytics: meten van websitegebruik</td>
       <td>26 maanden</td>
     </tr>
     <tr>
       <td>_gtm</td>
-      <td>Google Tag Manager — beheer van tags en scripts</td>
+      <td>Google Tag Manager: beheer van tags en scripts</td>
       <td>Sessie</td>
     </tr>
   </table>
@@ -155,13 +159,13 @@
   <h2>7. Uw rechten</h2>
   <p>Als betrokkene heeft u de volgende rechten onder de AVG:</p>
   <ul>
-    <li><strong>Recht op inzage</strong> — u kunt opvragen welke gegevens wij van u hebben</li>
-    <li><strong>Recht op rectificatie</strong> — u kunt onjuiste gegevens laten corrigeren</li>
-    <li><strong>Recht op verwijdering</strong> — u kunt verzoeken uw gegevens te laten wissen</li>
-    <li><strong>Recht op beperking</strong> — u kunt de verwerking laten beperken</li>
-    <li><strong>Recht op bezwaar</strong> — u kunt bezwaar maken tegen verwerking</li>
-    <li><strong>Recht op dataportabiliteit</strong> — u kunt uw gegevens opvragen in een leesbaar formaat</li>
-    <li><strong>Intrekken van toestemming</strong> — u kunt eerder gegeven toestemming (bijv. voor analytics) te allen tijde intrekken</li>
+    <li><strong>Recht op inzage</strong>: u kunt opvragen welke gegevens wij van u hebben</li>
+    <li><strong>Recht op rectificatie</strong>: u kunt onjuiste gegevens laten corrigeren</li>
+    <li><strong>Recht op verwijdering</strong>: u kunt verzoeken uw gegevens te laten wissen</li>
+    <li><strong>Recht op beperking</strong>: u kunt de verwerking laten beperken</li>
+    <li><strong>Recht op bezwaar</strong>: u kunt bezwaar maken tegen verwerking</li>
+    <li><strong>Recht op dataportabiliteit</strong>: u kunt uw gegevens opvragen in een leesbaar formaat</li>
+    <li><strong>Intrekken van toestemming</strong>: u kunt eerder gegeven toestemming (bijv. voor analytics) te allen tijde intrekken</li>
   </ul>
   <p>Stuur uw verzoek naar <a href="mailto:michiel.aandewiel@olivaenergy.nl">michiel.aandewiel@olivaenergy.nl</a>. Wij reageren binnen 30 dagen.</p>
 

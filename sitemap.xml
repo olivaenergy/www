@@ -3,7 +3,7 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://www.olivaenergy.nl/</loc>
-    <lastmod>2026-08-05</lastmod>
+    <lastmod>2026-10-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -27,7 +27,7 @@
   </url>
   <url>
     <loc>https://www.olivaenergy.nl/kennisbank.html</loc>
-    <lastmod>2026-08-05</lastmod>
+    <lastmod>2026-10-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -88,6 +88,18 @@
   <url>
     <loc>https://www.olivaenergy.nl/project-laadplein.html</loc>
     <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.olivaenergy.nl/artikel-dynamische-nettarieven.html</loc>
+    <lastmod>2026-08-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.olivaenergy.nl/artikel-energiewetgeving-2027.html</loc>
+    <lastmod>2026-10-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

@@ -147,7 +147,7 @@ window.i18n.fi = {
   'kb.lead': 'Artikkelit kirjoitettu k&auml;yt&auml;nn&ouml;n asiantuntijoiden toimesta.',
   'kb.all': 'Katso kaikki artikkelit',
   'ontzorging.eyebrow': 'Lupauksemme',
-  'ontzorging.title': 'T&auml;ydellinen palvelu — my&ouml;s asennuksessa paikan p&auml;&auml;ll&auml;',
+  'ontzorging.title': 'T&auml;ydellinen palvelu, my&ouml;s asennuksessa paikan p&auml;&auml;ll&auml;',
   'ontzorging.lead': 'Energianhallinta on monimutkaista. Me hoidamme sen kokonaan puolestasi, sek&auml; ohjelmallisesti ett&auml; laitteistollisesti, jotta sinä voit keskittyä siihen, mitä osaat parhaiten.',
   'ontzorging.software_title': 'Alusta & ohjelmistoohjaus',
   'ontzorging.software_desc': 'Kaikkien energiavoimavarojen reaaliaikainen seuranta. Aktiivinen ohjaus markkinasignaalien, energiahintojen ja verkkosignaalien perusteella. T&auml;ysin automatisoitu, ilman manuaalisia toimenpiteit&auml;.',

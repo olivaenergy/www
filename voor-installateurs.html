@@ -21,7 +21,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/png" href="oliva-logo.png">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
   <script type="application/ld+json">
   {
@@ -109,6 +111,7 @@
     }
     .nav-back:hover { color: var(--green-bright); }
     .nav-back svg { width: 16px; height: 16px; stroke: currentColor; fill: none; stroke-width: 2; }
+    @media (max-width: 600px) { .nav-back { font-size: 0; gap: 0; padding: 0.5rem; } } /* nav-back-mobile: alleen pijl op telefoons */
     .nav-cta {
       background: var(--green-mid); color: var(--white);
       padding: 0.5rem 1.25rem; border-radius: 6px;
@@ -401,7 +404,7 @@
 <!-- HERO -->
 <section class="hero">
   <div class="hero-left">
-    <span class="hero-label">Oliva Care — voor installateurs</span>
+    <span class="hero-label">Oliva Care voor installateurs</span>
     <h1 class="hero-title">Voeg <em>recurring omzet</em> toe aan uw bestaande installaties</h1>
     <p class="hero-sub">De solarmarkt staat onder druk. Oliva Care geeft solar-, elektro- en laadpaalinstallateurs een nieuw verdienmodel: professionele energiediensten die maandelijks terugkerende inkomsten genereren op installaties die u al heeft gebouwd.</p>
     <div class="hero-actions">

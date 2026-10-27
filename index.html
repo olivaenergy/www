@@ -778,7 +778,7 @@
     .delay-4 { animation-delay: 0.5s; }
     /* ── RESPONSIVE ── */
     .nav-links a { white-space: nowrap; }
-    @media (max-width: 1400px) {
+    @media (max-width: 1440px) {
       nav .nav-links { display: none; }
       nav .nav-links.open {
         display: flex; flex-direction: column; gap: 0;
@@ -791,6 +791,13 @@
       nav .nav-links.open li a { display: block; padding: 0.85rem 0; font-size: 1rem; color: var(--green-deep); }
       .hamburger { display: flex; }
       nav .lang-switcher { margin-left: auto; flex-shrink: 0; }
+    }
+    .nav-mobile-only { display: none; }
+    /* Op telefoons en tablets passen portal en taalkeuze niet in de balk: ze staan dan in het menu */
+    @media (max-width: 900px) {
+      .nav-actions .nav-portal { display: none; }
+      nav .nav-links.open .nav-mobile-only { display: block; }
+      .nav-lang-item .lang-switcher { margin-left: 0; padding: 0.75rem 0; justify-content: center; }
     }
     @media (max-width: 900px) {
       .hero { grid-template-columns: 1fr; }
@@ -820,7 +827,9 @@
       .ontzorging-grid { grid-template-columns: 1fr; }
     }
   </style>
-  <link rel="icon" type="image/png" href="oliva-logo.png">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <!-- Structured Data -->
   <script type="application/ld+json">
     {
@@ -856,6 +865,8 @@
     <li><a href="voor-installateurs.html"><span data-i18n="nav.for_installers">Voor Installateurs</span></a></li>
     <li><a href="voor-eindgebruikers.html"><span data-i18n="nav.for_endusers">Voor Eindgebruikers</span></a></li>
     <li><a href="kennisbank.html"><span data-i18n="nav.articles">Kennisbank</span></a></li>
+    <li class="nav-mobile-only"><a href="https://portal.oliva.energy/login" target="_blank"><span data-i18n="nav.portal">Mijn Oliva Energy</span></a></li>
+    <li class="nav-mobile-only nav-lang-item"></li>
   </ul>
   <button class="hamburger" id="nav-hamburger" onclick="toggleNav()" aria-label="Navigatie openen" aria-expanded="false">
     <span></span><span></span><span></span>
@@ -1641,12 +1652,22 @@
   <p class="section-lead"><span data-i18n="kb.lead">Artikelen geschreven door mensen die dagelijks in de praktijk werken.</span></p>
   <div class="kb-grid">
 
+    <a href="artikel-energiewetgeving-2027.html" class="kb-card">
+      <div class="kb-card-img"><img src="sector-betonfabriek.jpg" alt="Energiewetgeving 2027 voor bedrijven" loading="lazy"></div>
+      <div class="kb-card-body">
+        <span class="kb-cat">Wet- en regelgeving</span>
+        <p class="kb-title">Energiewetgeving 2027 en verder: gas duurder, slim stroomverbruik beloond</p>
+        <p class="kb-excerpt">Energiebelasting, ETS2, bijmengplicht en nieuwe nettarieven: wat verandert er in 2027 en 2028, en hoe gaat uw bedrijf hybride van het gas af?</p>
+        <span class="kb-read">Lees meer <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+      </div>
+    </a>
+
     <a href="artikel-datacenters-netcongestie.html" class="kb-card">
       <div class="kb-card-img"><img src="artikel_afbeelding_1.jpg" alt="Datacenters en netcongestie" loading="lazy"></div>
       <div class="kb-card-body">
         <span class="kb-cat">Netcongestie</span>
         <p class="kb-title">Zijn datacenters echt het probleem? Wat het netcongestiedebat mist</p>
-        <p class="kb-excerpt">Datacenters krijgen de schuld van het overvolle stroomnet. Maar het piekprobleem zit elders &mdash; en de oplossing ook.</p>
+        <p class="kb-excerpt">Datacenters krijgen de schuld van het overvolle stroomnet. Maar het piekprobleem zit elders. En de oplossing ook.</p>
         <span class="kb-read">Lees meer <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
       </div>
     </a>
@@ -1777,8 +1798,21 @@
     btn.classList.toggle('open', open);
     btn.setAttribute('aria-expanded', String(open));
   }
+  // Taalkeuze verhuist op telefoons en tablets naar het menu (zie .nav-lang-item)
+  (function() {
+    var switcher = document.querySelector('nav .lang-switcher');
+    var item = document.querySelector('nav .nav-lang-item');
+    var mq = window.matchMedia('(max-width: 900px)');
+    function placeLang() {
+      if (mq.matches) item.appendChild(switcher);
+      else document.querySelector('nav').appendChild(switcher);
+    }
+    placeLang();
+    if (mq.addEventListener) mq.addEventListener('change', placeLang);
+    else mq.addListener(placeLang);
+  })();
   document.addEventListener('click', function(e) {
-    if (!e.target.closest('nav')) {
+    if (!e.target.closest('nav') || e.target.closest('nav .nav-links a')) {
       var links = document.querySelector('nav .nav-links');
       var btn = document.getElementById('nav-hamburger');
       if (links && links.classList.contains('open')) {

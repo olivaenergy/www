@@ -21,7 +21,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/png" href="oliva-logo.png">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
   <script type="application/ld+json">
   {
@@ -65,6 +67,7 @@
     .nav-back { display: inline-flex; align-items: center; gap: 0.4rem; color: var(--muted); text-decoration: none; font-size: 0.88rem; font-weight: 500; transition: color .2s; }
     .nav-back:hover { color: var(--green-bright); }
     .nav-back svg { width: 16px; height: 16px; stroke: currentColor; fill: none; stroke-width: 2; }
+    @media (max-width: 600px) { .nav-back { font-size: 0; gap: 0; padding: 0.5rem; } } /* nav-back-mobile: alleen pijl op telefoons */
     .nav-cta { background: var(--green-mid); color: var(--white); padding: 0.5rem 1.25rem; border-radius: 6px; font-size: 0.875rem; font-weight: 600; text-decoration: none; transition: background .2s; }
     .nav-cta:hover { background: var(--green-deep); }
     .nav-portal { color: var(--green-mid); border: 1.5px solid var(--green-mid); padding: 0.45rem 1rem; border-radius: 6px; font-size: 0.875rem; font-weight: 600; text-decoration: none; transition: background .2s, color .2s; white-space: nowrap; }
@@ -214,18 +217,18 @@
 
     <p>Nederland bouwt. Gemeenten als Almere, Utrecht, Breda en Zwolle werken aan grootschalige uitbreiding van hun woningvoorraad en bedrijventerreinen. De druk op de woningmarkt is hoog, de politieke urgentie om te bouwen is groot en de projecten zijn in voorbereiding of al in uitvoering.</p>
 
-    <p>Maar er is een rem die steeds vaker roet in het eten gooit: het stroomnet houdt de groei niet bij. Nieuwe wijken, bedrijfscampussen en gemengde ontwikkellocaties lopen vast op onvoldoende netcapaciteit. De netbeheerder kan niet leveren wat de plannen vereisen &mdash; niet vandaag, en in veel gevallen ook niet binnen vijf jaar.</p>
+    <p>Maar er is een rem die steeds vaker roet in het eten gooit: het stroomnet houdt de groei niet bij. Nieuwe wijken, bedrijfscampussen en gemengde ontwikkellocaties lopen vast op onvoldoende netcapaciteit. De netbeheerder kan niet leveren wat de plannen vereisen. Niet vandaag, en in veel gevallen ook niet binnen vijf jaar.</p>
 
     <p>Dit is de energieparadox van stedelijke uitbreiding. En het vraagt om een fundamenteel andere manier van denken over energie in gebiedsontwikkeling.</p>
 
     <h2>Hoe erg is het probleem?</h2>
 
-    <p>De cijfers liegen er niet om. Netbeheerder Liander heeft in Noord-Holland en Flevoland &mdash; het verzorgingsgebied waar Almere onder valt &mdash; al meerdere jaren een wachtlijstenprobleem voor nieuwe of zwaardere aansluitingen. Maar ook Enexis in Noord-Brabant en Stedin in Zeeland en Zuid-Holland rapporteren vergelijkbare knelpunten.</p>
+    <p>De cijfers liegen er niet om. Netbeheerder Liander heeft in Noord-Holland en Flevoland, het verzorgingsgebied waar Almere onder valt, al meerdere jaren een wachtlijstenprobleem voor nieuwe of zwaardere aansluitingen. Maar ook Enexis in Noord-Brabant en Stedin in Zeeland en Zuid-Holland rapporteren vergelijkbare knelpunten.</p>
 
     <p>Wat stedelijke uitbreiding extra kwetsbaar maakt, is de <strong>gelijktijdigheid van de vraag</strong>. Als een nieuwe wijk van tweeduizend woningen in gebruik wordt genomen, komen die aansluitingen allemaal tegelijk. De piekbelasting op het lokale net is daarmee niet lineair maar exponentieel.</p>
 
     <div class="pull-quote">
-      &ldquo;Gebiedsontwikkelaars die nu plannen maken voor 2028 of 2030, moeten vandaag de energiestrategie meenemen &mdash; niet als bijlage, maar als kernonderdeel van het plan.&rdquo;
+      &ldquo;Gebiedsontwikkelaars die nu plannen maken voor 2028 of 2030, moeten vandaag de energiestrategie meenemen. Niet als bijlage, maar als kernonderdeel van het plan.&rdquo;
     </div>
 
     <h2>Waarom loopt de infrastructuur achter?</h2>
@@ -246,11 +249,11 @@
     <div class="scenario-grid">
       <div class="scenario-card bad">
         <h4>Zonder energiestrategie</h4>
-        <p>Vergunning verleend, bouw gestart &mdash; en dan ontdekt de ontwikkelaar dat de netbeheerder de benodigde aansluiting pas over vier jaar kan leveren. Vertraging, meerkosten, gespannen relaties met kopers of huurders.</p>
+        <p>Vergunning verleend, bouw gestart, en dan ontdekt de ontwikkelaar dat de netbeheerder de benodigde aansluiting pas over vier jaar kan leveren. Vertraging, meerkosten, gespannen relaties met kopers of huurders.</p>
       </div>
       <div class="scenario-card good">
         <h4>Met energiestrategie</h4>
-        <p>Energiehub op terreinniveau gepland v&oacute;&oacute;r de vergunning. Lokale opwek, opslag en slimme sturing zorgen dat de locatie functioneert binnen de beschikbare netcapaciteit &mdash; en klaar is voor uitbreiding later.</p>
+        <p>Energiehub op terreinniveau gepland v&oacute;&oacute;r de vergunning. Lokale opwek, opslag en slimme sturing zorgen dat de locatie functioneert binnen de beschikbare netcapaciteit en klaar is voor uitbreiding later.</p>
       </div>
     </div>
 
@@ -295,7 +298,7 @@
 
     <p>De vraag is niet <em>of</em> u te maken krijgt met netbeperkingen bij nieuwe ontwikkellocaties, maar <em>wanneer</em> en <em>hoe goed u daarop bent voorbereid</em>. Gemeenten die energiecoördinatie opnemen in hun bestemmingsplannen en grondexploitaties doen hun toekomstige bewoners en bedrijven een groot plezier.</p>
 
-    <p>Ontwikkelaars die een energiestrategie integreren in de vroege planfase &mdash; liefst al in de haalbaarheidsanalyse &mdash; vermijden de duurste verrassingen. En zij bouwen aan locaties die niet alleen vandaag werkbaar zijn, maar ook over tien jaar nog aansluiten op de energiemarkt van de toekomst.</p>
+    <p>Ontwikkelaars die een energiestrategie integreren in de vroege planfase, liefst al in de haalbaarheidsanalyse, vermijden de duurste verrassingen. En zij bouwen aan locaties die niet alleen vandaag werkbaar zijn, maar ook over tien jaar nog aansluiten op de energiemarkt van de toekomst.</p>
 
     <p>Oliva Energy werkt samen met O&amp;M-partijen, projectontwikkelaars en gemeenten aan energieoplossingen voor complexe locaties. Van het ontwerp en de businesscase tot de real-time aansturing van energieassets na oplevering.</p>
 
@@ -343,7 +346,7 @@
 <!-- CTA -->
 <section class="article-cta">
   <h2>Energie als onderdeel van uw gebiedsplan</h2>
-  <p>Oliva helpt ontwikkelaars en O&amp;M-partijen om energie vroeg in de planfase mee te nemen &mdash; van haalbaarheidsanalyse tot actieve sturing.</p>
+  <p>Oliva helpt ontwikkelaars en O&amp;M-partijen om energie vroeg in de planfase mee te nemen, van haalbaarheidsanalyse tot actieve sturing.</p>
   <div class="cta-group">
     <a href="mailto:michiel.aandewiel@olivaenergy.nl?subject=Vraag%20over%20energie%20en%20gebiedsontwikkeling" class="btn-white">Neem contact op</a>
     <a href="tel:+31850050440" class="btn-outline-white">Bel: 085 0050 440</a>

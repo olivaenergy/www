@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://www.olivaenergy.nl/kennisbank.html">
-  <title>Kennisbank | Oliva Energy — artikelen over energiebeheer</title>
+  <title>Kennisbank: artikelen over energiebeheer | Oliva Energy</title>
 
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.olivaenergy.nl/kennisbank.html">
@@ -21,7 +21,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/png" href="oliva-logo.png">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
   <script type="application/ld+json">
   {
@@ -54,6 +56,7 @@
     .nav-back { display: inline-flex; align-items: center; gap: 0.4rem; color: var(--muted); text-decoration: none; font-size: 0.88rem; font-weight: 500; transition: color .2s; }
     .nav-back:hover { color: var(--green-bright); }
     .nav-back svg { width: 16px; height: 16px; stroke: currentColor; fill: none; stroke-width: 2; }
+    @media (max-width: 600px) { .nav-back { font-size: 0; gap: 0; padding: 0.5rem; } } /* nav-back-mobile: alleen pijl op telefoons */
     .nav-cta { background: var(--green-mid); color: var(--white); padding: 0.5rem 1.25rem; border-radius: 6px; font-size: 0.875rem; font-weight: 600; text-decoration: none; display: inline-block; transition: background .2s; }
     .nav-cta:hover { background: var(--green-deep); }
     .nav-portal { color: var(--green-mid); border: 1.5px solid var(--green-mid); padding: 0.45rem 1rem; border-radius: 6px; font-size: 0.875rem; font-weight: 600; text-decoration: none; transition: background .2s, color .2s; white-space: nowrap; }
@@ -78,6 +81,8 @@
     .filters { padding: 2rem 8vw; background: var(--off-white); border-bottom: 1px solid var(--border); display: flex; align-items: center; gap: 0.75rem; flex-wrap: wrap; }
     .filter-label { font-size: 0.8rem; font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; }
     .filter-btn { background: var(--white); border: 1.5px solid var(--border); color: var(--muted); font-family: 'Lato', sans-serif; font-size: 0.82rem; font-weight: 600; padding: 0.4rem 1rem; border-radius: 20px; cursor: pointer; transition: all .15s; }
+    .filter-btn:focus-visible { outline: 2px solid var(--green-bright); outline-offset: 2px; }
+    .filters-empty { display: none; color: var(--muted); font-size: 0.95rem; padding: 1rem 0; }
     .filter-btn:hover, .filter-btn.active { background: var(--green-light); border-color: var(--green-bright); color: var(--green-mid); }
 
     /* ARTICLES GRID */
@@ -197,26 +202,27 @@
 <!-- FILTERS -->
 <div class="filters">
   <span class="filter-label">Onderwerp:</span>
-  <button class="filter-btn active">Alle artikelen</button>
-  <button class="filter-btn">Netcongestie</button>
-  <button class="filter-btn">Installateurs</button>
-  <button class="filter-btn">Energy Hubs</button>
-  <button class="filter-btn">Flexibiliteit</button>
+  <button type="button" class="filter-btn active" aria-pressed="true">Alle artikelen</button>
+  <button type="button" class="filter-btn" aria-pressed="false">Netcongestie</button>
+  <button type="button" class="filter-btn" aria-pressed="false">Installateurs</button>
+  <button type="button" class="filter-btn" aria-pressed="false">Energy Hubs</button>
+  <button type="button" class="filter-btn" aria-pressed="false">Flexibiliteit</button>
+  <button type="button" class="filter-btn" aria-pressed="false">Wet- en regelgeving</button>
 </div>
 
 <!-- ARTICLES -->
 <section class="articles">
 
   <!-- Featured article -->
-  <a href="artikel-datacenters-netcongestie.html" class="featured-article">
+  <a href="artikel-energiewetgeving-2027.html" class="featured-article">
     <div class="featured-article-img">
-      <img src="artikel_afbeelding_1.jpg" alt="Datacenters en netcongestie in Nederland">
-      <span class="featured-label">Aanbevolen</span>
+      <img src="sector-betonfabriek.jpg" alt="Energiewetgeving 2027 voor bedrijven">
+      <span class="featured-label">Nieuw</span>
     </div>
     <div class="featured-article-body">
-      <span class="featured-category">Netcongestie</span>
-      <h2 class="featured-title">Zijn datacenters echt het probleem? Wat het netcongestiedebat mist</h2>
-      <p class="featured-excerpt">Datacenters krijgen de schuld van het overvolle stroomnet. Maar de werkelijkheid is genuanceerder, en voor bedrijven die &eacute;chte oplossingen zoeken, is het belangrijk te begrijpen waar het piekprobleem werkelijk zit.</p>
+      <span class="featured-category">Wet- en regelgeving</span>
+      <h2 class="featured-title">Energiewetgeving 2027 en verder: gas duurder, slim stroomverbruik beloond</h2>
+      <p class="featured-excerpt">Energiebelasting, ETS2, bijmengplicht en nieuwe nettarieven: wat verandert er in 2027 en 2028, en hoe gaat uw bedrijf hybride van het gas af?</p>
 <span class="featured-read-more">
         Lees het artikel
         <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
@@ -224,8 +230,26 @@
     </div>
   </a>
 
+  <p class="filters-empty" id="filters-empty" role="status">Er zijn nog geen artikelen over dit onderwerp.</p>
+
   <!-- Articles grid -->
   <div class="articles-grid">
+
+    <a href="artikel-datacenters-netcongestie.html" class="article-card">
+      <div class="article-img">
+        <img src="artikel_afbeelding_1.jpg" alt="Datacenters en netcongestie in Nederland">
+        <div class="article-img-overlay"></div>
+        <span class="article-category">Netcongestie</span>
+      </div>
+      <div class="article-body">
+        <h2 class="article-title">Zijn datacenters echt het probleem? Wat het netcongestiedebat mist</h2>
+        <p class="article-excerpt">Datacenters krijgen de schuld van het overvolle stroomnet. Maar de werkelijkheid is genuanceerder, en voor bedrijven die &eacute;chte oplossingen zoeken, is het belangrijk te begrijpen waar het piekprobleem werkelijk zit.</p>
+        <span class="article-read-more">
+          Lees meer
+          <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </span>
+      </div>
+    </a>
 
     <a href="artikel-netcongestie.html" class="article-card">
       <div class="article-img">
@@ -329,7 +353,7 @@
 <!-- CTA -->
 <section class="cta-section">
   <h2 class="cta-title">Vraag over uw specifieke situatie?</h2>
-  <p>Onze specialisten denken graag met u mee over uw energievraagstuk &mdash; of u nu installateur bent of een organisatie met complexe energieuitdagingen.</p>
+  <p>Onze specialisten denken graag met u mee over uw energievraagstuk, of u nu installateur bent of een organisatie met complexe energieuitdagingen.</p>
   <div class="cta-group">
     <a href="mailto:michiel.aandewiel@olivaenergy.nl?subject=Vraag%20via%20de%20kennisbank" class="btn-white">Stel uw vraag</a>
     <a href="tel:+31850050440" class="btn-outline-white">Bel: 085 0050 440</a>
@@ -356,6 +380,35 @@
     <span>Copyright &copy; 2025 Oliva Energy</span>
   </div>
 </footer>
+
+<script>
+  // Filter artikelen op onderwerp (label op de kaart)
+  (function() {
+    var buttons = document.querySelectorAll('.filter-btn');
+    var items = document.querySelectorAll('.featured-article, .article-card');
+    var empty = document.getElementById('filters-empty');
+    function categoryOf(el) {
+      var label = el.querySelector('.featured-category, .article-category');
+      return label ? label.textContent.trim() : '';
+    }
+    buttons.forEach(function(btn, i) {
+      btn.addEventListener('click', function() {
+        var topic = i === 0 ? null : btn.textContent.trim();
+        var shown = 0;
+        buttons.forEach(function(b) {
+          b.classList.toggle('active', b === btn);
+          b.setAttribute('aria-pressed', b === btn ? 'true' : 'false');
+        });
+        items.forEach(function(el) {
+          var match = !topic || categoryOf(el) === topic;
+          el.style.display = match ? '' : 'none';
+          if (match) shown++;
+        });
+        empty.style.display = shown ? 'none' : 'block';
+      });
+    });
+  })();
+</script>
 
 </body>
 </html>

@@ -168,7 +168,7 @@ window.i18n.en = {
   'faq.q9': 'How do I contact Oliva Energy?',
   'faq.a9': 'You can reach us by email at michiel.aandewiel@olivaenergy.nl, by phone on +31 85 0050 440, or via the contact button on this page. We typically respond within one business day.',
   'ontzorging.eyebrow': 'Our promise',
-  'ontzorging.title': 'Complete end-to-end service — including installation at your location',
+  'ontzorging.title': 'Complete end-to-end service, including installation at your location',
   'ontzorging.lead': 'Energy management is complex. We take it fully off your hands, both in software and hardware, so you can keep doing what you\'re good at.',
   'ontzorging.software_title': 'Platform & software control',
   'ontzorging.software_desc': 'Real-time monitoring of all energy assets. Active control based on market signals, energy prices and grid signals. Fully automated, without manual intervention.',

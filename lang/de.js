@@ -147,7 +147,7 @@ window.i18n.de = {
   'kb.lead': 'Artikel von Experten, die t&auml;glich in der Praxis arbeiten.',
   'kb.all': 'Alle Artikel in der Wissensdatenbank',
   'ontzorging.eyebrow': 'Unser Versprechen',
-  'ontzorging.title': 'Vollst&auml;ndige Rundum-Betreuung — auch f&uuml;r die Installation vor Ort',
+  'ontzorging.title': 'Vollst&auml;ndige Rundum-Betreuung, auch f&uuml;r die Installation vor Ort',
   'ontzorging.lead': 'Energiemanagement ist komplex. Wir &uuml;bernehmen das vollst&auml;ndig f&uuml;r Sie, sowohl softwareseitig als auch hardwareseitig, damit Sie sich auf das konzentrieren k&ouml;nnen, was Sie am besten k&ouml;nnen.',
   'ontzorging.software_title': 'Plattform & Softwaresteuerung',
   'ontzorging.software_desc': 'Echtzeit-Monitoring aller Energieassets. Aktive Steuerung basierend auf Marktsignalen, Energiepreisen und Netzsignalen. Vollst&auml;ndig automatisiert, ohne manuelle Eingriffe.',

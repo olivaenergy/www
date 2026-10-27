@@ -147,7 +147,7 @@ window.i18n.fr = {
   'kb.lead': 'Articles r&eacute;dig&eacute;s par des professionnels du terrain.',
   'kb.all': 'Voir tous les articles',
   'ontzorging.eyebrow': 'Notre promesse',
-  'ontzorging.title': 'Prise en charge totale — y compris l\'installation sur site',
+  'ontzorging.title': 'Prise en charge totale, y compris l\'installation sur site',
   'ontzorging.lead': 'La gestion de l\'énergie est complexe. Nous la prenons entièrement en charge, logiciellement et matériellement, pour que vous puissiez vous concentrer sur votre c&oelig;ur de métier.',
   'ontzorging.software_title': 'Plateforme & pilotage logiciel',
   'ontzorging.software_desc': 'Surveillance en temps réel de tous les actifs énergétiques. Pilotage actif basé sur les signaux de marché, les prix de l\'énergie et les signaux du réseau. Entièrement automatisé, sans intervention manuelle.',
