@@ -350,6 +350,109 @@
   </div>
 </section>
 
+<!-- PROJECTEN -->
+<style>
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 3rem;
+  }
+  .project-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    transition: transform .2s, box-shadow .2s;
+  }
+  .project-card:hover { transform: translateY(-4px); box-shadow: 0 10px 32px rgba(20,38,28,0.12); }
+  .project-card-img { aspect-ratio: 3 / 2; overflow: hidden; position: relative; }
+  .project-card-img img, .project-card-img video { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .4s; }
+  .project-card:hover .project-card-img img, .project-card:hover .project-card-img video { transform: scale(1.04); }
+  .project-status {
+    position: absolute; top: 0.85rem; left: 0.85rem;
+    background: var(--amber); color: var(--white);
+    font-size: 0.68rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;
+    padding: 0.25rem 0.7rem; border-radius: 20px;
+  }
+  .project-card-body { padding: 1.5rem; display: flex; flex-direction: column; gap: 0.6rem; flex: 1; }
+  .project-cat { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--green-mid); }
+  .project-figure { padding: 0.25rem 0 0.75rem; border-bottom: 1px solid var(--border); margin-bottom: 0.25rem; }
+  .project-figure-num { font-family: 'Poppins', sans-serif; font-size: 2rem; font-weight: 700; color: var(--green-deep); line-height: 1.1; display: block; }
+  .project-figure-label { font-size: 0.78rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; }
+  .project-title { font-family: 'Poppins', sans-serif; font-size: 1.05rem; font-weight: 700; color: var(--green-deep); line-height: 1.35; }
+  .project-excerpt { font-size: 0.875rem; color: var(--muted); line-height: 1.65; flex: 1; }
+  .project-read { display: inline-flex; align-items: center; gap: 0.3rem; font-size: 0.82rem; font-weight: 700; color: var(--green-mid); margin-top: 0.25rem; }
+  .project-read svg { width: 13px; height: 13px; stroke: currentColor; fill: none; stroke-width: 2.5; transition: transform .2s; }
+  .project-card:hover .project-read svg { transform: translateX(3px); }
+  @media (max-width: 900px) { .projects-grid { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 600px) { .projects-grid { grid-template-columns: 1fr; } }
+  /* sectiekoppen alleen voor dit blok op de kennisbank */
+  .projects { padding: 5rem 8vw; background: var(--off-white); border-top: 1px solid var(--border); }
+  .projects .section-eyebrow { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--green-bright); margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.5rem; }
+  .projects .section-eyebrow::before { content: ''; width: 20px; height: 2px; background: var(--green-bright); }
+  .projects .section-title { font-family: 'Poppins', sans-serif; font-size: clamp(1.7rem, 2.8vw, 2.4rem); color: var(--green-deep); line-height: 1.2; letter-spacing: -0.01em; font-weight: 700; margin-bottom: 1rem; }
+  .projects .section-lead { font-size: 1.05rem; color: var(--muted); line-height: 1.7; max-width: 600px; }
+  @media (max-width: 600px) { .projects { padding: 4rem 6vw; } }
+</style>
+<section class="projects" id="projecten">
+  <div class="section-eyebrow">Uit de praktijk</div>
+  <h2 class="section-title">Projecten waar we trots op zijn</h2>
+  <p class="section-lead">Drie bedrijven die wilden verduurzamen, maar vastliepen op hun aansluiting. Samen met onze partners vonden we toch een weg.</p>
+  <div class="projects-grid">
+
+    <a href="project-pekso.html" class="project-card">
+      <div class="project-card-img"><video autoplay muted loop playsinline preload="metadata" poster="project-pekso-portaal-poster.jpg" aria-label="Live weergave van de sturing bij Pekso in het Oliva-portaal" style="object-fit:contain;background:#fff;"><source src="project-pekso-portaal.mp4" type="video/mp4"></video></div>
+      <div class="project-card-body">
+        <span class="project-cat">Industrie &middot; Noord-Brabant</span>
+        <div class="project-figure">
+          <span class="project-figure-num">60.000 m&sup3;</span>
+          <span class="project-figure-label">minder aardgas per jaar</span>
+        </div>
+        <p class="project-title">Pekso: warmte uit zonnestroom, binnen een volle aansluiting</p>
+        <p class="project-excerpt">Nooit terugleveren, nooit boven het netcontract, en het zonne-overschot gaat het productieproces in.</p>
+        <span class="project-read">Bekijk het project <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+      </div>
+    </a>
+
+    <a href="project-landal-schouwse-valleien.html" class="project-card">
+      <div class="project-card-img">
+        <img src="project-landal-batterijen.jpg" alt="Batterijopstellingen op Landal Schouwse Valleien tijdens de bouw" loading="lazy">
+        <span class="project-status">In oplevering</span>
+      </div>
+      <div class="project-card-body">
+        <span class="project-cat">Recreatie &middot; Zeeland</span>
+        <div class="project-figure">
+          <span class="project-figure-num">3x200 A</span>
+          <span class="project-figure-label">voor 135 gasloze vakantiewoningen</span>
+        </div>
+        <p class="project-title">Landal Schouwse Valleien: volledig elektrisch, zonder te wachten op het net</p>
+        <p class="project-excerpt">Zonder sturing was 1.800 kVA nodig. Met batterijen en een slimme volgorde past het park op een fractie daarvan.</p>
+        <span class="project-read">Bekijk het project <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+      </div>
+    </a>
+
+    <a href="project-laadplein.html" class="project-card">
+      <div class="project-card-img"><img src="project-laadplein-laadpalen.jpg" alt="Laadpalen op een bedrijfsparkeerplaats" loading="lazy"></div>
+      <div class="project-card-body">
+        <span class="project-cat">Laadplein &middot; Midden-Nederland</span>
+        <div class="project-figure">
+          <span class="project-figure-num">16</span>
+          <span class="project-figure-label">laadpunten op dezelfde aansluiting</span>
+        </div>
+        <p class="project-title">De laadplicht van 2027 halen zonder netverzwaring</p>
+        <p class="project-excerpt">Slim laden plus een batterij voor de ochtendpiek: zestien laadpunten erbij, de aansluiting blijft gelijk.</p>
+        <span class="project-read">Bekijk het project <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+      </div>
+    </a>
+
+  </div>
+</section>
+
 <!-- CTA -->
 <section class="cta-section">
   <h2 class="cta-title">Vraag over uw specifieke situatie?</h2>
