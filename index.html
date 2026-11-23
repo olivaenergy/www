@@ -1263,6 +1263,35 @@
     line-height: 1.6;
     margin: 0;
   }
+  .sector-announce {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    border-radius: 16px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0 4px 20px rgba(20,38,28,0.08);
+    border-left: 4px solid var(--green-bright);
+    text-align: left;
+  }
+  .sector-announce-img { min-height: 220px; }
+  .sector-announce-img img { width: 100%; height: 100%; object-fit: cover; object-position: center 45%; display: block; }
+  .sector-announce-body { padding: 1.75rem 2rem; display: flex; flex-direction: column; justify-content: center; gap: 0.6rem; }
+  .sector-announce-meta { display: flex; align-items: center; gap: 0.75rem; font-size: 0.75rem; color: var(--muted); }
+  .sector-announce-badge {
+    background: var(--green-light); color: var(--green-mid);
+    font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;
+    padding: 0.25rem 0.6rem; border-radius: 999px;
+  }
+  .sector-announce-title { font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 1.3rem; line-height: 1.3; color: var(--green-deep); margin: 0; }
+  .sector-announce-desc { font-size: 0.92rem; color: var(--muted); line-height: 1.65; margin: 0; }
+  .sector-announce-cta {
+    display: inline-flex; align-items: center; gap: 0.4rem; align-self: flex-start;
+    margin-top: 0.4rem; font-weight: 700; font-size: 0.9rem; color: var(--green-mid); text-decoration: none;
+  }
+  .sector-announce-cta svg { width: 16px; height: 16px; stroke: currentColor; fill: none; stroke-width: 2; transition: transform 0.2s; }
+  .sector-announce-cta:hover svg { transform: translateX(3px); }
+  @media (max-width: 700px) { .sector-announce { grid-template-columns: 1fr; } .sector-announce-img { min-height: 180px; } .sector-announce-body { padding: 1.25rem; } }
   @media (max-width: 900px) { .sectors-grid { grid-template-columns: repeat(2, 1fr); } }
   @media (max-width: 500px) { .sectors-grid { grid-template-columns: 1fr; } }
 </style>
@@ -1277,6 +1306,24 @@
     <span data-i18n="sectors.lead">Oliva is gespecialiseerd in industriële omgevingen waar energie een kritische factor is.</span>
   </p>
   <div class="sectors-grid">
+    <!-- AANKONDIGING BETONSECTOR (dummy tekst) -->
+    <article class="sector-announce">
+      <div class="sector-announce-img">
+        <img src="sector-betonfabriek.jpg" alt="Betonfabriek productievloer" loading="lazy" />
+      </div>
+      <div class="sector-announce-body">
+        <div class="sector-announce-meta">
+          <span class="sector-announce-badge" data-i18n="sectors.announce_badge">Nieuw</span>
+          <span data-i18n="sectors.announce_date">December 2026</span>
+        </div>
+        <h3 class="sector-announce-title" data-i18n="sectors.announce_title">Oliva breidt uit in de betonsector</h3>
+        <p class="sector-announce-desc" data-i18n="sectors.announce_desc">Betoncentrales en prefab-fabrieken draaien op zware, continue vermogens. Met slimme energiesturing verschuiven we pieken, benutten we lage tarieven en halen we meer uit de bestaande netaansluiting, zonder de productie te verstoren.</p>
+        <a href="#contact" class="sector-announce-cta">
+          <span data-i18n="sectors.announce_cta">Plan een kennismaking</span>
+          <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </article>
     <!-- BETONFABRIEKEN -->
     <div class="sector-card">
       <div class="sector-img sector-img--beton" style="background:none;padding:0;">
