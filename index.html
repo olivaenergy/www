@@ -665,6 +665,10 @@
     .footer-tagline { font-size: 0.82rem; color: rgba(255,255,255,0.4); }
     .footer-contact a { color: rgba(255,255,255,0.7); text-decoration: none; font-size: 0.88rem; display: block; margin-bottom: 0.3rem; }
     .footer-contact a:hover { color: var(--green-bright); }
+    .footer-links { display: flex; flex-direction: column; gap: 0.35rem; }
+    .footer-links-title { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.4); }
+    .footer-links a { color: rgba(255,255,255,0.75); text-decoration: none; font-size: 0.88rem; }
+    .footer-links a:hover { color: var(--green-bright); }
     .footer-address-bar {
       grid-column: 1 / -1;
       border-top: 1px solid rgba(255,255,255,0.1);
@@ -1263,6 +1267,10 @@
     line-height: 1.6;
     margin: 0;
   }
+  a.sector-card { display: block; text-decoration: none; color: inherit; }
+  .sector-more { display: inline-flex; align-items: center; gap: 0.3rem; margin-top: 0.85rem; font-size: 0.82rem; font-weight: 700; color: var(--green-mid); }
+  .sector-more svg { width: 13px; height: 13px; stroke: currentColor; fill: none; stroke-width: 2.5; transition: transform .2s; }
+  .sector-card:hover .sector-more svg { transform: translateX(3px); }
   @media (max-width: 900px) { .sectors-grid { grid-template-columns: repeat(2, 1fr); } }
   @media (max-width: 500px) { .sectors-grid { grid-template-columns: 1fr; } }
 </style>
@@ -1278,7 +1286,7 @@
   </p>
   <div class="sectors-grid">
     <!-- BETONFABRIEKEN -->
-    <div class="sector-card">
+    <a href="beton.html" class="sector-card">
       <div class="sector-img sector-img--beton" style="background:none;padding:0;">
         <img src="sector-betonfabriek.jpg" alt="Betonfabriek productievloer" loading="lazy" style="width:100%;height:100%;object-fit:cover;object-position:center 45%;display:block;" />
       </div>
@@ -1287,10 +1295,11 @@
           <span data-i18n="sectors.factories_title">(Beton) fabrieken</span>
         </p>
         <p class="sector-desc">
-          <span data-i18n="sectors.factories_desc">Energiesturing in omgevingen met hoge, continue vermogens is onze specialiteit. Wij werken samen met toonaangevende bedrijven in de cementsector.</span>
+          <span data-i18n="sectors.factories_desc">Droogkamers en uitharding van het gas af, binnen de bestaande aansluiting. Samen met R&amp;R Systems en Saman Groep, bewezen bij De Hoop Pekso.</span>
         </p>
+        <span class="sector-more"><span data-i18n="sectors.read_more">Lees meer</span> <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
       </div>
-    </div>
+    </a>
     <!-- BEDRIJVENTERREINEN -->
     <div class="sector-card">
       <div class="sector-img sector-img--terrein" style="background:none;padding:0;">
@@ -1773,6 +1782,10 @@
   <div>
     <a href="#" class="footer-logo"><img src="oliva-logo.png" alt="Oliva Energy" style="height:40px;width:auto;filter:brightness(0) invert(1);"></a>
     <p class="footer-tagline"><span data-i18n="footer.tagline">Onafhankelijk platform voor design, monitoring en sturing van energiesystemen</span></p>
+  </div>
+  <div class="footer-links">
+    <p class="footer-links-title"><span data-i18n="sectors.eyebrow">Sectoren</span></p>
+    <a href="beton.html"><span data-i18n="footer.sector_concrete">Betonindustrie</span></a>
   </div>
   <div class="footer-address-bar">
     <span>Gouwepoort 1, 4301 RZ Zierikzee, The Netherlands</span>

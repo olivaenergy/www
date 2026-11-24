@@ -190,6 +190,10 @@
     .sector-body { padding: 1.1rem 1.25rem 1.4rem; }
     .sector-title { font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 0.95rem; color: var(--green-deep); margin-bottom: 0.4rem; }
     .sector-desc { font-size: 0.82rem; color: var(--muted); line-height: 1.55; }
+    a.sector-card { display: block; text-decoration: none; color: inherit; }
+    .sector-more { display: inline-flex; align-items: center; gap: 0.3rem; margin-top: 0.75rem; font-size: 0.8rem; font-weight: 700; color: var(--green-mid); }
+    .sector-more svg { width: 13px; height: 13px; stroke: currentColor; fill: none; stroke-width: 2.5; transition: transform .2s; }
+    .sector-card:hover .sector-more svg { transform: translateX(3px); }
 
     /* PROCESS */
     .process { background: var(--white); }
@@ -227,6 +231,10 @@
     /* FOOTER */
     footer { background: var(--navy); color: rgba(255,255,255,0.6); padding: 3rem 8vw 0; display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 2rem; }
     .footer-tagline { font-size: 0.82rem; color: rgba(255,255,255,0.4); }
+    .footer-links { display: flex; flex-direction: column; gap: 0.35rem; }
+    .footer-links-title { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.4); }
+    .footer-links a { color: rgba(255,255,255,0.75); text-decoration: none; font-size: 0.88rem; }
+    .footer-links a:hover { color: var(--green-bright); }
     .footer-address-bar { grid-column: 1 / -1; border-top: 1px solid rgba(255,255,255,0.1); margin-top: 2rem; padding: 1.25rem 0; display: flex; justify-content: center; align-items: center; gap: 2rem; font-size: 0.8rem; color: rgba(255,255,255,0.45); flex-wrap: wrap; text-align: center; }
     .footer-address-bar a { color: rgba(255,255,255,0.45); text-decoration: none; }
     .footer-address-bar a:hover { color: var(--green-bright); }
@@ -402,15 +410,16 @@
   <h2 class="section-title">Actief waar energie ertoe doet</h2>
   <p class="section-lead">Oliva Systems is gespecialiseerd in industriële omgevingen waar energie een kritische factor is.</p>
   <div class="sectors-grid">
-    <div class="sector-card">
+    <a href="beton.html" class="sector-card">
       <div class="sector-img">
         <img src="sector-betonfabriek.jpg" alt="Betonfabriek productievloer">
       </div>
       <div class="sector-body">
         <p class="sector-title">(Beton)fabrieken</p>
-        <p class="sector-desc">Energiesturing in omgevingen met hoge, continue vermogens. Wij werken samen met toonaangevende bedrijven in de cementsector.</p>
+        <p class="sector-desc">Droogkamers en uitharding van het gas af, binnen de bestaande aansluiting. Samen met R&amp;R Systems en Saman Groep, bewezen bij De Hoop Pekso.</p>
+        <span class="sector-more">Lees meer <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
       </div>
-    </div>
+    </a>
     <div class="sector-card">
       <div class="sector-img">
         <img src="sector-bedrijventerrein.jpg" alt="Bedrijventerrein">
@@ -675,6 +684,10 @@
   <div>
     <a href="index.html"><img src="oliva-logo.png" alt="Oliva Energy" style="height:40px;width:auto;filter:brightness(0) invert(1);margin-bottom:0.5rem;display:block;"></a>
     <p class="footer-tagline">Onafhankelijk platform voor design, monitoring en sturing van energiesystemen</p>
+  </div>
+  <div class="footer-links">
+    <p class="footer-links-title">Sectoren</p>
+    <a href="beton.html">Betonindustrie</a>
   </div>
   <div class="footer-address-bar">
     <span>Gouwepoort 1, 4301 RZ Zierikzee, The Netherlands</span>
